@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Leads & Inteligência de Ads | Pilates de Parede</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+  <!-- TELA DE LOGIN / PROTEÇÃO POR SENHA -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-card">
+      <div class="login-icon">🔒</div>
+      <h2>Painel Exclusivo de Leads</h2>
+      <p class="login-subtitle">Funil Pilates de Parede — Mali Santos</p>
+      
+      <form id="login-form" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="admin-password">Senha de Acesso</label>
+          <input type="password" id="admin-password" placeholder="Digite a senha..." autofocus required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Acessar Painel</button>
+        <p id="login-error" class="login-error" style="display: none;">❌ Senha incorreta. Tente novamente.</p>
+        <div class="login-hint">
+          <span>💡 Senha padrão: <strong>admin123</strong></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL DO DASHBOARD -->
+  <div id="dashboard-app" class="dashboard-wrapper" style="display: none;">
+    
+    <!-- BARRA SUPERIOR (HEADER) -->
+    <header class="top-header">
+      <div class="header-brand">
+        <div class="brand-badge">PILATES DE PAREDE</div>
+        <h1>Painel de Retenção & Inteligência de Leads</h1>
+        <div class="live-pill"><span class="pulse-dot"></span> Monitorando em tempo real</div>
+      </div>
+      
+      <div class="header-actions">
+        <button id="btn-demo-data" class="btn btn-secondary" title="Gera 30 leads simulados para visualizar gráficos e métricas imediatamente">
+          <span>🎲</span> Gerar 30 Leads Demo
+        </button>
+        <button id="btn-export-csv" class="btn btn-secondary" title="Exportar todas as respostas para Excel ou Google Sheets">
+          <span>📥</span> Exportar CSV
+        </button>
+        <a href="index.html" target="_blank" class="btn btn-secondary" title="Abrir simulador do WhatsApp em nova aba">
+          <span>📱</span> Abrir Chat
+        </a>
+        <button id="btn-clear-data" class="btn btn-danger-outline" title="Apagar todos os dados salvos">
+          <span>🗑️</span> Limpar
+        </button>
+        <button id="btn-logout" class="btn btn-ghost" title="Sair do painel">
+          <span>🚪</span> Sair
+        </button>
+      </div>
+    </header>
+
+    <main class="dashboard-content">
+
+      <!-- 4 CARDS DE KPIS PRINCIPAIS -->
+      <section class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon">👥</div>
+          <div class="kpi-info">
+            <span class="kpi-label">Total de Leads Iniciados</span>
+            <div class="kpi-value" id="kpi-total-leads">0</div>
+            <span class="kpi-sub" id="kpi-leads-today">Acessos no funil</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-icon">🏁</div>
+          <div class="kpi-info">
+            <span class="kpi-label">Conclusão do Funil (Etapa 18)</span>
+            <div class="kpi-value text-teal" id="kpi-completion-rate">0%</div>
+            <span class="kpi-sub" id="kpi-completed-count">0 leads chegaram na oferta</span>
+          </div>
+        </div>
+
+        <div class="kpi-card highlight-card">
+          <div class="kpi-icon">💳</div>
+          <div class="kpi-info">
+            <span class="kpi-label">Cliques no Checkout Payt</span>
+            <div class="kpi-value text-green" id="kpi-checkout-clicks">0</div>
+            <span class="kpi-sub" id="kpi-conversion-rate">0% taxa de conversão final</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-icon">📱</div>
+          <div class="kpi-info">
+            <span class="kpi-label">Dispositivo Dominante</span>
+            <div class="kpi-value" id="kpi-device-stat">0% Mobile</div>
+            <span class="kpi-sub" id="kpi-device-details">Otimizado para celular</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DUPLA: RETENÇÃO DO FUNIL + INTELIGÊNCIA DE ADS -->
+      <div class="main-two-col">
+
+        <!-- BLOCO 1: FUNIL DE RETENÇÃO PASSO A PASSO -->
+        <section class="panel-box funnel-box">
+          <div class="panel-box-header">
+            <div>
+              <h2>📊 Funil de Retenção Passo a Passo (18 Etapas)</h2>
+              <p class="panel-desc">Acompanhe onde os leads avançam e identifique onde há queda para refinar a copy.</p>
+            </div>
+            <div class="legend-pills">
+              <span class="pill-legend pill-green">Alta retenção</span>
+              <span class="pill-legend pill-warning">Gargalo / Queda</span>
+            </div>
+          </div>
+
+          <div id="funnel-steps-list" class="funnel-steps-container">
+            <!-- Renderizado dinamicamente via painel.js -->
+          </div>
+        </section>
+
+        <!-- BLOCO 2: 🎯 INTELIGÊNCIA PARA NOVOS ADS (META & TIKTOK) -->
+        <section class="panel-box ads-box">
+          <div class="panel-box-header">
+            <div>
+              <h2>🎯 Inteligência para Novos Ads (Tráfego Pago)</h2>
+              <p class="panel-desc">Ganchos, ângulos de copy e dados das respostas reais para turbinar suas campanhas.</p>
+            </div>
+          </div>
+
+          <!-- RESUMO DAS RESPOSTAS MAIS FREQUENTES -->
+          <div class="demographics-grid">
+            <div class="stat-mini-card">
+              <span class="stat-mini-title">🎯 Objetivo Nº 1</span>
+              <strong id="top-objective">-</strong>
+              <small id="top-objective-pct">0% das respostas</small>
+            </div>
+            <div class="stat-mini-card">
+              <span class="stat-mini-title">🎂 Faixa Etária Dominante</span>
+              <strong id="top-age">-</strong>
+              <small id="top-age-pct">0% do público</small>
+            </div>
+            <div class="stat-mini-card">
+              <span class="stat-mini-title">📍 Região Mais Desejada</span>
+              <strong id="top-region">-</strong>
+              <small id="top-region-pct">Foco principal</small>
+            </div>
+            <div class="stat-mini-card">
+              <span class="stat-mini-title">📉 Média de Perda Desejada</span>
+              <strong id="top-weight-loss">-</strong>
+              <small id="top-weight-loss-sub">Meta dos leads</small>
+            </div>
+          </div>
+
+          <!-- GANCHOS DE ANÚNCIOS PRONTOS PARA COPIAR -->
+          <div class="hooks-section">
+            <div class="hooks-header">
+              <h3>🔥 Ganchos & Ideias de Criativos Gerados com Base nos Leads</h3>
+              <p>Copie e use diretamente em vídeos de tráfego pago (UGC, Reels, TikTok ou Carrossel):</p>
+            </div>
+
+            <div id="ads-hooks-list" class="ads-hooks-container">
+              <!-- Ganchos gerados dinamicamente com base nas respostas -->
+            </div>
+          </div>
+
+          <!-- SEGMENTAÇÃO RECOMENDADA NO META ADS -->
+          <div class="meta-targeting-card">
+            <h4>🎯 Sugestão de Segmentação para o Gerenciador de Anúncios</h4>
+            <div id="meta-targeting-content" class="targeting-content">
+              <!-- Sugestões dinâmicas -->
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- SEÇÃO 3: TABELA DETALHADA DE RESPOSTAS DOS LEADS -->
+      <section class="panel-box table-box">
+        <div class="panel-box-header table-header-flex">
+          <div>
+            <h2>📋 Respostas Individuais dos Leads</h2>
+            <p class="panel-desc">Consulte o questionário completo de cada pessoa que passou pelo funil.</p>
+          </div>
+
+          <div class="table-controls">
+            <div class="search-input-wrapper">
+              <input type="text" id="lead-search-input" placeholder="Buscar por ID, objetivo, idade..." oninput="filterLeadsTable()">
+            </div>
+            <select id="status-filter" onchange="filterLeadsTable()">
+              <option value="all">Todos os Leads</option>
+              <option value="checkout">🟢 Clicou no Checkout (Payt)</option>
+              <option value="completed">🟡 Chegou na Etapa 18</option>
+              <option value="dropoff">🔴 Abandonou pelo Caminho</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="leads-table">
+            <thead>
+              <tr>
+                <th>Lead ID</th>
+                <th>Data / Hora</th>
+                <th>Dispositivo</th>
+                <th>Etapa</th>
+                <th>Objetivo Principal</th>
+                <th>Idade</th>
+                <th>Altura</th>
+                <th>Peso Atual ➔ Meta</th>
+                <th>Região</th>
+                <th>Status</th>
+                <th style="text-align: right;">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="leads-table-body">
+              <!-- Linhas renderizadas via painel.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <div id="empty-state" class="empty-state" style="display: none;">
+          <div class="empty-icon">📭</div>
+          <h3>Nenhum lead encontrado</h3>
+          <p>Abra o simulador no botão acima para interagir ou clique em <strong>"Gerar 30 Leads Demo"</strong> para ver o painel populado agora mesmo.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- MODAL DE DETALHES COMPLETOS DO LEAD -->
+  <div id="lead-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-lead-title">Detalhes do Lead</h3>
+          <span id="modal-lead-meta" class="modal-subtitle"></span>
+        </div>
+        <button class="modal-close" onclick="closeLeadModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modal-lead-content">
+        <!-- Perguntas e respostas completas do lead -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeLeadModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="painel.js"></script>
+</body>
+</html>

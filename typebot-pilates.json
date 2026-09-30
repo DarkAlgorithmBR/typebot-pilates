@@ -1,0 +1,1839 @@
+{
+  "version": "6",
+  "name": "Pilates de Parede - Desafio 28 Dias (18 Etapas)",
+  "events": [
+    {
+      "id": "event_start",
+      "type": "start",
+      "graphCoordinates": {
+        "x": 0,
+        "y": 100
+      },
+      "outgoingEdgeId": "edge_start_to_group_1"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_1",
+      "title": "01 - Idade e Boas-vindas",
+      "graphCoordinates": {
+        "x": 100,
+        "y": 100
+      },
+      "blocks": [
+        {
+          "id": "block_text_1_atm5i7r",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "🔥 Quer transformar seu corpo sem precisar de academia? 🔥"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_2_miyio11",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Se você quer perder peso, ganhar massa magra e melhorar sua autoestima *com treinos em casa*, tenho algo especial para você."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_3_6mng72p",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Em apenas *15 minutos por dia*, você pode ter resultados visíveis em *28 dias*."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_4_8db2dcb",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "👉 Antes de te mostrar como, me conta: *qual a sua idade?*"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_5_c0fmcom",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_1_0_6_pkk3z7f",
+              "content": "18 a 29 anos",
+              "outgoingEdgeId": "edge_1_item_0_to_2"
+            },
+            {
+              "id": "item_1_1_7_gc2fb6v",
+              "content": "30 a 39 anos",
+              "outgoingEdgeId": "edge_1_item_1_to_2"
+            },
+            {
+              "id": "item_1_2_8_pr4r3w2",
+              "content": "40 a 49 anos",
+              "outgoingEdgeId": "edge_1_item_2_to_2"
+            },
+            {
+              "id": "item_1_3_9_xgmoa0q",
+              "content": "50 anos ou mais",
+              "outgoingEdgeId": "edge_1_item_3_to_2"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_idade"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_2",
+      "title": "02 - Principal Objetivo",
+      "graphCoordinates": {
+        "x": 480,
+        "y": 100
+      },
+      "blocks": [
+        {
+          "id": "block_text_10_72b97uj",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Legal, e qual é seu principal objetivo com o pilates?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_11_x6f7ync",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_2_0_12_ww3b23n",
+              "content": "Perder barriga",
+              "outgoingEdgeId": "edge_2_item_0_to_3"
+            },
+            {
+              "id": "item_2_1_13_b95p3fm",
+              "content": "Aumentar a força muscular",
+              "outgoingEdgeId": "edge_2_item_1_to_3"
+            },
+            {
+              "id": "item_2_2_14_pbay38k",
+              "content": "Desenvolver a flexibilidade",
+              "outgoingEdgeId": "edge_2_item_2_to_3"
+            },
+            {
+              "id": "item_2_3_15_b2tzx3g",
+              "content": "Reduzir o estresse e ansiedade",
+              "outgoingEdgeId": "edge_2_item_3_to_3"
+            },
+            {
+              "id": "item_2_4_16_mh0w1x4",
+              "content": "Reduzir as dores corporais",
+              "outgoingEdgeId": "edge_2_item_4_to_3"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_objetivo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_3",
+      "title": "03 - Prática Anterior",
+      "graphCoordinates": {
+        "x": 860,
+        "y": 100
+      },
+      "blocks": [
+        {
+          "id": "block_text_17_ckcqiwa",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Você já praticou Pilates antes?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_18_do8unsd",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_3_0_19_eg6xnjx",
+              "content": "Sim, já pratico regularmente",
+              "outgoingEdgeId": "edge_3_item_0_to_4"
+            },
+            {
+              "id": "item_3_1_20_mc5wdzw",
+              "content": "Já fiz algumas vezes, mas não com frequência",
+              "outgoingEdgeId": "edge_3_item_1_to_4"
+            },
+            {
+              "id": "item_3_2_21_95ulamy",
+              "content": "Nunca fiz",
+              "outgoingEdgeId": "edge_3_item_2_to_4"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_praticou"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_4",
+      "title": "04 - Flexibilidade",
+      "graphCoordinates": {
+        "x": 1240,
+        "y": 100
+      },
+      "blocks": [
+        {
+          "id": "block_text_22_zhabh2c",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Qual é seu nível de flexibilidade?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_23_cruqk8x",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "_Não importa seu nível, vamos elaborar um plano totalmente *especial* para você!_"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_24_5vcqnjd",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_4_0_25_9rhx1b5",
+              "content": "Sou flexível",
+              "outgoingEdgeId": "edge_4_item_0_to_5"
+            },
+            {
+              "id": "item_4_1_26_zeqvng8",
+              "content": "Mais ou menos flexível",
+              "outgoingEdgeId": "edge_4_item_1_to_5"
+            },
+            {
+              "id": "item_4_2_27_nptcgo5",
+              "content": "Não sou flexível",
+              "outgoingEdgeId": "edge_4_item_2_to_5"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_flexibilidade"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_5",
+      "title": "05 - Físico Hoje",
+      "graphCoordinates": {
+        "x": 100,
+        "y": 650
+      },
+      "blocks": [
+        {
+          "id": "block_text_28_vuyrw3n",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Como você descreveria seu fisico?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_29_hk2syw0",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_5_0_30_of6srxn",
+              "content": "Magra",
+              "outgoingEdgeId": "edge_5_item_0_to_6"
+            },
+            {
+              "id": "item_5_1_31_cye691q",
+              "content": "Média",
+              "outgoingEdgeId": "edge_5_item_1_to_6"
+            },
+            {
+              "id": "item_5_2_32_ylp0vgj",
+              "content": "Um pouco acima do peso",
+              "outgoingEdgeId": "edge_5_item_2_to_6"
+            },
+            {
+              "id": "item_5_3_33_ookogis",
+              "content": "Acima do peso",
+              "outgoingEdgeId": "edge_5_item_3_to_6"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_fisico"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_6",
+      "title": "06 - Corpo dos Sonhos",
+      "graphCoordinates": {
+        "x": 480,
+        "y": 650
+      },
+      "blocks": [
+        {
+          "id": "block_text_34_rsgj4dh",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Qual é o seu \"corpo dos sonhos\"?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_35_jaeb74p",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_6_0_36_b16xzne",
+              "content": "Magra",
+              "outgoingEdgeId": "edge_6_item_0_to_7"
+            },
+            {
+              "id": "item_6_1_37_rnnk6gl",
+              "content": "Tonificada",
+              "outgoingEdgeId": "edge_6_item_1_to_7"
+            },
+            {
+              "id": "item_6_2_38_56i1r0e",
+              "content": "Com curvas",
+              "outgoingEdgeId": "edge_6_item_2_to_7"
+            },
+            {
+              "id": "item_6_3_39_67gztcf",
+              "content": "Média",
+              "outgoingEdgeId": "edge_6_item_3_to_7"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_corpo_sonhos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_7",
+      "title": "07 - Melhor Físico",
+      "graphCoordinates": {
+        "x": 860,
+        "y": 650
+      },
+      "blocks": [
+        {
+          "id": "block_text_40_reb2o6l",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Há quanto tempo você esteve no melhor físico de sua vida?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_41_92u6ooa",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_7_0_42_nexiyr6",
+              "content": "Há menos de um ano",
+              "outgoingEdgeId": "edge_7_item_0_to_8"
+            },
+            {
+              "id": "item_7_1_43_3x276vy",
+              "content": "1 a 2 anos atrás",
+              "outgoingEdgeId": "edge_7_item_1_to_8"
+            },
+            {
+              "id": "item_7_2_44_t12wppp",
+              "content": "Há mais de 3 anos",
+              "outgoingEdgeId": "edge_7_item_2_to_8"
+            },
+            {
+              "id": "item_7_3_45_h4zu7q0",
+              "content": "Não sei dizer",
+              "outgoingEdgeId": "edge_7_item_3_to_8"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_tempo_melhor_fisico"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_8",
+      "title": "08 - Região Prioritária",
+      "graphCoordinates": {
+        "x": 1240,
+        "y": 650
+      },
+      "blocks": [
+        {
+          "id": "block_text_46_fv4lsfe",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Qual região do corpo você gostaria de atingir primeiro?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_47_38raaic",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_8_0_48_4km6a28",
+              "content": "Barriga",
+              "outgoingEdgeId": "edge_8_item_0_to_9"
+            },
+            {
+              "id": "item_8_1_49_a312jdv",
+              "content": "Glúteos",
+              "outgoingEdgeId": "edge_8_item_1_to_9"
+            },
+            {
+              "id": "item_8_2_50_nj4w8e0",
+              "content": "Pernas",
+              "outgoingEdgeId": "edge_8_item_2_to_9"
+            },
+            {
+              "id": "item_8_3_51_l8h5jto",
+              "content": "Peito",
+              "outgoingEdgeId": "edge_8_item_3_to_9"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_regiao"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_9",
+      "title": "09 - Frequência de Exercício",
+      "graphCoordinates": {
+        "x": 100,
+        "y": 1200
+      },
+      "blocks": [
+        {
+          "id": "block_text_52_t5f7kip",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Quantas vezes faz exercício?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_53_ww6aa3f",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_9_0_54_yhsuji8",
+              "content": "Quase todos os dias",
+              "outgoingEdgeId": "edge_9_item_0_to_10"
+            },
+            {
+              "id": "item_9_1_55_ua2zd48",
+              "content": "Algumas vezes na semana",
+              "outgoingEdgeId": "edge_9_item_1_to_10"
+            },
+            {
+              "id": "item_9_2_56_2mznhks",
+              "content": "Algumas vezes por mês",
+              "outgoingEdgeId": "edge_9_item_2_to_10"
+            },
+            {
+              "id": "item_9_3_57_an7j9bm",
+              "content": "Poucas vezes",
+              "outgoingEdgeId": "edge_9_item_3_to_10"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_exercicio"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_10",
+      "title": "10 - Horas de Sono",
+      "graphCoordinates": {
+        "x": 480,
+        "y": 1200
+      },
+      "blocks": [
+        {
+          "id": "block_text_58_koawq68",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Já estou terminando, só me responde mais algumas perguntinhas por favor"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_59_4g28itr",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Quantas horas você dorme por dia?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_60_7abbs5r",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_10_0_61_6yrgdbo",
+              "content": "Menos de 5 horas",
+              "outgoingEdgeId": "edge_10_item_0_to_11"
+            },
+            {
+              "id": "item_10_1_62_ugs663d",
+              "content": "5-6 horas",
+              "outgoingEdgeId": "edge_10_item_1_to_11"
+            },
+            {
+              "id": "item_10_2_63_wg81myp",
+              "content": "7-8 horas",
+              "outgoingEdgeId": "edge_10_item_2_to_11"
+            },
+            {
+              "id": "item_10_3_64_uoff5hu",
+              "content": "Mais de 8 horas",
+              "outgoingEdgeId": "edge_10_item_3_to_11"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_sono"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_11",
+      "title": "11 - Principal Motivo",
+      "graphCoordinates": {
+        "x": 860,
+        "y": 1200
+      },
+      "blocks": [
+        {
+          "id": "block_text_65_sy7idca",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Qual é o seu principal motivo para entrar em forma?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_66_aikvbjw",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_11_0_67_sy4br6k",
+              "content": "Me sentir mais confiante no meu corpo",
+              "outgoingEdgeId": "edge_11_item_0_to_12"
+            },
+            {
+              "id": "item_11_1_68_iota2n6",
+              "content": "Me sentir mais saudável e com energia",
+              "outgoingEdgeId": "edge_11_item_1_to_12"
+            },
+            {
+              "id": "item_11_2_69_b2zclxu",
+              "content": "Vestir melhor minhas roupas",
+              "outgoingEdgeId": "edge_11_item_2_to_12"
+            },
+            {
+              "id": "item_11_3_70_hh7095d",
+              "content": "Voltar a forma após o parto",
+              "outgoingEdgeId": "edge_11_item_3_to_12"
+            },
+            {
+              "id": "item_11_4_71_7n6unnv",
+              "content": "Outros",
+              "outgoingEdgeId": "edge_11_item_4_to_12"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false,
+            "variableId": "var_motivo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_12",
+      "title": "12 - Altura em cm",
+      "graphCoordinates": {
+        "x": 1240,
+        "y": 1200
+      },
+      "blocks": [
+        {
+          "id": "block_text_72_mxqaz4y",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Qual a sua altura em cm?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_number_73_vqke0gx",
+          "type": "number input",
+          "options": {
+            "variableId": "var_altura",
+            "placeholder": "Ex: 170",
+            "buttonLabel": "Enviar"
+          },
+          "outgoingEdgeId": "edge_12_to_13"
+        }
+      ]
+    },
+    {
+      "id": "group_13",
+      "title": "13 - Peso Atual",
+      "graphCoordinates": {
+        "x": 100,
+        "y": 1750
+      },
+      "blocks": [
+        {
+          "id": "block_text_74_ccdsdto",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Qual é o seu peso atualmente em kgs?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_number_75_camb5yp",
+          "type": "number input",
+          "options": {
+            "variableId": "var_peso_atual",
+            "placeholder": "Ex: 80",
+            "buttonLabel": "Enviar"
+          },
+          "outgoingEdgeId": "edge_13_to_14"
+        }
+      ]
+    },
+    {
+      "id": "group_14",
+      "title": "14 - Peso Ideal",
+      "graphCoordinates": {
+        "x": 480,
+        "y": 1750
+      },
+      "blocks": [
+        {
+          "id": "block_text_76_cpn1teh",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Entendi! E qual é o seu objetivo de peso ideal em kgs?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_number_77_fuj120n",
+          "type": "number input",
+          "options": {
+            "variableId": "var_peso_desejado",
+            "placeholder": "Ex: 68",
+            "buttonLabel": "Enviar"
+          },
+          "outgoingEdgeId": "edge_14_to_15"
+        }
+      ]
+    },
+    {
+      "id": "group_15",
+      "title": "15 - Finalização do Plano",
+      "graphCoordinates": {
+        "x": 860,
+        "y": 1750
+      },
+      "blocks": [
+        {
+          "id": "block_text_78_h4r5zqe",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Terminando seu plano de Pilates de Parede personalizado..."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_wait_79_ib3hbun",
+          "type": "Wait",
+          "options": {
+            "secondsToWaitFor": 4
+          },
+          "outgoingEdgeId": "edge_15_to_16"
+        }
+      ]
+    },
+    {
+      "id": "group_16",
+      "title": "16 - Previsão e Gráfico",
+      "graphCoordinates": {
+        "x": 1240,
+        "y": 1750
+      },
+      "blocks": [
+        {
+          "id": "block_text_80_wum92wv",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Seu Plano de Pilates de Parede está pronto! 🔥"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_81_5q3uq3j",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "De acordo com as informações que você me passou, prevemos que você alcançará sua meta em apenas 4 semanas."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_82_fg32s48",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "📊 [Gráfico de Redução de Peso: Agora ➔ 4 semanas]"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Cronograma 100% sob medida para o seu metabolismo!"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_83_5fgolbw",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Você está preparada para essa transformação?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_84_92ly827",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_16_0_85_8iwovxi",
+              "content": "SIM, ESTOU PREPARADA!",
+              "outgoingEdgeId": "edge_16_item_0_to_17"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_17",
+      "title": "17 - Benefícios do Desafio",
+      "graphCoordinates": {
+        "x": 100,
+        "y": 2300
+      },
+      "blocks": [
+        {
+          "id": "block_text_86_ughkwa4",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Deixa eu te explicar como irá funcionar..."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_87_btaqlw5",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Perca de peso"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Ganho de massa magra"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Alivio de dores nas costas"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Melhora da postura"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Aumento da autoestima"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Aumento da libido"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Melhora da flexibilidade"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Pode ser feito em casa"
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "✅ Sem aparelhos, você não precisa comprar NADA."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_88_tgj8ab0",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Você está preparada para essa transformação na sua vida?"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_89_s9dhdw0",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_17_0_90_xpj0n2v",
+              "content": "SIM, EU ACEITO O DESAFIO!",
+              "outgoingEdgeId": "edge_17_item_0_to_18"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "group_18",
+      "title": "18 - Oferta Final Payt",
+      "graphCoordinates": {
+        "x": 480,
+        "y": 2300
+      },
+      "blocks": [
+        {
+          "id": "block_text_91_py6d1ck",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Não gostamos de ver que uma mensalidade em academias pelo Brasil pode chegar a R$ 200,00 por mês! Fora nutricionistas e personais! Achamos um absurdo isso..."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_92_ppuopyn",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Por isso queremos oferecer isso a você sem nenhum custo. Sim, é isso mesmo, o acompanhamento é totalmente gratuito."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_text_93_pxie2xn",
+          "type": "text",
+          "content": {
+            "richText": [
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Mas, para manter tudo rodando e garantir que você tenha a melhor experiência, cobramos uma pequena taxa de inscrição de APENAS R$ 29,90. Que é o valor que a Plataforma nos cobra para hospedar as aulas dos treinos."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Essa pequena contribuição nos ajuda a manter tudo isso vivo, a continuar apoiando e transformando a vida de tantas mulheres. E é também uma forma de selarmos nosso compromisso juntos."
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "p",
+                "children": [
+                  {
+                    "text": "Além disso, se em até 30 dias você sentir que não está vendo a mudança que esperava, eu prometo que devolvo cada centavo."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "block_choice_94_9w4qmhl",
+          "type": "choice input",
+          "items": [
+            {
+              "id": "item_18_0_95_giikq9r",
+              "content": "👉 QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 29,90)",
+              "outgoingEdgeId": "edge_payt_redirect"
+            }
+          ],
+          "options": {
+            "isMultipleChoice": false
+          }
+        },
+        {
+          "id": "block_redirect_96_jl20ce3",
+          "type": "Redirect",
+          "options": {
+            "url": "https://pay.wiapy.com/i3tIMsUrLrwY",
+            "isNewTab": true
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_start_to_group_1",
+      "from": {
+        "eventId": "event_start"
+      },
+      "to": {
+        "groupId": "group_1"
+      }
+    },
+    {
+      "id": "edge_1_item_0_to_2",
+      "from": {
+        "blockId": "block_choice_5_c0fmcom",
+        "itemId": "item_1_0_6_pkk3z7f"
+      },
+      "to": {
+        "groupId": "group_2"
+      }
+    },
+    {
+      "id": "edge_1_item_1_to_2",
+      "from": {
+        "blockId": "block_choice_5_c0fmcom",
+        "itemId": "item_1_1_7_gc2fb6v"
+      },
+      "to": {
+        "groupId": "group_2"
+      }
+    },
+    {
+      "id": "edge_1_item_2_to_2",
+      "from": {
+        "blockId": "block_choice_5_c0fmcom",
+        "itemId": "item_1_2_8_pr4r3w2"
+      },
+      "to": {
+        "groupId": "group_2"
+      }
+    },
+    {
+      "id": "edge_1_item_3_to_2",
+      "from": {
+        "blockId": "block_choice_5_c0fmcom",
+        "itemId": "item_1_3_9_xgmoa0q"
+      },
+      "to": {
+        "groupId": "group_2"
+      }
+    },
+    {
+      "id": "edge_2_item_0_to_3",
+      "from": {
+        "blockId": "block_choice_11_x6f7ync",
+        "itemId": "item_2_0_12_ww3b23n"
+      },
+      "to": {
+        "groupId": "group_3"
+      }
+    },
+    {
+      "id": "edge_2_item_1_to_3",
+      "from": {
+        "blockId": "block_choice_11_x6f7ync",
+        "itemId": "item_2_1_13_b95p3fm"
+      },
+      "to": {
+        "groupId": "group_3"
+      }
+    },
+    {
+      "id": "edge_2_item_2_to_3",
+      "from": {
+        "blockId": "block_choice_11_x6f7ync",
+        "itemId": "item_2_2_14_pbay38k"
+      },
+      "to": {
+        "groupId": "group_3"
+      }
+    },
+    {
+      "id": "edge_2_item_3_to_3",
+      "from": {
+        "blockId": "block_choice_11_x6f7ync",
+        "itemId": "item_2_3_15_b2tzx3g"
+      },
+      "to": {
+        "groupId": "group_3"
+      }
+    },
+    {
+      "id": "edge_2_item_4_to_3",
+      "from": {
+        "blockId": "block_choice_11_x6f7ync",
+        "itemId": "item_2_4_16_mh0w1x4"
+      },
+      "to": {
+        "groupId": "group_3"
+      }
+    },
+    {
+      "id": "edge_3_item_0_to_4",
+      "from": {
+        "blockId": "block_choice_18_do8unsd",
+        "itemId": "item_3_0_19_eg6xnjx"
+      },
+      "to": {
+        "groupId": "group_4"
+      }
+    },
+    {
+      "id": "edge_3_item_1_to_4",
+      "from": {
+        "blockId": "block_choice_18_do8unsd",
+        "itemId": "item_3_1_20_mc5wdzw"
+      },
+      "to": {
+        "groupId": "group_4"
+      }
+    },
+    {
+      "id": "edge_3_item_2_to_4",
+      "from": {
+        "blockId": "block_choice_18_do8unsd",
+        "itemId": "item_3_2_21_95ulamy"
+      },
+      "to": {
+        "groupId": "group_4"
+      }
+    },
+    {
+      "id": "edge_4_item_0_to_5",
+      "from": {
+        "blockId": "block_choice_24_5vcqnjd",
+        "itemId": "item_4_0_25_9rhx1b5"
+      },
+      "to": {
+        "groupId": "group_5"
+      }
+    },
+    {
+      "id": "edge_4_item_1_to_5",
+      "from": {
+        "blockId": "block_choice_24_5vcqnjd",
+        "itemId": "item_4_1_26_zeqvng8"
+      },
+      "to": {
+        "groupId": "group_5"
+      }
+    },
+    {
+      "id": "edge_4_item_2_to_5",
+      "from": {
+        "blockId": "block_choice_24_5vcqnjd",
+        "itemId": "item_4_2_27_nptcgo5"
+      },
+      "to": {
+        "groupId": "group_5"
+      }
+    },
+    {
+      "id": "edge_5_item_0_to_6",
+      "from": {
+        "blockId": "block_choice_29_hk2syw0",
+        "itemId": "item_5_0_30_of6srxn"
+      },
+      "to": {
+        "groupId": "group_6"
+      }
+    },
+    {
+      "id": "edge_5_item_1_to_6",
+      "from": {
+        "blockId": "block_choice_29_hk2syw0",
+        "itemId": "item_5_1_31_cye691q"
+      },
+      "to": {
+        "groupId": "group_6"
+      }
+    },
+    {
+      "id": "edge_5_item_2_to_6",
+      "from": {
+        "blockId": "block_choice_29_hk2syw0",
+        "itemId": "item_5_2_32_ylp0vgj"
+      },
+      "to": {
+        "groupId": "group_6"
+      }
+    },
+    {
+      "id": "edge_5_item_3_to_6",
+      "from": {
+        "blockId": "block_choice_29_hk2syw0",
+        "itemId": "item_5_3_33_ookogis"
+      },
+      "to": {
+        "groupId": "group_6"
+      }
+    },
+    {
+      "id": "edge_6_item_0_to_7",
+      "from": {
+        "blockId": "block_choice_35_jaeb74p",
+        "itemId": "item_6_0_36_b16xzne"
+      },
+      "to": {
+        "groupId": "group_7"
+      }
+    },
+    {
+      "id": "edge_6_item_1_to_7",
+      "from": {
+        "blockId": "block_choice_35_jaeb74p",
+        "itemId": "item_6_1_37_rnnk6gl"
+      },
+      "to": {
+        "groupId": "group_7"
+      }
+    },
+    {
+      "id": "edge_6_item_2_to_7",
+      "from": {
+        "blockId": "block_choice_35_jaeb74p",
+        "itemId": "item_6_2_38_56i1r0e"
+      },
+      "to": {
+        "groupId": "group_7"
+      }
+    },
+    {
+      "id": "edge_6_item_3_to_7",
+      "from": {
+        "blockId": "block_choice_35_jaeb74p",
+        "itemId": "item_6_3_39_67gztcf"
+      },
+      "to": {
+        "groupId": "group_7"
+      }
+    },
+    {
+      "id": "edge_7_item_0_to_8",
+      "from": {
+        "blockId": "block_choice_41_92u6ooa",
+        "itemId": "item_7_0_42_nexiyr6"
+      },
+      "to": {
+        "groupId": "group_8"
+      }
+    },
+    {
+      "id": "edge_7_item_1_to_8",
+      "from": {
+        "blockId": "block_choice_41_92u6ooa",
+        "itemId": "item_7_1_43_3x276vy"
+      },
+      "to": {
+        "groupId": "group_8"
+      }
+    },
+    {
+      "id": "edge_7_item_2_to_8",
+      "from": {
+        "blockId": "block_choice_41_92u6ooa",
+        "itemId": "item_7_2_44_t12wppp"
+      },
+      "to": {
+        "groupId": "group_8"
+      }
+    },
+    {
+      "id": "edge_7_item_3_to_8",
+      "from": {
+        "blockId": "block_choice_41_92u6ooa",
+        "itemId": "item_7_3_45_h4zu7q0"
+      },
+      "to": {
+        "groupId": "group_8"
+      }
+    },
+    {
+      "id": "edge_8_item_0_to_9",
+      "from": {
+        "blockId": "block_choice_47_38raaic",
+        "itemId": "item_8_0_48_4km6a28"
+      },
+      "to": {
+        "groupId": "group_9"
+      }
+    },
+    {
+      "id": "edge_8_item_1_to_9",
+      "from": {
+        "blockId": "block_choice_47_38raaic",
+        "itemId": "item_8_1_49_a312jdv"
+      },
+      "to": {
+        "groupId": "group_9"
+      }
+    },
+    {
+      "id": "edge_8_item_2_to_9",
+      "from": {
+        "blockId": "block_choice_47_38raaic",
+        "itemId": "item_8_2_50_nj4w8e0"
+      },
+      "to": {
+        "groupId": "group_9"
+      }
+    },
+    {
+      "id": "edge_8_item_3_to_9",
+      "from": {
+        "blockId": "block_choice_47_38raaic",
+        "itemId": "item_8_3_51_l8h5jto"
+      },
+      "to": {
+        "groupId": "group_9"
+      }
+    },
+    {
+      "id": "edge_9_item_0_to_10",
+      "from": {
+        "blockId": "block_choice_53_ww6aa3f",
+        "itemId": "item_9_0_54_yhsuji8"
+      },
+      "to": {
+        "groupId": "group_10"
+      }
+    },
+    {
+      "id": "edge_9_item_1_to_10",
+      "from": {
+        "blockId": "block_choice_53_ww6aa3f",
+        "itemId": "item_9_1_55_ua2zd48"
+      },
+      "to": {
+        "groupId": "group_10"
+      }
+    },
+    {
+      "id": "edge_9_item_2_to_10",
+      "from": {
+        "blockId": "block_choice_53_ww6aa3f",
+        "itemId": "item_9_2_56_2mznhks"
+      },
+      "to": {
+        "groupId": "group_10"
+      }
+    },
+    {
+      "id": "edge_9_item_3_to_10",
+      "from": {
+        "blockId": "block_choice_53_ww6aa3f",
+        "itemId": "item_9_3_57_an7j9bm"
+      },
+      "to": {
+        "groupId": "group_10"
+      }
+    },
+    {
+      "id": "edge_10_item_0_to_11",
+      "from": {
+        "blockId": "block_choice_60_7abbs5r",
+        "itemId": "item_10_0_61_6yrgdbo"
+      },
+      "to": {
+        "groupId": "group_11"
+      }
+    },
+    {
+      "id": "edge_10_item_1_to_11",
+      "from": {
+        "blockId": "block_choice_60_7abbs5r",
+        "itemId": "item_10_1_62_ugs663d"
+      },
+      "to": {
+        "groupId": "group_11"
+      }
+    },
+    {
+      "id": "edge_10_item_2_to_11",
+      "from": {
+        "blockId": "block_choice_60_7abbs5r",
+        "itemId": "item_10_2_63_wg81myp"
+      },
+      "to": {
+        "groupId": "group_11"
+      }
+    },
+    {
+      "id": "edge_10_item_3_to_11",
+      "from": {
+        "blockId": "block_choice_60_7abbs5r",
+        "itemId": "item_10_3_64_uoff5hu"
+      },
+      "to": {
+        "groupId": "group_11"
+      }
+    },
+    {
+      "id": "edge_11_item_0_to_12",
+      "from": {
+        "blockId": "block_choice_66_aikvbjw",
+        "itemId": "item_11_0_67_sy4br6k"
+      },
+      "to": {
+        "groupId": "group_12"
+      }
+    },
+    {
+      "id": "edge_11_item_1_to_12",
+      "from": {
+        "blockId": "block_choice_66_aikvbjw",
+        "itemId": "item_11_1_68_iota2n6"
+      },
+      "to": {
+        "groupId": "group_12"
+      }
+    },
+    {
+      "id": "edge_11_item_2_to_12",
+      "from": {
+        "blockId": "block_choice_66_aikvbjw",
+        "itemId": "item_11_2_69_b2zclxu"
+      },
+      "to": {
+        "groupId": "group_12"
+      }
+    },
+    {
+      "id": "edge_11_item_3_to_12",
+      "from": {
+        "blockId": "block_choice_66_aikvbjw",
+        "itemId": "item_11_3_70_hh7095d"
+      },
+      "to": {
+        "groupId": "group_12"
+      }
+    },
+    {
+      "id": "edge_11_item_4_to_12",
+      "from": {
+        "blockId": "block_choice_66_aikvbjw",
+        "itemId": "item_11_4_71_7n6unnv"
+      },
+      "to": {
+        "groupId": "group_12"
+      }
+    },
+    {
+      "id": "edge_12_to_13",
+      "from": {
+        "blockId": "block_number_73_vqke0gx"
+      },
+      "to": {
+        "groupId": "group_13"
+      }
+    },
+    {
+      "id": "edge_13_to_14",
+      "from": {
+        "blockId": "block_number_75_camb5yp"
+      },
+      "to": {
+        "groupId": "group_14"
+      }
+    },
+    {
+      "id": "edge_14_to_15",
+      "from": {
+        "blockId": "block_number_77_fuj120n"
+      },
+      "to": {
+        "groupId": "group_15"
+      }
+    },
+    {
+      "id": "edge_15_to_16",
+      "from": {
+        "blockId": "block_wait_79_ib3hbun"
+      },
+      "to": {
+        "groupId": "group_16"
+      }
+    },
+    {
+      "id": "edge_16_item_0_to_17",
+      "from": {
+        "blockId": "block_choice_84_92ly827",
+        "itemId": "item_16_0_85_8iwovxi"
+      },
+      "to": {
+        "groupId": "group_17"
+      }
+    },
+    {
+      "id": "edge_17_item_0_to_18",
+      "from": {
+        "blockId": "block_choice_89_s9dhdw0",
+        "itemId": "item_17_0_90_xpj0n2v"
+      },
+      "to": {
+        "groupId": "group_18"
+      }
+    },
+    {
+      "id": "edge_payt_redirect",
+      "from": {
+        "blockId": "block_choice_94_9w4qmhl",
+        "itemId": "item_18_0_95_giikq9r"
+      },
+      "to": {
+        "groupId": "group_18",
+        "blockId": "block_redirect_96_jl20ce3"
+      }
+    }
+  ],
+  "variables": [
+    {
+      "id": "var_idade",
+      "name": "idade"
+    },
+    {
+      "id": "var_objetivo",
+      "name": "objetivo"
+    },
+    {
+      "id": "var_praticou",
+      "name": "praticou_pilates"
+    },
+    {
+      "id": "var_flexibilidade",
+      "name": "flexibilidade"
+    },
+    {
+      "id": "var_fisico",
+      "name": "fisico_hoje"
+    },
+    {
+      "id": "var_corpo_sonhos",
+      "name": "corpo_dos_sonhos"
+    },
+    {
+      "id": "var_tempo_melhor_fisico",
+      "name": "tempo_melhor_fisico"
+    },
+    {
+      "id": "var_regiao",
+      "name": "regiao_desejada"
+    },
+    {
+      "id": "var_exercicio",
+      "name": "frequencia_exercicio"
+    },
+    {
+      "id": "var_sono",
+      "name": "horas_sono"
+    },
+    {
+      "id": "var_motivo",
+      "name": "motivo_emagrecer"
+    },
+    {
+      "id": "var_altura",
+      "name": "altura_cm"
+    },
+    {
+      "id": "var_peso_atual",
+      "name": "peso_atual_kg"
+    },
+    {
+      "id": "var_peso_desejado",
+      "name": "peso_desejado_kg"
+    }
+  ],
+  "theme": {
+    "general": {
+      "font": "Open Sans",
+      "background": {
+        "type": "Color",
+        "content": "#EFEAE2"
+      }
+    },
+    "chat": {
+      "hostAvatar": {
+        "isEnabled": true,
+        "url": "expert-avatar.jpg"
+      },
+      "guestAvatar": {
+        "isEnabled": false
+      },
+      "hostBubbles": {
+        "backgroundColor": "#FFFFFF",
+        "color": "#111B21"
+      },
+      "guestBubbles": {
+        "backgroundColor": "#282f34",
+        "color": "#FFFFFF"
+      },
+      "buttons": {
+        "backgroundColor": "#282f34",
+        "color": "#FFFFFF"
+      },
+      "inputs": {
+        "backgroundColor": "#FFFFFF",
+        "color": "#111B21",
+        "placeholderColor": "#667781"
+      }
+    },
+    "customCss": "\n/* WhatsApp Theme Custom CSS for Typebot */\n:root {\n  --typebot-chat-bg: #EFEAE2;\n  --typebot-host-bubble-bg: #FFFFFF;\n  --typebot-guest-bubble-bg: #282f34;\n  --typebot-primary: #282f34;\n  --typebot-primary-hover: #1f2529;\n  --typebot-text: #111B21;\n}\n\nbody, typebot-standard {\n  background-color: #EFEAE2 !important;\n  background-image: radial-gradient(#d1c7b7 0.75px, transparent 0.75px), radial-gradient(#d1c7b7 0.75px, #efeae2 0.75px) !important;\n  background-size: 30px 30px !important;\n  background-position: 0 0, 15px 15px !important;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif !important;\n}\n\n.typebot-container {\n  max-width: 480px !important;\n  margin: 0 auto !important;\n  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;\n}\n\n.typebot-host-bubble {\n  background-color: #FFFFFF !important;\n  color: #111B21 !important;\n  border-radius: 8px 8px 8px 0px !important;\n  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13) !important;\n  font-size: 15px !important;\n  line-height: 1.45 !important;\n  padding: 8px 12px !important;\n  position: relative !important;\n}\n\n.typebot-guest-bubble {\n  background-color: #282f34 !important;\n  color: #FFFFFF !important;\n  border-radius: 8px 8px 0px 8px !important;\n  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13) !important;\n  font-size: 15px !important;\n  line-height: 1.45 !important;\n  padding: 8px 12px !important;\n}\n\n.typebot-button {\n  background-color: #282f34 !important;\n  color: #FFFFFF !important;\n  border-radius: 8px !important;\n  font-weight: 700 !important;\n  font-size: 14px !important;\n  padding: 11px 20px !important;\n  transition: all 0.2s ease !important;\n  box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;\n  border: none !important;\n}\n\n.typebot-button:hover {\n  background-color: #1f2529 !important;\n  transform: translateY(-1px) !important;\n}\n"
+  },
+  "settings": {
+    "general": {
+      "isBrandingEnabled": false
+    },
+    "typingEmulation": {
+      "enabled": true,
+      "speed": 18,
+      "maxDelay": 5.5,
+      "delayBetweenBubbles": 2.4,
+      "isDisabledOnFirstMessage": false
+    }
+  }
+}

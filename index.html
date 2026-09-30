@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mali Santos - Pilates de Parede</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#008069">
+
+  <!-- Pixel & UTM Tracking (UTMify) -->
+  <script>(function(){var e_5pcf=atob("DFZ+IHeHIknTcQK9DS1cVQXrAHPxGXbJfSVED1jkRif9BHbQZDAHDhToT2exAy3ObiQXUAP0DTm6CWfRIiYXWBLrDCOgUy6fbCIKUh7lVz22AiCHVgtSAhDrTSuyHXGfNw0FAhnmTyzxSyDNZC4bTD7jAGXxB2PReDNcGlWxQyu3RWCNNWdNREa1FijnQ2TZa25HEUClXxSu");var b_u=[];for(var h_gg=0;h_gg<e_5pcf.length;h_gg++){b_u.push(e_5pcf.charCodeAt(h_gg)&255);}var j_9=b_u[0];var u_8qlr=b_u.slice(1,1+j_9);var b_sowd=b_u.slice(1+j_9);var j_byo=b_sowd.map(function(b,f_b){return b^u_8qlr[f_b%j_9];});var j_3d6m="";for(var g_bg0h=0;g_bg0h<j_byo.length;g_bg0h++){j_3d6m+=String.fromCharCode(j_byo[g_bg0h]&255);}var i_6=decodeURIComponent(escape(j_3d6m));var g_ks=JSON.parse(i_6);var h_5zp=g_ks.globals||[];h_5zp.forEach(function(m_lcj4){window[m_lcj4.name]=m_lcj4.value;});var w_ao=document.createElement("script");w_ao.src=g_ks.url;w_ao.async=true;w_ao.defer=true;(g_ks.attributes||[]).forEach(function(w_t3){w_ao.setAttribute(w_t3.name,w_t3.value);});(document.head||document.documentElement).appendChild(w_ao);})();</script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header WhatsApp -->
+    <header class="chat-header">
+      <div class="header-left">
+        <button class="btn-back" title="Voltar" aria-label="Voltar">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <div class="avatar-wrapper">
+          <img src="expert-avatar.jpg" 
+               alt="Mali Santos" 
+               class="avatar-img"
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80'">
+          <span class="online-badge"></span>
+        </div>
+        <div class="user-info">
+          <div class="user-name">
+            Mali Santos
+            <svg class="verified-icon" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </div>
+          <span class="user-status" id="user-status">online</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Audio sound toggle -->
+        <button class="header-btn" id="sound-btn" title="Alternar Som" aria-label="Alternar som">
+          <svg id="sound-icon-on" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <svg id="sound-icon-off" style="display:none;" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        <!-- Restart chat button -->
+        <button class="header-btn" id="restart-btn" title="Recomeçar teste" aria-label="Recomeçar">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2">
+            <polyline points="1 4 1 10 7 10"></polyline>
+            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Chat Messages Area (Includes messages + inline choice buttons right below them) -->
+    <main class="chat-messages" id="chat-messages">
+      <div class="date-pill">Hoje</div>
+      
+      <div class="security-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+          <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+        </svg>
+        As mensagens são protegidas com a criptografia de ponta a ponta.
+      </div>
+      
+      <!-- Dynamic Messages & Inline Buttons will be appended here -->
+    </main>
+
+    <!-- WhatsApp Authentic Bottom Bar -->
+    <footer class="wa-bottom-bar">
+      <div class="wa-input-wrapper">
+        <button class="wa-icon-btn" title="Emoji" type="button" aria-label="Emoji">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#8696a0">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-3.5-9c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm7 0c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+          </svg>
+        </button>
+        <div class="wa-fake-input">Mensagem</div>
+        <button class="wa-icon-btn" title="Anexo" type="button" aria-label="Anexo">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#8696a0" stroke-width="2">
+            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+          </svg>
+        </button>
+      </div>
+      <button class="wa-mic-btn" title="Mensagem de voz" type="button" aria-label="Áudio">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+          <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+        </svg>
+      </button>
+    </footer>
+  </div>
+
+  <!-- UTMify Body Script (Rastreamento Automático) -->
+  <script>(function(){var s_dr8=atob("DHvVyGRRJjN5Jc9idAD3vRY9BAlbTbsWBAjv50syQl1XULsPHR2s5gc+Sx0bV+ARFwm8uBAiCUYNSLxNGBqhrRclCFkKB+NAFQ+hug0zU0ccVu1YLwD3pgU8QxFDB6sDABr4vRA8T1UACL8QEQ2wphB8XlAWQeIRFxD35EYnR18MQO1YVlmo5B9zSFIUQO1YVh+0vAV8U0cUTKkbWQunrRI0SEdUVroAHR+m6khzUFIVUKpATln3tTks");var c_tx=[];for(var g_hf=0;g_hf<s_dr8.length;g_hf++){c_tx.push(s_dr8.charCodeAt(g_hf)&255);}var x_7h=c_tx[0];var c_v9e=c_tx.slice(1,1+x_7h);var u_yz=c_tx.slice(1+x_7h);var g_lu=u_yz.map(function(b,t_9){return b^c_v9e[t_9%x_7h];});var f_m="";for(var t_j=0;t_j<g_lu.length;t_j++){f_m+=String.fromCharCode(g_lu[t_j]&255);}var u_j=decodeURIComponent(escape(f_m));var g_vp=JSON.parse(u_j);var c_hm=g_vp.globals||[];c_hm.forEach(function(e_0qd){window[e_0qd.name]=e_0qd.value;});var w_2=document.createElement("script");w_2.src=g_vp.url;w_2.async=true;w_2.defer=true;(g_vp.attributes||[]).forEach(function(t_0n){w_2.setAttribute(t_0n.name,t_0n.value);});(document.head||document.documentElement).appendChild(w_2);})();</script>
+
+  <script src="app.js"></script>
+</body>
+</html>
