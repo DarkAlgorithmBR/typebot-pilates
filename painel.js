@@ -1,5 +1,5 @@
 /**
- * Painel de Retenção & Inteligência de Leads - Pilates de Parede
+ * Painel de Retenção & Inteligência de Leads - Pilates Tailandês
  * Especialista: Mali Santos
  * Funil com 18 Etapas (Ajustado com o Gancho Inicial + Idade na Etapa 1)
  */
@@ -27,7 +27,7 @@ const FUNNEL_STEPS_META = [
   { num: 15, name: "Finalização do Plano (4s)", desc: "Pontinhos de digitação terminando o cronograma personalizado" },
   { num: 16, name: "Previsão & Gráfico de Peso", desc: "Gráfico visual de redução de peso em 4 semanas" },
   { num: 17, name: "Benefícios do Desafio", desc: "Apresentação detalhada do método 100% sem aparelhos" },
-  { num: 18, name: "Checkout Payt (R$ 29,90)", desc: "Oferta com garantia de 30 dias e redirecionamento" }
+  { num: 18, name: "Checkout (R$ 37)", desc: "Oferta com garantia de 30 dias e redirecionamento" }
 ];
 
 // Mapeamento amigável das perguntas para exibição no modal
@@ -295,17 +295,17 @@ function renderAdsIntelligence() {
     {
       angle: `ÂNGULO 1: DOR + FAIXA ETÁRIA (${dominantAge})`,
       headline: `🚨 Para mulheres de ${dominantAge} anos que sentem que a ${dominantReg.toLowerCase()} não diminui mesmo com dieta:`,
-      script: `"Se você já tentou de tudo e sente que seu metabolismo desacelerou, academias pesadas só te deixam dolorida. O método de 15 minutos de Pilates na Parede ativa o abdômen profundo e acelera a queima de gordura sem impacto!"`
+      script: `"Se você já tentou de tudo e sente que seu metabolismo desacelerou, academias pesadas só te deixam dolorida. O método de 15 minutos de Pilates Tailandês ativa o abdômen profundo e acelera a queima de gordura sem impacto!"`
     },
     {
       angle: `ÂNGULO 2: ZERO IMPACTO & FIM DAS DORES NAS COSTAS`,
       headline: `🩺 "Quero tonificar meu corpo, mas tenho dores nas costas e articulações..."`,
-      script: `"Você não precisa pular nem levantar peso pesado. Usando apenas uma parede da sua casa, o Pilates fortalece a musculatura postural, queima gordura e alivia as dores na coluna em apenas 4 semanas."`
+      script: `"Você não precisa pular nem levantar peso pesado. O Pilates Tailandês fortalece a musculatura postural, queima gordura e alivia as dores na coluna em apenas 4 semanas."`
     },
     {
       angle: `ÂNGULO 3: META DE EMAGRECIMENTO REALISTA (-${avgLoss} KG)`,
       headline: `🎯 Como eliminar em média ${avgLoss} kg em 4 semanas sem sair de casa:`,
-      script: `"Com base nas avaliações reais de centenas de mulheres, nosso Desafio de 28 Dias proporciona uma perda média de ${avgLoss}kg focada em desinchar o abdômen e tonificar as pernas, com apenas 15 minutos por dia na parede!"`
+      script: `"Com base nas avaliações reais de centenas de mulheres, nosso Desafio de 28 Dias proporciona uma perda média de ${avgLoss}kg focada em desinchar o abdômen e tonificar as pernas, com apenas 15 minutos por dia de Pilates Tailandês!"`
     },
     {
       angle: `ÂNGULO 4: GATILHO EMOCIONAL (${dominantMot.toUpperCase()})`,
@@ -315,12 +315,12 @@ function renderAdsIntelligence() {
     {
       angle: `ÂNGULO 5: COMPARATIVO VS ACADEMIA CARA`,
       headline: `❌ Mensalidades de academia chegam a R$ 200/mês fora nutricionistas e personais!`,
-      script: `"Por que pagar caro todo mês se você pode ter um cronograma completo guiado em vídeo por apenas R$ 29,90 taxa única? Sem aparelhos caros, sem impacto e com garantia de 30 dias!"`
+      script: `"Por que pagar caro todo mês se você pode ter um cronograma completo guiado em vídeo por apenas R$ 37 taxa única? Sem aparelhos caros, sem impacto e com garantia de 30 dias!"`
     },
     {
       angle: `ÂNGULO 6: FALTA DE TEMPO (ROTINA DE 15 MIN)`,
       headline: `⏰ "Não tenho tempo para treinar na correria do dia a dia..."`,
-      script: `"Você tem 15 a 20 minutos antes do banho ou logo ao acordar? Esse é o único tempo que você precisa na parede da sua casa para transformar o seu corpo em 28 dias."`
+      script: `"Você tem 15 a 20 minutos antes do banho ou logo ao acordar? Esse é o único tempo que você precisa para praticar o Pilates Tailandês e transformar o seu corpo em 28 dias."`
     }
   ];
 
@@ -649,7 +649,7 @@ function generateDemoLeads() {
     if (maxStep >= 14) leadAnswers.peso_desejado = String(demoWeightTarget);
     if (maxStep >= 16) leadAnswers.preparada_transformacao = "SIM, ESTOU PREPARADA!";
     if (maxStep >= 17) leadAnswers.etapa_17 = "SIM, EU ACEITO O DESAFIO!";
-    if (clickedCheckout) leadAnswers.etapa_18 = "QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 29,90)";
+    if (clickedCheckout) leadAnswers.etapa_18 = "QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)";
 
     demoLeads.push({
       id: `lead_demo_${String(i).padStart(2, "0")}_${Math.random().toString(36).substring(2, 6)}`,
@@ -743,7 +743,7 @@ function exportLeadsCSV() {
 
   const a = document.createElement("a");
   a.href = url;
-  a.download = `leads_pilates_parede_${new Date().toISOString().slice(0, 10)}.csv`;
+  a.download = `leads_pilates_tailandes_${new Date().toISOString().slice(0, 10)}.csv`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

@@ -1,5 +1,5 @@
 /**
- * Pilates de Parede - Funil WhatsApp Typebot
+ * Pilates Tailandês - Funil WhatsApp Typebot
  * Especialista: Mali Santos
  */
 
@@ -330,7 +330,7 @@ const funnelSteps = [
   {
     step: 15,
     messages: [
-      "Terminando seu plano de Pilates de Parede personalizado..."
+      "Terminando seu plano de Pilates Tailandês personalizado..."
     ],
     type: "calculation_wait",
     waitDuration: 4000
@@ -338,7 +338,7 @@ const funnelSteps = [
   {
     step: 16,
     messages: [
-      "Seu Plano de Pilates de Parede está pronto! 🔥",
+      "Seu Plano de Pilates Tailandês está pronto! 🔥",
       "De acordo com as informações que você me passou, prevemos que você alcançará sua meta em apenas 4 semanas."
     ],
     type: "chart_step",
@@ -359,10 +359,10 @@ const funnelSteps = [
     messages: [
       "Não gostamos de ver que uma mensalidade em academias pelo Brasil pode chegar a R$ 200,00 por mês! Fora nutricionistas e personais! Achamos um absurdo isso...",
       "Por isso queremos oferecer isso a você sem nenhum custo. Sim, é isso mesmo, o acompanhamento é totalmente gratuito.",
-      "Mas, para manter tudo rodando e garantir que você tenha a melhor experiência, cobramos uma pequena taxa de inscrição de APENAS R$ 29,90. Que é o valor que a Plataforma nos cobra para hospedar as aulas dos treinos.\n\nEssa pequena contribuição nos ajuda a manter tudo isso vivo, a continuar apoiando e transformando a vida de tantas mulheres. E é também uma forma de selarmos nosso compromisso juntos.\n\nAlém disso, se em até 30 dias você sentir que não está vendo a mudança que esperava, eu prometo que devolvo cada centavo."
+      "Mas, para manter tudo rodando e garantir que você tenha a melhor experiência, cobramos uma pequena taxa de inscrição de APENAS R$ 37. Que é o valor que a Plataforma nos cobra para hospedar as aulas dos treinos.\n\nEssa pequena contribuição nos ajuda a manter tudo isso vivo, a continuar apoiando e transformando a vida de tantas mulheres. E é também uma forma de selarmos nosso compromisso juntos.\n\nAlém disso, se em até 30 dias você sentir que não está vendo a mudança que esperava, eu prometo que devolvo cada centavo."
     ],
     type: "final_payt",
-    options: ["QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 29,90)"]
+    options: ["QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)"]
   }
 ];
 

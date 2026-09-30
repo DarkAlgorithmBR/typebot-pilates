@@ -1,6 +1,6 @@
-# Typebot Pilates de Parede - Simulação WhatsApp & Painel de Leads 🧘‍♀️✨
+# Typebot Pilates Tailandês - Simulação WhatsApp & Painel de Leads 🧘‍♀️✨
 **Especialista:** Mali Santos  
-**Oferta:** Desafio Pilates de Parede 28 Dias (R$ 29,90 com 30 dias de garantia)
+**Oferta:** Desafio Pilates Tailandês 28 Dias (R$ 37 com 30 dias de garantia)
 
 ---
 
@@ -40,7 +40,7 @@
 | **16** | Cálculo do plano personalizado | Diagnóstico | Pontinhos automáticos de digitação (4 segundos) |
 | **17** | Plano Pronto + Gráfico de Redução de Peso | Gráfico + Copy | Card visual com curva de perda de peso (Hoje ➔ 4 semanas) + Botão `SIM, ESTOU PREPARADA!` |
 | **18** | Benefícios do Desafio (100% sem aparelhos) | Benefícios | `SIM, EU ACEITO O DESAFIO!` |
-| **19** | Comparativo com academias + Oferta R$ 29,90 | Oferta Final | Botão CTA: `QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 29,90)` direto para Payt |
+| **19** | Comparativo com academias + Oferta R$ 37 | Oferta Final | Botão CTA: `QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)` direto para Payt |
 
 ---
 

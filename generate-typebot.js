@@ -177,7 +177,7 @@ const stepsData = [
     step: 15,
     title: '15 - Finalização do Plano',
     texts: [
-      'Terminando seu plano de Pilates de Parede personalizado...'
+      'Terminando seu plano de Pilates Tailandês personalizado...'
     ],
     type: 'wait',
     seconds: 4
@@ -186,7 +186,7 @@ const stepsData = [
     step: 16,
     title: '16 - Previsão e Gráfico',
     texts: [
-      'Seu Plano de Pilates de Parede está pronto! 🔥',
+      'Seu Plano de Pilates Tailandês está pronto! 🔥',
       'De acordo com as informações que você me passou, prevemos que você alcançará sua meta em apenas 4 semanas.',
       '📊 [Gráfico de Redução de Peso: Agora ➔ 4 semanas]\nCronograma 100% sob medida para o seu metabolismo!',
       'Você está preparada para essa transformação?'
@@ -209,15 +209,15 @@ const stepsData = [
   },
   {
     step: 18,
-    title: '18 - Oferta Final Payt',
+    title: '18 - Oferta Final',
     texts: [
       'Não gostamos de ver que uma mensalidade em academias pelo Brasil pode chegar a R$ 200,00 por mês! Fora nutricionistas e personais! Achamos um absurdo isso...',
       'Por isso queremos oferecer isso a você sem nenhum custo. Sim, é isso mesmo, o acompanhamento é totalmente gratuito.',
-      'Mas, para manter tudo rodando e garantir que você tenha a melhor experiência, cobramos uma pequena taxa de inscrição de APENAS R$ 29,90. Que é o valor que a Plataforma nos cobra para hospedar as aulas dos treinos.\n\nEssa pequena contribuição nos ajuda a manter tudo isso vivo, a continuar apoiando e transformando a vida de tantas mulheres. E é também uma forma de selarmos nosso compromisso juntos.\n\nAlém disso, se em até 30 dias você sentir que não está vendo a mudança que esperava, eu prometo que devolvo cada centavo.'
+      'Mas, para manter tudo rodando e garantir que você tenha a melhor experiência, cobramos uma pequena taxa de inscrição de APENAS R$ 37. Que é o valor que a Plataforma nos cobra para hospedar as aulas dos treinos.\n\nEssa pequena contribuição nos ajuda a manter tudo isso vivo, a continuar apoiando e transformando a vida de tantas mulheres. E é também uma forma de selarmos nosso compromisso juntos.\n\nAlém disso, se em até 30 dias você sentir que não está vendo a mudança que esperava, eu prometo que devolvo cada centavo.'
     ],
     type: 'final',
     variableId: null,
-    options: ['👉 QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 29,90)']
+    options: ['👉 QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)']
   }
 ];
 
@@ -435,7 +435,7 @@ body, typebot-standard {
 
 const typebotData = {
   version: '6',
-  name: 'Pilates de Parede - Desafio 28 Dias (18 Etapas)',
+  name: 'Pilates Tailandês - Desafio 28 Dias (18 Etapas)',
   events: [eventStart],
   groups: groups,
   edges: edges,
