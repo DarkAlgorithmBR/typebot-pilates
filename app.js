@@ -21,7 +21,7 @@ const state = {
 // ==========================================
 const Tracker = {
   STORAGE_KEY: "pilates_leads",
-  GOOGLE_SHEETS_URL: "https://script.google.com/macros/s/AKfycbxI58f3ddp7BEC_MdP9K-9Ny9fmogUtpk4w5f3Bl557Y4Mwvvo3NMZC1C65IRjX2Oxi/exec",
+  GOOGLE_SHEETS_URL: "https://script.google.com/macros/s/AKfycby0xd-wdy9vJZZO8nq8x7PIlE1yON6if4eTjZmul86SM3OemdSne8sKW9rWcUmCzGV7nA/exec",
   currentLeadId: null,
 
   init() {

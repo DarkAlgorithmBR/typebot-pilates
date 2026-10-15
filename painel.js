@@ -7,7 +7,7 @@
 const STORAGE_KEY = "pilates_leads";
 const AUTH_KEY = "pilates_admin_auth";
 const DEFAULT_PASS = "admin123";
-const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbxI58f3ddp7BEC_MdP9K-9Ny9fmogUtpk4w5f3Bl557Y4Mwvvo3NMZC1C65IRjX2Oxi/exec";
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycby0xd-wdy9vJZZO8nq8x7PIlE1yON6if4eTjZmul86SM3OemdSne8sKW9rWcUmCzGV7nA/exec";
 
 // Definição das 18 etapas com nomes explicativos para visualização
 const FUNNEL_STEPS_META = [
