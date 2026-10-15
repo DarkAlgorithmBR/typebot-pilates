@@ -7,6 +7,7 @@
 const STORAGE_KEY = "pilates_leads";
 const AUTH_KEY = "pilates_admin_auth";
 const DEFAULT_PASS = "admin123";
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbxI58f3ddp7BEC_MdP9K-9Ny9fmogUtpk4w5f3Bl557Y4Mwvvo3NMZC1C65IRjX2Oxi/exec";
 
 // Definição das 18 etapas com nomes explicativos para visualização
 const FUNNEL_STEPS_META = [
@@ -113,12 +114,32 @@ function saveLeadsToStorage(leads) {
   }
 }
 
-function loadDashboard() {
+async function loadDashboard() {
   currentLeads = getLeadsFromStorage();
   renderKpis();
   renderFunnel();
   renderAdsIntelligence();
   renderLeadsTable();
+
+  // Busca leads centralizados da nuvem (Google Sheets)
+  if (GOOGLE_SHEETS_URL) {
+    try {
+      const res = await fetch(GOOGLE_SHEETS_URL);
+      if (res.ok) {
+        const json = await res.json();
+        if (json && json.status === "success" && Array.isArray(json.leads) && json.leads.length > 0) {
+          currentLeads = json.leads;
+          saveLeadsToStorage(currentLeads);
+          renderKpis();
+          renderFunnel();
+          renderAdsIntelligence();
+          renderLeadsTable();
+        }
+      }
+    } catch (e) {
+      // Falha silenciosa, usa dados do cache local
+    }
+  }
 }
 
 // ==========================================

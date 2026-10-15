@@ -21,6 +21,7 @@ const state = {
 // ==========================================
 const Tracker = {
   STORAGE_KEY: "pilates_leads",
+  GOOGLE_SHEETS_URL: "https://script.google.com/macros/s/AKfycbxI58f3ddp7BEC_MdP9K-9Ny9fmogUtpk4w5f3Bl557Y4Mwvvo3NMZC1C65IRjX2Oxi/exec",
   currentLeadId: null,
 
   init() {
@@ -47,6 +48,7 @@ const Tracker = {
       };
       leads.unshift(lead);
       this.saveAllLeads(leads);
+      this.syncLead(lead);
     }
   },
 
@@ -87,6 +89,7 @@ const Tracker = {
     }
     lead.updatedAt = new Date().toISOString();
     this.saveAllLeads(leads);
+    this.syncLead(lead);
   },
 
   trackAnswer(key, answer) {
@@ -98,6 +101,7 @@ const Tracker = {
     lead.answers[key] = answer;
     lead.updatedAt = new Date().toISOString();
     this.saveAllLeads(leads);
+    this.syncLead(lead);
   },
 
   trackCheckout() {
@@ -109,6 +113,38 @@ const Tracker = {
     lead.completed = true;
     lead.updatedAt = new Date().toISOString();
     this.saveAllLeads(leads);
+    this.syncLead(lead);
+  },
+
+  syncLead(lead) {
+    if (!this.GOOGLE_SHEETS_URL || !lead) return;
+    try {
+      const stepIdx = (lead.currentStep || 1) - 1;
+      let stepName = `Etapa ${lead.currentStep || 1}`;
+      if (typeof funnelSteps !== "undefined" && funnelSteps[stepIdx] && funnelSteps[stepIdx].messages && funnelSteps[stepIdx].messages[0]) {
+        stepName = `Etapa ${lead.currentStep} - ${funnelSteps[stepIdx].messages[0].substring(0, 35)}`;
+      }
+
+      const payload = {
+        id: lead.id,
+        currentStep: lead.currentStep || 1,
+        maxStepReached: lead.maxStepReached || lead.currentStep || 1,
+        stepName: stepName,
+        completed: !!lead.completed,
+        clickedCheckout: !!lead.clickedCheckout,
+        device: lead.device || "Mobile",
+        answers: lead.answers || {}
+      };
+
+      fetch(this.GOOGLE_SHEETS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload)
+      }).catch(() => {});
+    } catch (e) {
+      // Ignora silenciosamente para não interromper a usuária
+    }
   }
 };
 
