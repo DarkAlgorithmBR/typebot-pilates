@@ -180,7 +180,7 @@ const stepsData = [
       'Terminando seu plano de Pilates Tailandês personalizado...'
     ],
     type: 'wait',
-    seconds: 4
+    seconds: 2
   },
   {
     step: 16,

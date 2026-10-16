@@ -369,7 +369,7 @@ const funnelSteps = [
       "Terminando seu plano de Pilates Tailandês personalizado..."
     ],
     type: "calculation_wait",
-    waitDuration: 4000
+    waitDuration: 2500
   },
   {
     step: 16,
@@ -573,14 +573,14 @@ async function executeStep(stepIndex) {
       chatMessagesEl.appendChild(typingBubble);
       scrollToBottom();
 
-      await new Promise(res => setTimeout(res, 2400));
+      await new Promise(res => setTimeout(res, 1100));
 
       typingBubble.remove();
       setTypingStatus(false);
       renderIncomingImage(rawMsg.src, rawMsg.caption);
 
       if (i < stepData.messages.length - 1) {
-        await new Promise(res => setTimeout(res, 2200));
+        await new Promise(res => setTimeout(res, 600));
       }
       continue;
     }
@@ -590,11 +590,10 @@ async function executeStep(stepIndex) {
       msgText = msgText.replace(/\{DATA_ALVO\}/g, getFormattedTargetDate(38));
     }
 
-
-    // TEMPOS HUMANIZADOS CALIBRADOS (ritmo tranquilo e natural para leitura real)
-    // Mensagens curtas: ~3400ms - 4400ms
-    // Mensagens médias e longas: ~4800ms - 7500ms
-    const typingTime = Math.min(7500, Math.max(3400, msgText.length * 45));
+    // TEMPOS ACELERADOS E ÁGEIS (dinâmico e sem travamento)
+    // Mensagens curtas: ~800ms - 1100ms
+    // Mensagens médias e longas: ~1200ms - 2200ms
+    const typingTime = Math.min(2200, Math.max(800, msgText.length * 15));
 
     // Exibe pontinhos no chat e status "digitando..."
     setTypingStatus(true);
@@ -602,7 +601,7 @@ async function executeStep(stepIndex) {
     chatMessagesEl.appendChild(typingBubble);
     scrollToBottom();
 
-    // Aguarda o tempo humanizado de digitação
+    // Aguarda o tempo dinâmico de digitação
     await new Promise(res => setTimeout(res, typingTime));
 
     // Remove pontinhos e exibe a mensagem
@@ -610,9 +609,9 @@ async function executeStep(stepIndex) {
     setTypingStatus(false);
     renderIncomingMessage(msgText);
 
-    // Pausa natural de 2200ms entre mensagens consecutivas para dar tempo de leitura
+    // Pausa rápida e natural de 600ms entre mensagens consecutivas
     if (i < stepData.messages.length - 1) {
-      await new Promise(res => setTimeout(res, 2200));
+      await new Promise(res => setTimeout(res, 600));
     }
   }
 
@@ -622,13 +621,13 @@ async function executeStep(stepIndex) {
   } else if (stepData.type === "number_input") {
     renderNumberInput(stepData);
   } else if (stepData.type === "calculation_wait") {
-    // Etapa 16: Cálculo com pontinhos de digitação (4 segundos exatos, sem loading bar)
-    await handleCalculationWait(stepData.waitDuration || 4000);
+    // Etapa 15: Cálculo com pontinhos de digitação (2.5 segundos, ágil)
+    await handleCalculationWait(stepData.waitDuration || 2500);
   } else if (stepData.type === "chart_step") {
-    // Etapa 17: Previsão gráfica de redução de peso
+    // Etapa 16: Previsão gráfica de redução de peso
     renderChartStep(stepData);
   } else if (stepData.type === "final_payt") {
-    // Etapa 19: Botão final direto para a Payt
+    // Etapa 18: Botão final direto para a Payt/Zuptos
     renderPaytChoice(stepData.options[0]);
   }
 }
@@ -695,10 +694,10 @@ function renderNumberInput(stepData) {
     container.remove();
     renderOutgoingMessage(formattedAnswer);
 
-    // Pausa humanizada de 1600ms antes do expert começar a digitar
+    // Pausa rápida de 400ms antes do expert começar a digitar
     setTimeout(() => {
       executeStep(state.currentStepIndex + 1);
-    }, 1600);
+    }, 400);
   });
 
   chatMessagesEl.appendChild(container);
@@ -794,7 +793,7 @@ function renderChartStep(stepData) {
   scrollToBottom();
   AudioController.playReceive();
 
-  // Pergunta de confirmação após breve pausa de 1800ms
+  // Pergunta de confirmação após breve pausa de 700ms
   setTimeout(() => {
     setTypingStatus(true);
     const typingBubble = createTypingBubble();
@@ -808,8 +807,8 @@ function renderChartStep(stepData) {
 
       // Exibe o botão de confirmação inline alinhado à direita
       renderChoices(stepData.options, "preparada_transformacao");
-    }, 2400);
-  }, 1800);
+    }, 1000);
+  }, 700);
 }
 
 // Renderiza as opções de botões inline diretamente no fluxo do chat, logo abaixo da mensagem
@@ -842,10 +841,10 @@ function renderChoices(options, responseKey) {
       // Renderiza mensagem do usuário
       renderOutgoingMessage(optionText);
 
-      // Pausa humanizada de 1600ms antes do expert começar a digitar a próxima resposta
+      // Pausa rápida de 400ms antes do expert começar a digitar a próxima resposta
       setTimeout(() => {
         executeStep(state.currentStepIndex + 1);
-      }, 1600);
+      }, 400);
     });
 
     container.appendChild(btn);
@@ -855,24 +854,24 @@ function renderChoices(options, responseKey) {
   scrollToBottom();
 }
 
-// Etapa 16: Cálculo sem barra de loading, apenas com pontinhos de digitação ("digitando...")
+// Etapa 15: Cálculo sem barra de loading, apenas com pontinhos de digitação ("digitando...")
 async function handleCalculationWait(durationMs) {
   setTypingStatus(true);
   const typingBubble = createTypingBubble();
   chatMessagesEl.appendChild(typingBubble);
   scrollToBottom();
 
-  // Espera os 4.5 segundos de cálculo
-  await new Promise(res => setTimeout(res, durationMs || 4500));
+  // Espera os 2.5 segundos de cálculo ágil
+  await new Promise(res => setTimeout(res, durationMs || 2500));
 
   typingBubble.remove();
   setTypingStatus(false);
 
-  // Avança automaticamente para a Etapa 17
+  // Avança automaticamente para a Etapa 16
   executeStep(state.currentStepIndex + 1);
 }
 
-// Etapa 19: Renderiza botão CTA final da Payt no padrão dos outros botões
+// Etapa 18: Renderiza botão CTA final da Payt/Zuptos
 function renderPaytChoice(buttonLabel) {
   removeActiveChoices();
 
@@ -909,8 +908,8 @@ function renderPaytChoice(buttonLabel) {
         renderIncomingMessage(
           `Excelente escolha! Você está sendo redirecionada para a página segura de pagamento. 🧘‍♀️💚\n\nCaso a página não abra automaticamente, você pode acessar diretamente pelo link abaixo:\n\n👉 <a href="${CHECKOUT_PAYT_URL}" target="_blank" style="color: #008069; font-weight: bold; text-decoration: underline;">Clique aqui para abrir o Checkout</a>`
         );
-      }, 2600);
-    }, 1000);
+      }, 1000);
+    }, 400);
   });
 
   container.appendChild(btn);
@@ -971,8 +970,8 @@ window.addEventListener("DOMContentLoaded", () => {
   // Inicializa o rastreador de sessão do lead
   Tracker.init();
 
-  // Pausa inicial de 2000ms antes da especialista começar a digitar
+  // Pausa inicial rápida de 600ms antes da especialista começar a digitar
   setTimeout(() => {
     executeStep(0);
-  }, 2000);
+  }, 600);
 });
