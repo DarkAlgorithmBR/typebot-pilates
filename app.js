@@ -375,7 +375,7 @@ const funnelSteps = [
     step: 16,
     messages: [
       "Seu Plano de Pilates Tailandês está pronto! 🔥",
-      "De acordo com as informações que você me passou, calculamos um cronograma saudável e palpável de 800g a 1kg por semana para você atingir seu objetivo até {DATA_ALVO}."
+      "De acordo com as informações que você me passou, prevemos sua meta até {DATA_ALVO}."
     ],
     type: "chart_step",
     options: ["SIM, ESTOU PREPARADA!"]
@@ -672,18 +672,16 @@ function renderChartStep(stepData) {
   const pAtual = parseFloat(state.userResponses.peso_atual) || 80;
   const pDesejadoInput = parseFloat(state.userResponses.peso_desejado);
 
-  // Ritmo palpável e saudável: de 800g a 1kg por semana (média de ~900g/semana)
-  // Em 37 dias (~5.3 semanas), a perda saudável planejada é de ~4.8kg
-  const semanas37Dias = 37 / 7; // ~5.28 semanas
-  const perdaMax37Dias = Math.round(semanas37Dias * 0.9 * 10) / 10; // 4.8 kg
+  // Ritmo palpável e saudável: 1kg por semana (~5kg em 37 dias / 5 semanas)
+  const perdaPlanejada = 5.0; // 1kg por semana
 
-  let kgDiff = perdaMax37Dias;
+  let kgDiff = perdaPlanejada;
   if (pDesejadoInput && (pAtual - pDesejadoInput > 0)) {
     const metaDesejada = pAtual - pDesejadoInput;
-    if (metaDesejada < perdaMax37Dias) {
+    if (metaDesejada < perdaPlanejada) {
       kgDiff = Math.max(1.5, Math.round(metaDesejada * 10) / 10);
     } else {
-      kgDiff = perdaMax37Dias;
+      kgDiff = perdaPlanejada;
     }
   }
 
@@ -748,7 +746,7 @@ function renderChartStep(stepData) {
       </div>
 
       <div style="margin-top: 8px; padding-top: 6px; border-top: 1px dashed rgba(0, 128, 105, 0.2); text-align: center; font-size: 11px; color: #008069; font-weight: 600;">
-        ✨ Ritmo saudável e sustentável: 800g a 1kg por semana (37 dias)
+        ✨ Ritmo saudável: 1kg por semana (37 dias)
       </div>
 
       <div class="msg-meta">
