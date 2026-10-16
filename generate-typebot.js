@@ -202,8 +202,9 @@ const stepsData = [
       'Deixa eu te explicar como irá funcionar...',
       'Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:\n\n✅ Perca de peso\n✅ Ganho de massa magra\n✅ Alivio de dores nas costas\n✅ Melhora da postura\n✅ Aumento da autoestima\n✅ Aumento da libido\n✅ Melhora da flexibilidade\n✅ Pode ser feito em casa\n✅ Sem aparelhos, você não precisa comprar NADA.',
       'Dá uma olhada no que algumas das minhas alunas que começaram do zero me mandaram essa semana 👇',
-      '📸 [Depoimento Neuza: Perdeu 4kg em 3 semanas fazendo 15 min de pilates em casa e aliviou dores]',
-      '📸 [Depoimento Maria Silva: Barriga desinchou e não tem mais dores na coluna lombar]',
+      '📸 [Depoimento Neuza: Perdeu o medo de usar o app e sentiu alívio das dores articulares em 1 semana]',
+      '📸 [Depoimento Maria Silva: Perdeu 3,5kg em 4 semanas sem deixar de comer o que gosta]',
+      '📸 [Depoimento Maria Silva (Antes e Depois): Perdeu 15kg em 5 semanas com foto visível de evolução]',
       'Você está preparada para essa transformação na sua vida?'
     ],
     type: 'choice',

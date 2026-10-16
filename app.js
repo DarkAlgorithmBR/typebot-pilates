@@ -388,6 +388,7 @@ const funnelSteps = [
       "Dá uma olhada no que algumas das minhas alunas que começaram do zero me mandaram essa semana 👇",
       { type: "image", src: "depoimento-neuza.png" },
       { type: "image", src: "depoimento-maria.png" },
+      { type: "image", src: "depoimento-maria-evolucao.jpg" },
       "Você está preparada para essa transformação na sua vida?"
     ],
     type: "choice",
