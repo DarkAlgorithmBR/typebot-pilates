@@ -187,8 +187,8 @@ const stepsData = [
     title: '16 - Previsão e Gráfico',
     texts: [
       'Seu Plano de Pilates Tailandês está pronto! 🔥',
-      'De acordo com as informações que você me passou, prevemos que você alcançará sua meta em apenas 4 semanas.',
-      '📊 [Gráfico de Redução de Peso: Agora ➔ 4 semanas]\nCronograma 100% sob medida para o seu metabolismo!',
+      'De acordo com as informações que você me passou, calculamos um cronograma saudável e palpável de 800g a 1kg por semana para você atingir sua transformação em 37 dias.',
+      '📊 [Previsão de Transformação: Em 37 Dias]\nRitmo seguro de 800g a 1kg por semana, 100% sem efeito sanfona!',
       'Você está preparada para essa transformação?'
     ],
     type: 'choice',

@@ -375,7 +375,7 @@ const funnelSteps = [
     step: 16,
     messages: [
       "Seu Plano de Pilates Tailandês está pronto! 🔥",
-      "De acordo com as informações que você me passou, prevemos que você alcançará sua meta em apenas 4 semanas."
+      "De acordo com as informações que você me passou, calculamos um cronograma saudável e palpável de 800g a 1kg por semana para você atingir seu objetivo até {DATA_ALVO}."
     ],
     type: "chart_step",
     options: ["SIM, ESTOU PREPARADA!"]
@@ -418,6 +418,26 @@ function removeActiveChoices() {
 // ==========================================
 // HELPERS
 // ==========================================
+function getFormattedTargetDate(daysAhead = 38) {
+  const d = new Date();
+  d.setDate(d.getDate() + daysAhead);
+  const meses = [
+    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+  ];
+  return `${d.getDate()} de ${meses[d.getMonth()]}`;
+}
+
+function getShortTargetDate(daysAhead = 38) {
+  const d = new Date();
+  d.setDate(d.getDate() + daysAhead);
+  const meses = [
+    "Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+    "Jul", "Ago", "Set", "Out", "Nov", "Dez"
+  ];
+  return `${d.getDate()} de ${meses[d.getMonth()]}`;
+}
+
 function getCurrentTime() {
   const now = new Date();
   const hours = String(now.getHours()).padStart(2, '0');
@@ -522,6 +542,9 @@ async function executeStep(stepIndex) {
   // Envia cada mensagem com tempo humanizado e pontinhos
   for (let i = 0; i < stepData.messages.length; i++) {
     let msgText = stepData.messages[i];
+    if (typeof msgText === "string" && msgText.includes("{DATA_ALVO}")) {
+      msgText = msgText.replace(/\{DATA_ALVO\}/g, getFormattedTargetDate(38));
+    }
 
 
     // TEMPOS HUMANIZADOS CALIBRADOS (ritmo tranquilo e natural para leitura real)
@@ -642,20 +665,32 @@ function renderNumberInput(stepData) {
   }, 100);
 }
 
-// Renderiza o gráfico visual de redução de peso e botão de confirmação (Etapa 17)
+// Renderiza o gráfico visual de redução de peso e botão de confirmação (Etapa 16)
 function renderChartStep(stepData) {
   removeActiveChoices();
 
   const pAtual = parseFloat(state.userResponses.peso_atual) || 80;
-  let pDesejado = parseFloat(state.userResponses.peso_desejado) || 68;
+  const pDesejadoInput = parseFloat(state.userResponses.peso_desejado);
 
-  // Garante valores coerentes para o gráfico
-  if (pDesejado >= pAtual) {
-    pDesejado = Math.round(pAtual * 0.88);
+  // Ritmo palpável e saudável: de 800g a 1kg por semana (média de ~900g/semana)
+  // Em 37 dias (~5.3 semanas), a perda saudável planejada é de ~4.8kg
+  const semanas37Dias = 37 / 7; // ~5.28 semanas
+  const perdaMax37Dias = Math.round(semanas37Dias * 0.9 * 10) / 10; // 4.8 kg
+
+  let kgDiff = perdaMax37Dias;
+  if (pDesejadoInput && (pAtual - pDesejadoInput > 0)) {
+    const metaDesejada = pAtual - pDesejadoInput;
+    if (metaDesejada < perdaMax37Dias) {
+      kgDiff = Math.max(1.5, Math.round(metaDesejada * 10) / 10);
+    } else {
+      kgDiff = perdaMax37Dias;
+    }
   }
-  const kgDiff = Math.max(2, Math.round(pAtual - pDesejado));
-  const pSemana2 = (pAtual - kgDiff * 0.55).toFixed(1);
+
+  const pFinal = (pAtual - kgDiff).toFixed(1).replace(/\.0$/, "");
+  const pSemana2 = (pAtual - kgDiff * 0.48).toFixed(1).replace(/\.0$/, "");
   const regiaoAlvo = state.userResponses.regiao || "Barriga";
+  const dataAlvoCurta = getShortTargetDate(38);
 
   // Card com o gráfico de redução de peso
   const chartRow = document.createElement("div");
@@ -664,7 +699,7 @@ function renderChartStep(stepData) {
     <div class="chat-bubble incoming-bubble chart-bubble">
       <div class="chart-header">
         <span class="chart-badge">📊 PREVISÃO DE TRANSFORMAÇÃO</span>
-        <span class="chart-target">4 Semanas</span>
+        <span class="chart-target">Até ${dataAlvoCurta}</span>
       </div>
 
       <div class="weight-stat-row">
@@ -674,8 +709,8 @@ function renderChartStep(stepData) {
         </div>
         <div class="weight-arrow">➔</div>
         <div class="weight-stat-pill success">
-          <span class="stat-lbl">Meta 4 Semanas</span>
-          <strong class="stat-val target">${pDesejado} kg</strong>
+          <span class="stat-lbl">Até ${dataAlvoCurta}</span>
+          <strong class="stat-val target">${pFinal} kg</strong>
         </div>
         <div class="weight-stat-pill diff">
           <span class="stat-lbl">Eliminar</span>
@@ -701,8 +736,8 @@ function renderChartStep(stepData) {
           <circle cx="160" cy="55" r="3.5" fill="#00a884" stroke="#fff" stroke-width="1.5"/>
           <circle cx="292" cy="95" r="5" fill="#00a884" stroke="#fff" stroke-width="2"/>
           <text x="28" y="16" font-size="11" font-weight="700" fill="#111b21" text-anchor="start">Hoje: ${pAtual}kg</text>
-          <text x="160" y="47" font-size="10" font-weight="600" fill="#667781" text-anchor="middle">Semana 2: ${pSemana2}kg</text>
-          <text x="292" y="86" font-size="11" font-weight="800" fill="#008069" text-anchor="end">Semana 4: ${pDesejado}kg</text>
+          <text x="160" y="47" font-size="10" font-weight="600" fill="#667781" text-anchor="middle">Semana 2.5: ${pSemana2}kg</text>
+          <text x="292" y="86" font-size="11" font-weight="800" fill="#008069" text-anchor="end">${dataAlvoCurta}: ${pFinal}kg</text>
         </svg>
       </div>
 
@@ -710,6 +745,10 @@ function renderChartStep(stepData) {
         <span>⏱️ 15 a 20 min/dia</span>
         <span>🎯 Foco: ${regiaoAlvo}</span>
         <span>🛡️ 100% Sem Impacto</span>
+      </div>
+
+      <div style="margin-top: 8px; padding-top: 6px; border-top: 1px dashed rgba(0, 128, 105, 0.2); text-align: center; font-size: 11px; color: #008069; font-weight: 600;">
+        ✨ Ritmo saudável e sustentável: 800g a 1kg por semana (37 dias)
       </div>
 
       <div class="msg-meta">

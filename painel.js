@@ -26,7 +26,7 @@ const FUNNEL_STEPS_META = [
   { num: 13, name: "Peso Atual (kg)", desc: "Campo numérico de peso atual" },
   { num: 14, name: "Peso Ideal (kg)", desc: "Campo numérico de peso desejado" },
   { num: 15, name: "Finalização do Plano (4s)", desc: "Pontinhos de digitação terminando o cronograma personalizado" },
-  { num: 16, name: "Previsão & Gráfico de Peso", desc: "Gráfico visual de redução de peso em 4 semanas" },
+  { num: 16, name: "Previsão & Gráfico de Peso", desc: "Gráfico visual de redução de peso em 37 dias (800g a 1kg/semana)" },
   { num: 17, name: "Benefícios do Desafio", desc: "Apresentação detalhada do método 100% sem aparelhos" },
   { num: 18, name: "Checkout (R$ 37)", desc: "Oferta com garantia de 30 dias e redirecionamento" }
 ];
