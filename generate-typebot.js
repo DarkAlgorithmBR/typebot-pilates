@@ -336,7 +336,7 @@ stepsData.forEach((sd, idx) => {
         id: redirectBlockId,
         type: 'Redirect',
         options: {
-          url: 'https://pay.wiapy.com/i3tIMsUrLrwY',
+          url: 'https://app.zuptos.com.br/checkout/7dda6e09d2f964c0',
           isNewTab: true
         }
       };

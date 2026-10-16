@@ -22,7 +22,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_1_pc0g723",
+          "id": "block_text_1_r6dfocw",
           "type": "text",
           "content": {
             "richText": [
@@ -38,7 +38,7 @@
           }
         },
         {
-          "id": "block_text_2_4bq6uhb",
+          "id": "block_text_2_ffwiqs3",
           "type": "text",
           "content": {
             "richText": [
@@ -54,7 +54,7 @@
           }
         },
         {
-          "id": "block_text_3_i15jpxq",
+          "id": "block_text_3_3byew0h",
           "type": "text",
           "content": {
             "richText": [
@@ -70,7 +70,7 @@
           }
         },
         {
-          "id": "block_text_4_f0ecb18",
+          "id": "block_text_4_gpuxrj7",
           "type": "text",
           "content": {
             "richText": [
@@ -86,26 +86,26 @@
           }
         },
         {
-          "id": "block_choice_5_bqyhzt7",
+          "id": "block_choice_5_tf4eoqk",
           "type": "choice input",
           "items": [
             {
-              "id": "item_1_0_6_oi6ntzw",
+              "id": "item_1_0_6_00yscde",
               "content": "18 a 29 anos",
               "outgoingEdgeId": "edge_1_item_0_to_2"
             },
             {
-              "id": "item_1_1_7_3mzig0g",
+              "id": "item_1_1_7_a9qbrk4",
               "content": "30 a 39 anos",
               "outgoingEdgeId": "edge_1_item_1_to_2"
             },
             {
-              "id": "item_1_2_8_j12mmmx",
+              "id": "item_1_2_8_obtddso",
               "content": "40 a 49 anos",
               "outgoingEdgeId": "edge_1_item_2_to_2"
             },
             {
-              "id": "item_1_3_9_fgupyib",
+              "id": "item_1_3_9_jbudtjb",
               "content": "50 anos ou mais",
               "outgoingEdgeId": "edge_1_item_3_to_2"
             }
@@ -126,7 +126,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_10_i2y9liq",
+          "id": "block_text_10_z6xka8r",
           "type": "text",
           "content": {
             "richText": [
@@ -142,31 +142,31 @@
           }
         },
         {
-          "id": "block_choice_11_0jpbzk7",
+          "id": "block_choice_11_w05j1r0",
           "type": "choice input",
           "items": [
             {
-              "id": "item_2_0_12_76sp88x",
+              "id": "item_2_0_12_i9baqe1",
               "content": "Perder barriga",
               "outgoingEdgeId": "edge_2_item_0_to_3"
             },
             {
-              "id": "item_2_1_13_d22wm4s",
+              "id": "item_2_1_13_0bu8zd2",
               "content": "Aumentar a força muscular",
               "outgoingEdgeId": "edge_2_item_1_to_3"
             },
             {
-              "id": "item_2_2_14_y3wb6bh",
+              "id": "item_2_2_14_3asb5e5",
               "content": "Desenvolver a flexibilidade",
               "outgoingEdgeId": "edge_2_item_2_to_3"
             },
             {
-              "id": "item_2_3_15_xwqq9o0",
+              "id": "item_2_3_15_81k0hik",
               "content": "Reduzir o estresse e ansiedade",
               "outgoingEdgeId": "edge_2_item_3_to_3"
             },
             {
-              "id": "item_2_4_16_dv7s6zz",
+              "id": "item_2_4_16_ebst7vx",
               "content": "Reduzir as dores corporais",
               "outgoingEdgeId": "edge_2_item_4_to_3"
             }
@@ -187,7 +187,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_17_brdu0tp",
+          "id": "block_text_17_70i9drg",
           "type": "text",
           "content": {
             "richText": [
@@ -203,21 +203,21 @@
           }
         },
         {
-          "id": "block_choice_18_xkd4h46",
+          "id": "block_choice_18_0tmqz76",
           "type": "choice input",
           "items": [
             {
-              "id": "item_3_0_19_24p38z5",
+              "id": "item_3_0_19_6tra190",
               "content": "Sim, já pratico regularmente",
               "outgoingEdgeId": "edge_3_item_0_to_4"
             },
             {
-              "id": "item_3_1_20_4isdi4h",
+              "id": "item_3_1_20_zcbk5cv",
               "content": "Já fiz algumas vezes, mas não com frequência",
               "outgoingEdgeId": "edge_3_item_1_to_4"
             },
             {
-              "id": "item_3_2_21_wfmi3wb",
+              "id": "item_3_2_21_928ulb3",
               "content": "Nunca fiz",
               "outgoingEdgeId": "edge_3_item_2_to_4"
             }
@@ -238,7 +238,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_22_br3qs2c",
+          "id": "block_text_22_2jinwnu",
           "type": "text",
           "content": {
             "richText": [
@@ -254,7 +254,7 @@
           }
         },
         {
-          "id": "block_text_23_ispazs1",
+          "id": "block_text_23_5nn660t",
           "type": "text",
           "content": {
             "richText": [
@@ -270,21 +270,21 @@
           }
         },
         {
-          "id": "block_choice_24_1elyybj",
+          "id": "block_choice_24_zqewqot",
           "type": "choice input",
           "items": [
             {
-              "id": "item_4_0_25_hp3xvb5",
+              "id": "item_4_0_25_uhpdyib",
               "content": "Sou flexível",
               "outgoingEdgeId": "edge_4_item_0_to_5"
             },
             {
-              "id": "item_4_1_26_76id4kw",
+              "id": "item_4_1_26_2j73jol",
               "content": "Mais ou menos flexível",
               "outgoingEdgeId": "edge_4_item_1_to_5"
             },
             {
-              "id": "item_4_2_27_insjxqr",
+              "id": "item_4_2_27_7wfpyiv",
               "content": "Não sou flexível",
               "outgoingEdgeId": "edge_4_item_2_to_5"
             }
@@ -305,7 +305,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_28_lhoey00",
+          "id": "block_text_28_2zpti3p",
           "type": "text",
           "content": {
             "richText": [
@@ -321,26 +321,26 @@
           }
         },
         {
-          "id": "block_choice_29_elm6lrs",
+          "id": "block_choice_29_hx0twur",
           "type": "choice input",
           "items": [
             {
-              "id": "item_5_0_30_b0h1vig",
+              "id": "item_5_0_30_4a4nzik",
               "content": "Magra",
               "outgoingEdgeId": "edge_5_item_0_to_6"
             },
             {
-              "id": "item_5_1_31_p1pcrns",
+              "id": "item_5_1_31_ndd4egz",
               "content": "Média",
               "outgoingEdgeId": "edge_5_item_1_to_6"
             },
             {
-              "id": "item_5_2_32_jshp5o3",
+              "id": "item_5_2_32_a23cojd",
               "content": "Um pouco acima do peso",
               "outgoingEdgeId": "edge_5_item_2_to_6"
             },
             {
-              "id": "item_5_3_33_zmwj7jt",
+              "id": "item_5_3_33_jnctn8k",
               "content": "Acima do peso",
               "outgoingEdgeId": "edge_5_item_3_to_6"
             }
@@ -361,7 +361,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_34_xr8muo9",
+          "id": "block_text_34_mltjo4c",
           "type": "text",
           "content": {
             "richText": [
@@ -377,26 +377,26 @@
           }
         },
         {
-          "id": "block_choice_35_jswwsdk",
+          "id": "block_choice_35_aesy4ys",
           "type": "choice input",
           "items": [
             {
-              "id": "item_6_0_36_50j4d19",
+              "id": "item_6_0_36_avgcbw2",
               "content": "Magra",
               "outgoingEdgeId": "edge_6_item_0_to_7"
             },
             {
-              "id": "item_6_1_37_1vkj3gi",
+              "id": "item_6_1_37_rwv1dwv",
               "content": "Tonificada",
               "outgoingEdgeId": "edge_6_item_1_to_7"
             },
             {
-              "id": "item_6_2_38_n56ilbu",
+              "id": "item_6_2_38_uvwjd46",
               "content": "Com curvas",
               "outgoingEdgeId": "edge_6_item_2_to_7"
             },
             {
-              "id": "item_6_3_39_0yx2s15",
+              "id": "item_6_3_39_u59yjed",
               "content": "Média",
               "outgoingEdgeId": "edge_6_item_3_to_7"
             }
@@ -417,7 +417,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_40_3pt851y",
+          "id": "block_text_40_vp6hhai",
           "type": "text",
           "content": {
             "richText": [
@@ -433,26 +433,26 @@
           }
         },
         {
-          "id": "block_choice_41_7qrrx7d",
+          "id": "block_choice_41_rnsck7c",
           "type": "choice input",
           "items": [
             {
-              "id": "item_7_0_42_0a40m58",
+              "id": "item_7_0_42_4s5tgjp",
               "content": "Há menos de um ano",
               "outgoingEdgeId": "edge_7_item_0_to_8"
             },
             {
-              "id": "item_7_1_43_ejs6ai1",
+              "id": "item_7_1_43_coi4142",
               "content": "1 a 2 anos atrás",
               "outgoingEdgeId": "edge_7_item_1_to_8"
             },
             {
-              "id": "item_7_2_44_7plofwk",
+              "id": "item_7_2_44_z6eg8ii",
               "content": "Há mais de 3 anos",
               "outgoingEdgeId": "edge_7_item_2_to_8"
             },
             {
-              "id": "item_7_3_45_jil1yjo",
+              "id": "item_7_3_45_nszf321",
               "content": "Não sei dizer",
               "outgoingEdgeId": "edge_7_item_3_to_8"
             }
@@ -473,7 +473,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_46_jrdxw58",
+          "id": "block_text_46_ku704wr",
           "type": "text",
           "content": {
             "richText": [
@@ -489,26 +489,26 @@
           }
         },
         {
-          "id": "block_choice_47_ztihwvu",
+          "id": "block_choice_47_jezxadt",
           "type": "choice input",
           "items": [
             {
-              "id": "item_8_0_48_6yj4gln",
+              "id": "item_8_0_48_h8h91tq",
               "content": "Barriga",
               "outgoingEdgeId": "edge_8_item_0_to_9"
             },
             {
-              "id": "item_8_1_49_as5phgm",
+              "id": "item_8_1_49_yi1nc68",
               "content": "Glúteos",
               "outgoingEdgeId": "edge_8_item_1_to_9"
             },
             {
-              "id": "item_8_2_50_mj0hgdd",
+              "id": "item_8_2_50_m73foab",
               "content": "Pernas",
               "outgoingEdgeId": "edge_8_item_2_to_9"
             },
             {
-              "id": "item_8_3_51_j3gjk9m",
+              "id": "item_8_3_51_in22hkn",
               "content": "Peito",
               "outgoingEdgeId": "edge_8_item_3_to_9"
             }
@@ -529,7 +529,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_52_51woi3v",
+          "id": "block_text_52_hna535h",
           "type": "text",
           "content": {
             "richText": [
@@ -545,26 +545,26 @@
           }
         },
         {
-          "id": "block_choice_53_63cuyaq",
+          "id": "block_choice_53_6k1q7fc",
           "type": "choice input",
           "items": [
             {
-              "id": "item_9_0_54_rws8hed",
+              "id": "item_9_0_54_py9o13t",
               "content": "Quase todos os dias",
               "outgoingEdgeId": "edge_9_item_0_to_10"
             },
             {
-              "id": "item_9_1_55_ncvds96",
+              "id": "item_9_1_55_7hlo7ni",
               "content": "Algumas vezes na semana",
               "outgoingEdgeId": "edge_9_item_1_to_10"
             },
             {
-              "id": "item_9_2_56_gk4h6sp",
+              "id": "item_9_2_56_924vvro",
               "content": "Algumas vezes por mês",
               "outgoingEdgeId": "edge_9_item_2_to_10"
             },
             {
-              "id": "item_9_3_57_0ebhhs2",
+              "id": "item_9_3_57_av6z29q",
               "content": "Poucas vezes",
               "outgoingEdgeId": "edge_9_item_3_to_10"
             }
@@ -585,7 +585,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_58_pbrb3g3",
+          "id": "block_text_58_51ncyhg",
           "type": "text",
           "content": {
             "richText": [
@@ -601,7 +601,7 @@
           }
         },
         {
-          "id": "block_text_59_79ul226",
+          "id": "block_text_59_1ypnfud",
           "type": "text",
           "content": {
             "richText": [
@@ -617,26 +617,26 @@
           }
         },
         {
-          "id": "block_choice_60_4ozexsg",
+          "id": "block_choice_60_9xf7xpz",
           "type": "choice input",
           "items": [
             {
-              "id": "item_10_0_61_ofg9gvy",
+              "id": "item_10_0_61_3w8vnyq",
               "content": "Menos de 5 horas",
               "outgoingEdgeId": "edge_10_item_0_to_11"
             },
             {
-              "id": "item_10_1_62_g4cjpl4",
+              "id": "item_10_1_62_z77puqw",
               "content": "5-6 horas",
               "outgoingEdgeId": "edge_10_item_1_to_11"
             },
             {
-              "id": "item_10_2_63_rxhkkja",
+              "id": "item_10_2_63_v60yqu7",
               "content": "7-8 horas",
               "outgoingEdgeId": "edge_10_item_2_to_11"
             },
             {
-              "id": "item_10_3_64_zat78qf",
+              "id": "item_10_3_64_jbxs0bs",
               "content": "Mais de 8 horas",
               "outgoingEdgeId": "edge_10_item_3_to_11"
             }
@@ -657,7 +657,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_65_154255p",
+          "id": "block_text_65_1rlb5td",
           "type": "text",
           "content": {
             "richText": [
@@ -673,31 +673,31 @@
           }
         },
         {
-          "id": "block_choice_66_r4l8cxf",
+          "id": "block_choice_66_l7wm23r",
           "type": "choice input",
           "items": [
             {
-              "id": "item_11_0_67_i1bqzub",
+              "id": "item_11_0_67_6ho6i6y",
               "content": "Me sentir mais confiante no meu corpo",
               "outgoingEdgeId": "edge_11_item_0_to_12"
             },
             {
-              "id": "item_11_1_68_xlr7gxv",
+              "id": "item_11_1_68_d2w9i2g",
               "content": "Me sentir mais saudável e com energia",
               "outgoingEdgeId": "edge_11_item_1_to_12"
             },
             {
-              "id": "item_11_2_69_tt6gn7p",
+              "id": "item_11_2_69_9cvvo9g",
               "content": "Vestir melhor minhas roupas",
               "outgoingEdgeId": "edge_11_item_2_to_12"
             },
             {
-              "id": "item_11_3_70_11u1js4",
+              "id": "item_11_3_70_q3zbxdt",
               "content": "Voltar a forma após o parto",
               "outgoingEdgeId": "edge_11_item_3_to_12"
             },
             {
-              "id": "item_11_4_71_5upasd7",
+              "id": "item_11_4_71_w1d24eu",
               "content": "Outros",
               "outgoingEdgeId": "edge_11_item_4_to_12"
             }
@@ -718,7 +718,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_72_5pgfbqv",
+          "id": "block_text_72_umda9m3",
           "type": "text",
           "content": {
             "richText": [
@@ -734,7 +734,7 @@
           }
         },
         {
-          "id": "block_number_73_db5fnvo",
+          "id": "block_number_73_5tjyiys",
           "type": "number input",
           "options": {
             "variableId": "var_altura",
@@ -754,7 +754,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_74_701vhkb",
+          "id": "block_text_74_gl51k6r",
           "type": "text",
           "content": {
             "richText": [
@@ -770,7 +770,7 @@
           }
         },
         {
-          "id": "block_number_75_dpmfcr8",
+          "id": "block_number_75_29b2pjl",
           "type": "number input",
           "options": {
             "variableId": "var_peso_atual",
@@ -790,7 +790,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_76_76cjb8z",
+          "id": "block_text_76_q27adax",
           "type": "text",
           "content": {
             "richText": [
@@ -806,7 +806,7 @@
           }
         },
         {
-          "id": "block_number_77_1se6llq",
+          "id": "block_number_77_6ngy597",
           "type": "number input",
           "options": {
             "variableId": "var_peso_desejado",
@@ -826,7 +826,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_78_82wcf44",
+          "id": "block_text_78_s1eexl1",
           "type": "text",
           "content": {
             "richText": [
@@ -842,7 +842,7 @@
           }
         },
         {
-          "id": "block_wait_79_aattci9",
+          "id": "block_wait_79_tkzvs50",
           "type": "Wait",
           "options": {
             "secondsToWaitFor": 4
@@ -860,7 +860,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_80_8qukhge",
+          "id": "block_text_80_pg5yiey",
           "type": "text",
           "content": {
             "richText": [
@@ -876,7 +876,7 @@
           }
         },
         {
-          "id": "block_text_81_ksgcm5i",
+          "id": "block_text_81_44a7g3d",
           "type": "text",
           "content": {
             "richText": [
@@ -892,7 +892,7 @@
           }
         },
         {
-          "id": "block_text_82_37kqhj3",
+          "id": "block_text_82_q1qd4fa",
           "type": "text",
           "content": {
             "richText": [
@@ -916,7 +916,7 @@
           }
         },
         {
-          "id": "block_text_83_gi4c8ax",
+          "id": "block_text_83_qo85lzd",
           "type": "text",
           "content": {
             "richText": [
@@ -932,11 +932,11 @@
           }
         },
         {
-          "id": "block_choice_84_25p9gp6",
+          "id": "block_choice_84_djrv2l3",
           "type": "choice input",
           "items": [
             {
-              "id": "item_16_0_85_bkvw06x",
+              "id": "item_16_0_85_o1fiput",
               "content": "SIM, ESTOU PREPARADA!",
               "outgoingEdgeId": "edge_16_item_0_to_17"
             }
@@ -956,7 +956,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_86_q0oykhx",
+          "id": "block_text_86_rp6w8fr",
           "type": "text",
           "content": {
             "richText": [
@@ -972,7 +972,7 @@
           }
         },
         {
-          "id": "block_text_87_rqz3v6u",
+          "id": "block_text_87_o0qaydt",
           "type": "text",
           "content": {
             "richText": [
@@ -1068,7 +1068,7 @@
           }
         },
         {
-          "id": "block_text_88_pi0ffvp",
+          "id": "block_text_88_ymykfpb",
           "type": "text",
           "content": {
             "richText": [
@@ -1084,11 +1084,11 @@
           }
         },
         {
-          "id": "block_choice_89_4m2rmen",
+          "id": "block_choice_89_54of8sf",
           "type": "choice input",
           "items": [
             {
-              "id": "item_17_0_90_iv53qi5",
+              "id": "item_17_0_90_24j61j0",
               "content": "SIM, EU ACEITO O DESAFIO!",
               "outgoingEdgeId": "edge_17_item_0_to_18"
             }
@@ -1108,7 +1108,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_91_0eb11g9",
+          "id": "block_text_91_vzozf4i",
           "type": "text",
           "content": {
             "richText": [
@@ -1124,7 +1124,7 @@
           }
         },
         {
-          "id": "block_text_92_3be91f5",
+          "id": "block_text_92_ddf4n91",
           "type": "text",
           "content": {
             "richText": [
@@ -1140,7 +1140,7 @@
           }
         },
         {
-          "id": "block_text_93_p74xin8",
+          "id": "block_text_93_41k0osw",
           "type": "text",
           "content": {
             "richText": [
@@ -1188,11 +1188,11 @@
           }
         },
         {
-          "id": "block_choice_94_r77umoz",
+          "id": "block_choice_94_5ogi5ac",
           "type": "choice input",
           "items": [
             {
-              "id": "item_18_0_95_nqxcn2n",
+              "id": "item_18_0_95_ntf61gj",
               "content": "👉 QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)",
               "outgoingEdgeId": "edge_payt_redirect"
             }
@@ -1202,10 +1202,10 @@
           }
         },
         {
-          "id": "block_redirect_96_pv7eqrr",
+          "id": "block_redirect_96_3fv1dew",
           "type": "Redirect",
           "options": {
-            "url": "https://pay.wiapy.com/i3tIMsUrLrwY",
+            "url": "https://app.zuptos.com.br/checkout/7dda6e09d2f964c0",
             "isNewTab": true
           }
         }
@@ -1225,8 +1225,8 @@
     {
       "id": "edge_1_item_0_to_2",
       "from": {
-        "blockId": "block_choice_5_bqyhzt7",
-        "itemId": "item_1_0_6_oi6ntzw"
+        "blockId": "block_choice_5_tf4eoqk",
+        "itemId": "item_1_0_6_00yscde"
       },
       "to": {
         "groupId": "group_2"
@@ -1235,8 +1235,8 @@
     {
       "id": "edge_1_item_1_to_2",
       "from": {
-        "blockId": "block_choice_5_bqyhzt7",
-        "itemId": "item_1_1_7_3mzig0g"
+        "blockId": "block_choice_5_tf4eoqk",
+        "itemId": "item_1_1_7_a9qbrk4"
       },
       "to": {
         "groupId": "group_2"
@@ -1245,8 +1245,8 @@
     {
       "id": "edge_1_item_2_to_2",
       "from": {
-        "blockId": "block_choice_5_bqyhzt7",
-        "itemId": "item_1_2_8_j12mmmx"
+        "blockId": "block_choice_5_tf4eoqk",
+        "itemId": "item_1_2_8_obtddso"
       },
       "to": {
         "groupId": "group_2"
@@ -1255,8 +1255,8 @@
     {
       "id": "edge_1_item_3_to_2",
       "from": {
-        "blockId": "block_choice_5_bqyhzt7",
-        "itemId": "item_1_3_9_fgupyib"
+        "blockId": "block_choice_5_tf4eoqk",
+        "itemId": "item_1_3_9_jbudtjb"
       },
       "to": {
         "groupId": "group_2"
@@ -1265,8 +1265,8 @@
     {
       "id": "edge_2_item_0_to_3",
       "from": {
-        "blockId": "block_choice_11_0jpbzk7",
-        "itemId": "item_2_0_12_76sp88x"
+        "blockId": "block_choice_11_w05j1r0",
+        "itemId": "item_2_0_12_i9baqe1"
       },
       "to": {
         "groupId": "group_3"
@@ -1275,8 +1275,8 @@
     {
       "id": "edge_2_item_1_to_3",
       "from": {
-        "blockId": "block_choice_11_0jpbzk7",
-        "itemId": "item_2_1_13_d22wm4s"
+        "blockId": "block_choice_11_w05j1r0",
+        "itemId": "item_2_1_13_0bu8zd2"
       },
       "to": {
         "groupId": "group_3"
@@ -1285,8 +1285,8 @@
     {
       "id": "edge_2_item_2_to_3",
       "from": {
-        "blockId": "block_choice_11_0jpbzk7",
-        "itemId": "item_2_2_14_y3wb6bh"
+        "blockId": "block_choice_11_w05j1r0",
+        "itemId": "item_2_2_14_3asb5e5"
       },
       "to": {
         "groupId": "group_3"
@@ -1295,8 +1295,8 @@
     {
       "id": "edge_2_item_3_to_3",
       "from": {
-        "blockId": "block_choice_11_0jpbzk7",
-        "itemId": "item_2_3_15_xwqq9o0"
+        "blockId": "block_choice_11_w05j1r0",
+        "itemId": "item_2_3_15_81k0hik"
       },
       "to": {
         "groupId": "group_3"
@@ -1305,8 +1305,8 @@
     {
       "id": "edge_2_item_4_to_3",
       "from": {
-        "blockId": "block_choice_11_0jpbzk7",
-        "itemId": "item_2_4_16_dv7s6zz"
+        "blockId": "block_choice_11_w05j1r0",
+        "itemId": "item_2_4_16_ebst7vx"
       },
       "to": {
         "groupId": "group_3"
@@ -1315,8 +1315,8 @@
     {
       "id": "edge_3_item_0_to_4",
       "from": {
-        "blockId": "block_choice_18_xkd4h46",
-        "itemId": "item_3_0_19_24p38z5"
+        "blockId": "block_choice_18_0tmqz76",
+        "itemId": "item_3_0_19_6tra190"
       },
       "to": {
         "groupId": "group_4"
@@ -1325,8 +1325,8 @@
     {
       "id": "edge_3_item_1_to_4",
       "from": {
-        "blockId": "block_choice_18_xkd4h46",
-        "itemId": "item_3_1_20_4isdi4h"
+        "blockId": "block_choice_18_0tmqz76",
+        "itemId": "item_3_1_20_zcbk5cv"
       },
       "to": {
         "groupId": "group_4"
@@ -1335,8 +1335,8 @@
     {
       "id": "edge_3_item_2_to_4",
       "from": {
-        "blockId": "block_choice_18_xkd4h46",
-        "itemId": "item_3_2_21_wfmi3wb"
+        "blockId": "block_choice_18_0tmqz76",
+        "itemId": "item_3_2_21_928ulb3"
       },
       "to": {
         "groupId": "group_4"
@@ -1345,8 +1345,8 @@
     {
       "id": "edge_4_item_0_to_5",
       "from": {
-        "blockId": "block_choice_24_1elyybj",
-        "itemId": "item_4_0_25_hp3xvb5"
+        "blockId": "block_choice_24_zqewqot",
+        "itemId": "item_4_0_25_uhpdyib"
       },
       "to": {
         "groupId": "group_5"
@@ -1355,8 +1355,8 @@
     {
       "id": "edge_4_item_1_to_5",
       "from": {
-        "blockId": "block_choice_24_1elyybj",
-        "itemId": "item_4_1_26_76id4kw"
+        "blockId": "block_choice_24_zqewqot",
+        "itemId": "item_4_1_26_2j73jol"
       },
       "to": {
         "groupId": "group_5"
@@ -1365,8 +1365,8 @@
     {
       "id": "edge_4_item_2_to_5",
       "from": {
-        "blockId": "block_choice_24_1elyybj",
-        "itemId": "item_4_2_27_insjxqr"
+        "blockId": "block_choice_24_zqewqot",
+        "itemId": "item_4_2_27_7wfpyiv"
       },
       "to": {
         "groupId": "group_5"
@@ -1375,8 +1375,8 @@
     {
       "id": "edge_5_item_0_to_6",
       "from": {
-        "blockId": "block_choice_29_elm6lrs",
-        "itemId": "item_5_0_30_b0h1vig"
+        "blockId": "block_choice_29_hx0twur",
+        "itemId": "item_5_0_30_4a4nzik"
       },
       "to": {
         "groupId": "group_6"
@@ -1385,8 +1385,8 @@
     {
       "id": "edge_5_item_1_to_6",
       "from": {
-        "blockId": "block_choice_29_elm6lrs",
-        "itemId": "item_5_1_31_p1pcrns"
+        "blockId": "block_choice_29_hx0twur",
+        "itemId": "item_5_1_31_ndd4egz"
       },
       "to": {
         "groupId": "group_6"
@@ -1395,8 +1395,8 @@
     {
       "id": "edge_5_item_2_to_6",
       "from": {
-        "blockId": "block_choice_29_elm6lrs",
-        "itemId": "item_5_2_32_jshp5o3"
+        "blockId": "block_choice_29_hx0twur",
+        "itemId": "item_5_2_32_a23cojd"
       },
       "to": {
         "groupId": "group_6"
@@ -1405,8 +1405,8 @@
     {
       "id": "edge_5_item_3_to_6",
       "from": {
-        "blockId": "block_choice_29_elm6lrs",
-        "itemId": "item_5_3_33_zmwj7jt"
+        "blockId": "block_choice_29_hx0twur",
+        "itemId": "item_5_3_33_jnctn8k"
       },
       "to": {
         "groupId": "group_6"
@@ -1415,8 +1415,8 @@
     {
       "id": "edge_6_item_0_to_7",
       "from": {
-        "blockId": "block_choice_35_jswwsdk",
-        "itemId": "item_6_0_36_50j4d19"
+        "blockId": "block_choice_35_aesy4ys",
+        "itemId": "item_6_0_36_avgcbw2"
       },
       "to": {
         "groupId": "group_7"
@@ -1425,8 +1425,8 @@
     {
       "id": "edge_6_item_1_to_7",
       "from": {
-        "blockId": "block_choice_35_jswwsdk",
-        "itemId": "item_6_1_37_1vkj3gi"
+        "blockId": "block_choice_35_aesy4ys",
+        "itemId": "item_6_1_37_rwv1dwv"
       },
       "to": {
         "groupId": "group_7"
@@ -1435,8 +1435,8 @@
     {
       "id": "edge_6_item_2_to_7",
       "from": {
-        "blockId": "block_choice_35_jswwsdk",
-        "itemId": "item_6_2_38_n56ilbu"
+        "blockId": "block_choice_35_aesy4ys",
+        "itemId": "item_6_2_38_uvwjd46"
       },
       "to": {
         "groupId": "group_7"
@@ -1445,8 +1445,8 @@
     {
       "id": "edge_6_item_3_to_7",
       "from": {
-        "blockId": "block_choice_35_jswwsdk",
-        "itemId": "item_6_3_39_0yx2s15"
+        "blockId": "block_choice_35_aesy4ys",
+        "itemId": "item_6_3_39_u59yjed"
       },
       "to": {
         "groupId": "group_7"
@@ -1455,8 +1455,8 @@
     {
       "id": "edge_7_item_0_to_8",
       "from": {
-        "blockId": "block_choice_41_7qrrx7d",
-        "itemId": "item_7_0_42_0a40m58"
+        "blockId": "block_choice_41_rnsck7c",
+        "itemId": "item_7_0_42_4s5tgjp"
       },
       "to": {
         "groupId": "group_8"
@@ -1465,8 +1465,8 @@
     {
       "id": "edge_7_item_1_to_8",
       "from": {
-        "blockId": "block_choice_41_7qrrx7d",
-        "itemId": "item_7_1_43_ejs6ai1"
+        "blockId": "block_choice_41_rnsck7c",
+        "itemId": "item_7_1_43_coi4142"
       },
       "to": {
         "groupId": "group_8"
@@ -1475,8 +1475,8 @@
     {
       "id": "edge_7_item_2_to_8",
       "from": {
-        "blockId": "block_choice_41_7qrrx7d",
-        "itemId": "item_7_2_44_7plofwk"
+        "blockId": "block_choice_41_rnsck7c",
+        "itemId": "item_7_2_44_z6eg8ii"
       },
       "to": {
         "groupId": "group_8"
@@ -1485,8 +1485,8 @@
     {
       "id": "edge_7_item_3_to_8",
       "from": {
-        "blockId": "block_choice_41_7qrrx7d",
-        "itemId": "item_7_3_45_jil1yjo"
+        "blockId": "block_choice_41_rnsck7c",
+        "itemId": "item_7_3_45_nszf321"
       },
       "to": {
         "groupId": "group_8"
@@ -1495,8 +1495,8 @@
     {
       "id": "edge_8_item_0_to_9",
       "from": {
-        "blockId": "block_choice_47_ztihwvu",
-        "itemId": "item_8_0_48_6yj4gln"
+        "blockId": "block_choice_47_jezxadt",
+        "itemId": "item_8_0_48_h8h91tq"
       },
       "to": {
         "groupId": "group_9"
@@ -1505,8 +1505,8 @@
     {
       "id": "edge_8_item_1_to_9",
       "from": {
-        "blockId": "block_choice_47_ztihwvu",
-        "itemId": "item_8_1_49_as5phgm"
+        "blockId": "block_choice_47_jezxadt",
+        "itemId": "item_8_1_49_yi1nc68"
       },
       "to": {
         "groupId": "group_9"
@@ -1515,8 +1515,8 @@
     {
       "id": "edge_8_item_2_to_9",
       "from": {
-        "blockId": "block_choice_47_ztihwvu",
-        "itemId": "item_8_2_50_mj0hgdd"
+        "blockId": "block_choice_47_jezxadt",
+        "itemId": "item_8_2_50_m73foab"
       },
       "to": {
         "groupId": "group_9"
@@ -1525,8 +1525,8 @@
     {
       "id": "edge_8_item_3_to_9",
       "from": {
-        "blockId": "block_choice_47_ztihwvu",
-        "itemId": "item_8_3_51_j3gjk9m"
+        "blockId": "block_choice_47_jezxadt",
+        "itemId": "item_8_3_51_in22hkn"
       },
       "to": {
         "groupId": "group_9"
@@ -1535,8 +1535,8 @@
     {
       "id": "edge_9_item_0_to_10",
       "from": {
-        "blockId": "block_choice_53_63cuyaq",
-        "itemId": "item_9_0_54_rws8hed"
+        "blockId": "block_choice_53_6k1q7fc",
+        "itemId": "item_9_0_54_py9o13t"
       },
       "to": {
         "groupId": "group_10"
@@ -1545,8 +1545,8 @@
     {
       "id": "edge_9_item_1_to_10",
       "from": {
-        "blockId": "block_choice_53_63cuyaq",
-        "itemId": "item_9_1_55_ncvds96"
+        "blockId": "block_choice_53_6k1q7fc",
+        "itemId": "item_9_1_55_7hlo7ni"
       },
       "to": {
         "groupId": "group_10"
@@ -1555,8 +1555,8 @@
     {
       "id": "edge_9_item_2_to_10",
       "from": {
-        "blockId": "block_choice_53_63cuyaq",
-        "itemId": "item_9_2_56_gk4h6sp"
+        "blockId": "block_choice_53_6k1q7fc",
+        "itemId": "item_9_2_56_924vvro"
       },
       "to": {
         "groupId": "group_10"
@@ -1565,8 +1565,8 @@
     {
       "id": "edge_9_item_3_to_10",
       "from": {
-        "blockId": "block_choice_53_63cuyaq",
-        "itemId": "item_9_3_57_0ebhhs2"
+        "blockId": "block_choice_53_6k1q7fc",
+        "itemId": "item_9_3_57_av6z29q"
       },
       "to": {
         "groupId": "group_10"
@@ -1575,8 +1575,8 @@
     {
       "id": "edge_10_item_0_to_11",
       "from": {
-        "blockId": "block_choice_60_4ozexsg",
-        "itemId": "item_10_0_61_ofg9gvy"
+        "blockId": "block_choice_60_9xf7xpz",
+        "itemId": "item_10_0_61_3w8vnyq"
       },
       "to": {
         "groupId": "group_11"
@@ -1585,8 +1585,8 @@
     {
       "id": "edge_10_item_1_to_11",
       "from": {
-        "blockId": "block_choice_60_4ozexsg",
-        "itemId": "item_10_1_62_g4cjpl4"
+        "blockId": "block_choice_60_9xf7xpz",
+        "itemId": "item_10_1_62_z77puqw"
       },
       "to": {
         "groupId": "group_11"
@@ -1595,8 +1595,8 @@
     {
       "id": "edge_10_item_2_to_11",
       "from": {
-        "blockId": "block_choice_60_4ozexsg",
-        "itemId": "item_10_2_63_rxhkkja"
+        "blockId": "block_choice_60_9xf7xpz",
+        "itemId": "item_10_2_63_v60yqu7"
       },
       "to": {
         "groupId": "group_11"
@@ -1605,8 +1605,8 @@
     {
       "id": "edge_10_item_3_to_11",
       "from": {
-        "blockId": "block_choice_60_4ozexsg",
-        "itemId": "item_10_3_64_zat78qf"
+        "blockId": "block_choice_60_9xf7xpz",
+        "itemId": "item_10_3_64_jbxs0bs"
       },
       "to": {
         "groupId": "group_11"
@@ -1615,8 +1615,8 @@
     {
       "id": "edge_11_item_0_to_12",
       "from": {
-        "blockId": "block_choice_66_r4l8cxf",
-        "itemId": "item_11_0_67_i1bqzub"
+        "blockId": "block_choice_66_l7wm23r",
+        "itemId": "item_11_0_67_6ho6i6y"
       },
       "to": {
         "groupId": "group_12"
@@ -1625,8 +1625,8 @@
     {
       "id": "edge_11_item_1_to_12",
       "from": {
-        "blockId": "block_choice_66_r4l8cxf",
-        "itemId": "item_11_1_68_xlr7gxv"
+        "blockId": "block_choice_66_l7wm23r",
+        "itemId": "item_11_1_68_d2w9i2g"
       },
       "to": {
         "groupId": "group_12"
@@ -1635,8 +1635,8 @@
     {
       "id": "edge_11_item_2_to_12",
       "from": {
-        "blockId": "block_choice_66_r4l8cxf",
-        "itemId": "item_11_2_69_tt6gn7p"
+        "blockId": "block_choice_66_l7wm23r",
+        "itemId": "item_11_2_69_9cvvo9g"
       },
       "to": {
         "groupId": "group_12"
@@ -1645,8 +1645,8 @@
     {
       "id": "edge_11_item_3_to_12",
       "from": {
-        "blockId": "block_choice_66_r4l8cxf",
-        "itemId": "item_11_3_70_11u1js4"
+        "blockId": "block_choice_66_l7wm23r",
+        "itemId": "item_11_3_70_q3zbxdt"
       },
       "to": {
         "groupId": "group_12"
@@ -1655,8 +1655,8 @@
     {
       "id": "edge_11_item_4_to_12",
       "from": {
-        "blockId": "block_choice_66_r4l8cxf",
-        "itemId": "item_11_4_71_5upasd7"
+        "blockId": "block_choice_66_l7wm23r",
+        "itemId": "item_11_4_71_w1d24eu"
       },
       "to": {
         "groupId": "group_12"
@@ -1665,7 +1665,7 @@
     {
       "id": "edge_12_to_13",
       "from": {
-        "blockId": "block_number_73_db5fnvo"
+        "blockId": "block_number_73_5tjyiys"
       },
       "to": {
         "groupId": "group_13"
@@ -1674,7 +1674,7 @@
     {
       "id": "edge_13_to_14",
       "from": {
-        "blockId": "block_number_75_dpmfcr8"
+        "blockId": "block_number_75_29b2pjl"
       },
       "to": {
         "groupId": "group_14"
@@ -1683,7 +1683,7 @@
     {
       "id": "edge_14_to_15",
       "from": {
-        "blockId": "block_number_77_1se6llq"
+        "blockId": "block_number_77_6ngy597"
       },
       "to": {
         "groupId": "group_15"
@@ -1692,7 +1692,7 @@
     {
       "id": "edge_15_to_16",
       "from": {
-        "blockId": "block_wait_79_aattci9"
+        "blockId": "block_wait_79_tkzvs50"
       },
       "to": {
         "groupId": "group_16"
@@ -1701,8 +1701,8 @@
     {
       "id": "edge_16_item_0_to_17",
       "from": {
-        "blockId": "block_choice_84_25p9gp6",
-        "itemId": "item_16_0_85_bkvw06x"
+        "blockId": "block_choice_84_djrv2l3",
+        "itemId": "item_16_0_85_o1fiput"
       },
       "to": {
         "groupId": "group_17"
@@ -1711,8 +1711,8 @@
     {
       "id": "edge_17_item_0_to_18",
       "from": {
-        "blockId": "block_choice_89_4m2rmen",
-        "itemId": "item_17_0_90_iv53qi5"
+        "blockId": "block_choice_89_54of8sf",
+        "itemId": "item_17_0_90_24j61j0"
       },
       "to": {
         "groupId": "group_18"
@@ -1721,12 +1721,12 @@
     {
       "id": "edge_payt_redirect",
       "from": {
-        "blockId": "block_choice_94_r77umoz",
-        "itemId": "item_18_0_95_nqxcn2n"
+        "blockId": "block_choice_94_5ogi5ac",
+        "itemId": "item_18_0_95_ntf61gj"
       },
       "to": {
         "groupId": "group_18",
-        "blockId": "block_redirect_96_pv7eqrr"
+        "blockId": "block_redirect_96_3fv1dew"
       }
     }
   ],

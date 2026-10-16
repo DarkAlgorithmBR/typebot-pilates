@@ -6,8 +6,8 @@
 // ==========================================
 // CONFIGURAÇÕES GERAIS
 // ==========================================
-// Link oficial de checkout (Wiapy):
-const CHECKOUT_PAYT_URL = "https://pay.wiapy.com/i3tIMsUrLrwY";
+// Link oficial de checkout (Zuptos):
+const CHECKOUT_PAYT_URL = "https://app.zuptos.com.br/checkout/7dda6e09d2f964c0";
 
 // Estado da conversa e respostas do usuário
 const state = {

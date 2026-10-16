@@ -59,7 +59,7 @@ const g15 = data.groups.find(g => g.id === 'group_15');
 const hasWait = g15 && g15.blocks.some(b => b.type === 'Wait' && b.options?.secondsToWaitFor === 4);
 console.log('Step 15 Wait (4s) verified:', hasWait ? '✅ YES' : '❌ NO');
 
-// Check if Step 18 has Checkout redirect (Wiapy)
+// Check if Step 18 has Checkout redirect (Zuptos)
 const g18 = data.groups.find(g => g.id === 'group_18');
-const hasRedirect = g18 && g18.blocks.some(b => b.type === 'Redirect' && (b.options?.url?.includes('wiapy') || b.options?.url?.includes('payt')));
-console.log('Step 18 Wiapy Redirect verified:', hasRedirect ? '✅ YES' : '❌ NO');
+const hasRedirect = g18 && g18.blocks.some(b => b.type === 'Redirect' && (b.options?.url?.includes('zuptos') || b.options?.url?.includes('wiapy') || b.options?.url?.includes('payt')));
+console.log('Step 18 Zuptos Redirect verified:', hasRedirect ? '✅ YES' : '❌ NO');
