@@ -670,23 +670,14 @@ function renderChartStep(stepData) {
   removeActiveChoices();
 
   const pAtual = parseFloat(state.userResponses.peso_atual) || 80;
-  const pDesejadoInput = parseFloat(state.userResponses.peso_desejado);
+  let pDesejado = parseFloat(state.userResponses.peso_desejado) || 68;
 
-  // Ritmo palpável e saudável: 1kg por semana (~5kg em 37 dias / 5 semanas)
-  const perdaPlanejada = 5.0; // 1kg por semana
-
-  let kgDiff = perdaPlanejada;
-  if (pDesejadoInput && (pAtual - pDesejadoInput > 0)) {
-    const metaDesejada = pAtual - pDesejadoInput;
-    if (metaDesejada < perdaPlanejada) {
-      kgDiff = Math.max(1.5, Math.round(metaDesejada * 10) / 10);
-    } else {
-      kgDiff = perdaPlanejada;
-    }
+  // Garante valores coerentes para o gráfico
+  if (pDesejado >= pAtual) {
+    pDesejado = Math.round(pAtual * 0.88);
   }
-
-  const pFinal = (pAtual - kgDiff).toFixed(1).replace(/\.0$/, "");
-  const pSemana2 = (pAtual - kgDiff * 0.48).toFixed(1).replace(/\.0$/, "");
+  const kgDiff = Math.max(2, Math.round(pAtual - pDesejado));
+  const pSemana2 = (pAtual - kgDiff * 0.5).toFixed(1).replace(/\.0$/, "");
   const regiaoAlvo = state.userResponses.regiao || "Barriga";
   const dataAlvoCurta = getShortTargetDate(38);
 
@@ -708,7 +699,7 @@ function renderChartStep(stepData) {
         <div class="weight-arrow">➔</div>
         <div class="weight-stat-pill success">
           <span class="stat-lbl">Até ${dataAlvoCurta}</span>
-          <strong class="stat-val target">${pFinal} kg</strong>
+          <strong class="stat-val target">${pDesejado} kg</strong>
         </div>
         <div class="weight-stat-pill diff">
           <span class="stat-lbl">Eliminar</span>
@@ -735,7 +726,7 @@ function renderChartStep(stepData) {
           <circle cx="292" cy="95" r="5" fill="#00a884" stroke="#fff" stroke-width="2"/>
           <text x="28" y="16" font-size="11" font-weight="700" fill="#111b21" text-anchor="start">Hoje: ${pAtual}kg</text>
           <text x="160" y="47" font-size="10" font-weight="600" fill="#667781" text-anchor="middle">Semana 2.5: ${pSemana2}kg</text>
-          <text x="292" y="86" font-size="11" font-weight="800" fill="#008069" text-anchor="end">${dataAlvoCurta}: ${pFinal}kg</text>
+          <text x="292" y="86" font-size="11" font-weight="800" fill="#008069" text-anchor="end">${dataAlvoCurta}: ${pDesejado}kg</text>
         </svg>
       </div>
 
