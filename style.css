@@ -321,6 +321,34 @@ body {
   color: var(--wa-text-secondary);
 }
 
+/* Balão de Imagem / Depoimento (WhatsApp Style) */
+.message-bubble.image-bubble {
+  padding: 4px 4px 6px 4px;
+  max-width: 84%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.wa-media-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.wa-media-img:hover {
+  filter: brightness(0.96);
+}
+
+.message-bubble.image-bubble .message-meta {
+  float: right;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+
 .ticks {
   display: flex;
   align-items: center;

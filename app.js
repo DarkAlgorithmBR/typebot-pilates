@@ -385,6 +385,9 @@ const funnelSteps = [
     messages: [
       "Deixa eu te explicar como irá funcionar...",
       "Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:\n\n✅ Perca de peso\n✅ Ganho de massa magra\n✅ Alivio de dores nas costas\n✅ Melhora da postura\n✅ Aumento da autoestima\n✅ Aumento da libido\n✅ Melhora da flexibilidade\n✅ Pode ser feito em casa\n✅ Sem aparelhos, você não precisa comprar NADA.",
+      "Dá uma olhada no que algumas das minhas alunas que começaram do zero me mandaram essa semana 👇",
+      { type: "image", src: "depoimento-neuza.png" },
+      { type: "image", src: "depoimento-maria.png" },
       "Você está preparada para essa transformação na sua vida?"
     ],
     type: "choice",
@@ -502,6 +505,25 @@ function renderIncomingMessage(text) {
   AudioController.playReceive();
 }
 
+// Renderiza mensagem de imagem/depoimento recebida (Mali Santos)
+function renderIncomingImage(src, caption) {
+  const row = document.createElement("div");
+  row.className = "message-row incoming first-in-series";
+
+  row.innerHTML = `
+    <div class="message-bubble image-bubble">
+      <img src="${src}" alt="Depoimento Aluna" class="wa-media-img" loading="lazy" title="Toque para ampliar" onclick="window.open('${src}', '_blank')">
+      ${caption ? `<div class="message-content" style="margin-top: 6px; padding: 0 4px;">${formatWhatsAppText(caption)}</div>` : ""}
+      <div class="message-meta">
+        <span class="message-time">${getCurrentTime()}</span>
+      </div>
+    </div>
+  `;
+  chatMessagesEl.appendChild(row);
+  scrollToBottom();
+  AudioController.playReceive();
+}
+
 // Renderiza mensagem de saída (Usuário)
 function renderOutgoingMessage(text) {
   const row = document.createElement("div");
@@ -541,7 +563,28 @@ async function executeStep(stepIndex) {
 
   // Envia cada mensagem com tempo humanizado e pontinhos
   for (let i = 0; i < stepData.messages.length; i++) {
-    let msgText = stepData.messages[i];
+    const rawMsg = stepData.messages[i];
+
+    // Se for mensagem com imagem (depoimentos / prints de WhatsApp)
+    if (typeof rawMsg === "object" && rawMsg.type === "image") {
+      setTypingStatus(true);
+      const typingBubble = createTypingBubble();
+      chatMessagesEl.appendChild(typingBubble);
+      scrollToBottom();
+
+      await new Promise(res => setTimeout(res, 2400));
+
+      typingBubble.remove();
+      setTypingStatus(false);
+      renderIncomingImage(rawMsg.src, rawMsg.caption);
+
+      if (i < stepData.messages.length - 1) {
+        await new Promise(res => setTimeout(res, 2200));
+      }
+      continue;
+    }
+
+    let msgText = rawMsg;
     if (typeof msgText === "string" && msgText.includes("{DATA_ALVO}")) {
       msgText = msgText.replace(/\{DATA_ALVO\}/g, getFormattedTargetDate(38));
     }
