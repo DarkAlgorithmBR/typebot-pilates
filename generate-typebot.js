@@ -180,7 +180,7 @@ const stepsData = [
       'Terminando seu plano de Pilates Tailandês personalizado...'
     ],
     type: 'wait',
-    seconds: 2
+    seconds: 5
   },
   {
     step: 16,
@@ -204,7 +204,7 @@ const stepsData = [
       'Dá uma olhada no que algumas das minhas alunas que começaram do zero me mandaram essa semana 👇',
       '📸 [Depoimento Neuza: Perdeu o medo de usar o app e sentiu alívio das dores articulares em 1 semana]',
       '📸 [Depoimento Maria Silva: Perdeu 3,5kg em 4 semanas sem deixar de comer o que gosta]',
-      '📸 [Depoimento Maria Silva (Antes e Depois): Perdeu 15kg em 5 semanas com foto visível de evolução]',
+      '📸 [Depoimento Leopoldina (Antes e Depois): Perdeu 15kg em 5 semanas com foto visível de evolução]',
       'Você está preparada para essa transformação na sua vida?'
     ],
     type: 'choice',

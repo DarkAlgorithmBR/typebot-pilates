@@ -369,7 +369,7 @@ const funnelSteps = [
       "Terminando seu plano de Pilates Tailandês personalizado..."
     ],
     type: "calculation_wait",
-    waitDuration: 2500
+    waitDuration: 4800
   },
   {
     step: 16,
@@ -388,7 +388,7 @@ const funnelSteps = [
       "Dá uma olhada no que algumas das minhas alunas que começaram do zero me mandaram essa semana 👇",
       { type: "image", src: "depoimento-neuza.png" },
       { type: "image", src: "depoimento-maria.png" },
-      { type: "image", src: "depoimento-maria-evolucao.jpg" },
+      { type: "image", src: "depoimento-leopoldina.jpg" },
       "Você está preparada para essa transformação na sua vida?"
     ],
     type: "choice",
@@ -590,10 +590,14 @@ async function executeStep(stepIndex) {
       msgText = msgText.replace(/\{DATA_ALVO\}/g, getFormattedTargetDate(38));
     }
 
-    // TEMPOS ACELERADOS E ÁGEIS (dinâmico e sem travamento)
-    // Mensagens curtas: ~800ms - 1100ms
-    // Mensagens médias e longas: ~1200ms - 2200ms
-    const typingTime = Math.min(2200, Math.max(800, msgText.length * 15));
+    const isOfferStep = stepData.type === "final_payt" || stepData.step === 18;
+
+    // TEMPOS DE DIGITAÇÃO:
+    // Para a oferta final (Etapa 18 após "SIM, EU ACEITO O DESAFIO"): ritmo cadenciado para leitura real da proposta e garantia
+    // Para as demais etapas: tempos dinâmicos e ágeis
+    const typingTime = isOfferStep
+      ? Math.min(3800, Math.max(1800, msgText.length * 20))
+      : Math.min(2200, Math.max(800, msgText.length * 15));
 
     // Exibe pontinhos no chat e status "digitando..."
     setTypingStatus(true);
@@ -609,9 +613,12 @@ async function executeStep(stepIndex) {
     setTypingStatus(false);
     renderIncomingMessage(msgText);
 
-    // Pausa rápida e natural de 600ms entre mensagens consecutivas
+    // Pausa entre mensagens consecutivas:
+    // Na oferta final (Etapa 18), pausa cadenciada de 2000ms para permitir leitura completa do texto
+    // Nas demais etapas, pausa rápida de 600ms
     if (i < stepData.messages.length - 1) {
-      await new Promise(res => setTimeout(res, 600));
+      const pauseDuration = isOfferStep ? 2000 : 600;
+      await new Promise(res => setTimeout(res, pauseDuration));
     }
   }
 
@@ -621,14 +628,16 @@ async function executeStep(stepIndex) {
   } else if (stepData.type === "number_input") {
     renderNumberInput(stepData);
   } else if (stepData.type === "calculation_wait") {
-    // Etapa 15: Cálculo com pontinhos de digitação (2.5 segundos, ágil)
-    await handleCalculationWait(stepData.waitDuration || 2500);
+    // Etapa 15: Análise e cálculo do plano personalizado (4.8 segundos para transmitir autoridade e precisão)
+    await handleCalculationWait(stepData.waitDuration || 4800);
   } else if (stepData.type === "chart_step") {
     // Etapa 16: Previsão gráfica de redução de peso
     renderChartStep(stepData);
   } else if (stepData.type === "final_payt") {
-    // Etapa 18: Botão final direto para a Payt/Zuptos
-    renderPaytChoice(stepData.options[0]);
+    // Etapa 18: Botão final direto para a Zuptos (aguarda 900ms para leitura da garantia antes de exibir o botão)
+    setTimeout(() => {
+      renderPaytChoice(stepData.options[0]);
+    }, 900);
   }
 }
 
@@ -841,10 +850,13 @@ function renderChoices(options, responseKey) {
       // Renderiza mensagem do usuário
       renderOutgoingMessage(optionText);
 
-      // Pausa rápida de 400ms antes do expert começar a digitar a próxima resposta
+      // Pausa antes do expert começar a digitar a próxima resposta
+      // Se for a confirmação do desafio ("SIM, EU ACEITO O DESAFIO!"), dá uma pausa cadenciada de 800ms
+      const isAcceptChallenge = optionText.includes("ACEITO O DESAFIO");
+      const nextDelay = isAcceptChallenge ? 800 : 400;
       setTimeout(() => {
         executeStep(state.currentStepIndex + 1);
-      }, 400);
+      }, nextDelay);
     });
 
     container.appendChild(btn);
@@ -861,8 +873,8 @@ async function handleCalculationWait(durationMs) {
   chatMessagesEl.appendChild(typingBubble);
   scrollToBottom();
 
-  // Espera os 2.5 segundos de cálculo ágil
-  await new Promise(res => setTimeout(res, durationMs || 2500));
+  // Espera os 4.8 segundos de análise e cálculo do plano personalizado
+  await new Promise(res => setTimeout(res, durationMs || 4800));
 
   typingBubble.remove();
   setTypingStatus(false);
