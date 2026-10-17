@@ -128,7 +128,27 @@ async function loadDashboard() {
       if (res.ok) {
         const json = await res.json();
         if (json && json.status === "success" && Array.isArray(json.leads) && json.leads.length > 0) {
-          currentLeads = json.leads;
+          // Desduplica leads por ID único preservando o progresso mais avançado
+          const leadMap = new Map();
+          json.leads.forEach(l => {
+            if (!l || !l.id) return;
+            if (!leadMap.has(l.id)) {
+              leadMap.set(l.id, l);
+            } else {
+              const existing = leadMap.get(l.id);
+              const maxStep = Math.max(existing.maxStepReached || existing.currentStep || 1, l.maxStepReached || l.currentStep || 1);
+              const clicked = existing.clickedCheckout || l.clickedCheckout;
+              const completed = existing.completed || l.completed;
+              leadMap.set(l.id, {
+                ...existing,
+                ...l,
+                maxStepReached: maxStep,
+                clickedCheckout: clicked,
+                completed: completed
+              });
+            }
+          });
+          currentLeads = Array.from(leadMap.values());
           saveLeadsToStorage(currentLeads);
           renderKpis();
           renderFunnel();

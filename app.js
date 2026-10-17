@@ -48,7 +48,6 @@ const Tracker = {
       };
       leads.unshift(lead);
       this.saveAllLeads(leads);
-      this.syncLead(lead);
     }
   },
 
@@ -116,7 +115,17 @@ const Tracker = {
     this.syncLead(lead);
   },
 
+  _syncTimer: null,
+
   syncLead(lead) {
+    if (!this.GOOGLE_SHEETS_URL || !lead) return;
+    clearTimeout(this._syncTimer);
+    this._syncTimer = setTimeout(() => {
+      this._sendSync(lead);
+    }, 600);
+  },
+
+  _sendSync(lead) {
     if (!this.GOOGLE_SHEETS_URL || !lead) return;
     try {
       const stepIdx = (lead.currentStep || 1) - 1;
