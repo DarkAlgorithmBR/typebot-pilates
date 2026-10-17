@@ -54,12 +54,12 @@ if (brokenEdges === 0) {
   console.error(`❌ Found ${brokenEdges} broken edges!`);
 }
 
-// Check if Step 15 has wait block
-const g15 = data.groups.find(g => g.id === 'group_15');
-const hasWait = g15 && g15.blocks.some(b => b.type === 'Wait' && b.options?.secondsToWaitFor >= 2);
-console.log('Step 15 Wait verified:', hasWait ? '✅ YES' : '❌ NO');
+// Check if Step 14 has wait block
+const g14 = data.groups.find(g => g.id === 'group_14');
+const hasWait = g14 && g14.blocks.some(b => b.type === 'Wait' && b.options?.secondsToWaitFor >= 2);
+console.log('Step 14 Wait verified:', hasWait ? '✅ YES' : '❌ NO');
 
-// Check if Step 18 has Checkout redirect (Zuptos)
-const g18 = data.groups.find(g => g.id === 'group_18');
-const hasRedirect = g18 && g18.blocks.some(b => b.type === 'Redirect' && (b.options?.url?.includes('zuptos') || b.options?.url?.includes('wiapy') || b.options?.url?.includes('payt')));
-console.log('Step 18 Zuptos Redirect verified:', hasRedirect ? '✅ YES' : '❌ NO');
+// Check if Step 17 has Checkout redirect (Zuptos)
+const g17 = data.groups.find(g => g.id === 'group_17');
+const hasRedirect = g17 && g17.blocks.some(b => b.type === 'Redirect' && (b.options?.url?.includes('zuptos') || b.options?.url?.includes('wiapy') || b.options?.url?.includes('payt')));
+console.log('Step 17 Zuptos Redirect verified:', hasRedirect ? '✅ YES' : '❌ NO');

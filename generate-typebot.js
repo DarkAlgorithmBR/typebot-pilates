@@ -17,8 +17,7 @@ function genId(prefix = 'b') {
 }
 
 const variables = [
-  { id: 'var_idade', name: 'idade' },
-  { id: 'var_objetivo', name: 'objetivo' },
+  { id: 'var_inicio_teste', name: 'inicio_teste' },
   { id: 'var_praticou', name: 'praticou_pilates' },
   { id: 'var_flexibilidade', name: 'flexibilidade' },
   { id: 'var_fisico', name: 'fisico_hoje' },
@@ -36,34 +35,18 @@ const variables = [
 const stepsData = [
   {
     step: 1,
-    title: '01 - Idade e Boas-vindas',
+    title: '01 - Início e Teste Grátis',
     texts: [
-      '🔥 Quer transformar seu corpo sem precisar de academia? 🔥',
-      'Se você quer perder peso, ganhar massa magra e melhorar sua autoestima *com treinos em casa*, tenho algo especial para você.',
-      'Em apenas *15 minutos por dia*, você pode ter resultados visíveis em *28 dias*.',
-      '👉 Antes de te mostrar como, me conta: *qual a sua idade?*'
+      'Faça Pilates Tailandês para melhorar as articulações e de quebra perder uns kilinhos em 28 dias',
+      'Clique abaixo, faça o teste grátis de 1 minuto e aprenda'
     ],
     type: 'choice',
-    variableId: 'var_idade',
-    options: ['18 a 29 anos', '30 a 39 anos', '40 a 49 anos', '50 anos ou mais']
+    variableId: 'var_inicio_teste',
+    options: ['COMEÇAR TESTE GRÁTIS']
   },
   {
     step: 2,
-    title: '02 - Principal Objetivo',
-    texts: ['Legal, e qual é seu principal objetivo com o pilates?'],
-    type: 'choice',
-    variableId: 'var_objetivo',
-    options: [
-      'Perder barriga',
-      'Aumentar a força muscular',
-      'Desenvolver a flexibilidade',
-      'Reduzir o estresse e ansiedade',
-      'Reduzir as dores corporais'
-    ]
-  },
-  {
-    step: 3,
-    title: '03 - Prática Anterior',
+    title: '02 - Prática Anterior',
     texts: ['Você já praticou Pilates antes?'],
     type: 'choice',
     variableId: 'var_praticou',
@@ -74,8 +57,8 @@ const stepsData = [
     ]
   },
   {
-    step: 4,
-    title: '04 - Flexibilidade',
+    step: 3,
+    title: '03 - Flexibilidade',
     texts: [
       'Qual é seu nível de flexibilidade?',
       '_Não importa seu nível, vamos elaborar um plano totalmente *especial* para você!_'
@@ -85,48 +68,48 @@ const stepsData = [
     options: ['Sou flexível', 'Mais ou menos flexível', 'Não sou flexível']
   },
   {
-    step: 5,
-    title: '05 - Físico Hoje',
+    step: 4,
+    title: '04 - Físico Hoje',
     texts: ['Como você descreveria seu fisico?'],
     type: 'choice',
     variableId: 'var_fisico',
     options: ['Magra', 'Média', 'Um pouco acima do peso', 'Acima do peso']
   },
   {
-    step: 6,
-    title: '06 - Corpo dos Sonhos',
+    step: 5,
+    title: '05 - Corpo dos Sonhos',
     texts: ['Qual é o seu "corpo dos sonhos"?'],
     type: 'choice',
     variableId: 'var_corpo_sonhos',
     options: ['Magra', 'Tonificada', 'Com curvas', 'Média']
   },
   {
-    step: 7,
-    title: '07 - Melhor Físico',
+    step: 6,
+    title: '06 - Melhor Físico',
     texts: ['Há quanto tempo você esteve no melhor físico de sua vida?'],
     type: 'choice',
     variableId: 'var_tempo_melhor_fisico',
     options: ['Há menos de um ano', '1 a 2 anos atrás', 'Há mais de 3 anos', 'Não sei dizer']
   },
   {
-    step: 8,
-    title: '08 - Região Prioritária',
+    step: 7,
+    title: '07 - Região Prioritária',
     texts: ['Qual região do corpo você gostaria de atingir primeiro?'],
     type: 'choice',
     variableId: 'var_regiao',
     options: ['Barriga', 'Glúteos', 'Pernas', 'Peito']
   },
   {
-    step: 9,
-    title: '09 - Frequência de Exercício',
+    step: 8,
+    title: '08 - Frequência de Exercício',
     texts: ['Quantas vezes faz exercício?'],
     type: 'choice',
     variableId: 'var_exercicio',
     options: ['Quase todos os dias', 'Algumas vezes na semana', 'Algumas vezes por mês', 'Poucas vezes']
   },
   {
-    step: 10,
-    title: '10 - Horas de Sono',
+    step: 9,
+    title: '09 - Horas de Sono',
     texts: [
       'Já estou terminando, só me responde mais algumas perguntinhas por favor',
       'Quantas horas você dorme por dia?'
@@ -136,8 +119,8 @@ const stepsData = [
     options: ['Menos de 5 horas', '5-6 horas', '7-8 horas', 'Mais de 8 horas']
   },
   {
-    step: 11,
-    title: '11 - Principal Motivo',
+    step: 10,
+    title: '10 - Principal Motivo',
     texts: ['Qual é o seu principal motivo para entrar em forma?'],
     type: 'choice',
     variableId: 'var_motivo',
@@ -150,32 +133,32 @@ const stepsData = [
     ]
   },
   {
-    step: 12,
-    title: '12 - Altura em cm',
+    step: 11,
+    title: '11 - Altura em cm',
     texts: ['Qual a sua altura em cm?'],
     type: 'number',
     variableId: 'var_altura',
     placeholder: 'Ex: 170'
   },
   {
-    step: 13,
-    title: '13 - Peso Atual',
+    step: 12,
+    title: '12 - Peso Atual',
     texts: ['Qual é o seu peso atualmente em kgs?'],
     type: 'number',
     variableId: 'var_peso_atual',
     placeholder: 'Ex: 80'
   },
   {
-    step: 14,
-    title: '14 - Peso Ideal',
+    step: 13,
+    title: '13 - Peso Ideal',
     texts: ['Entendi! E qual é o seu objetivo de peso ideal em kgs?'],
     type: 'number',
     variableId: 'var_peso_desejado',
     placeholder: 'Ex: 68'
   },
   {
-    step: 15,
-    title: '15 - Finalização do Plano',
+    step: 14,
+    title: '14 - Finalização do Plano',
     texts: [
       'Terminando seu plano de Pilates Tailandês personalizado...'
     ],
@@ -183,8 +166,8 @@ const stepsData = [
     seconds: 5
   },
   {
-    step: 16,
-    title: '16 - Previsão e Gráfico',
+    step: 15,
+    title: '15 - Previsão e Gráfico',
     texts: [
       'Seu Plano de Pilates Tailandês está pronto! 🔥',
       'De acordo com as informações que você me passou, prevemos sua meta até 23 de Novembro (1kg por semana).',
@@ -196,8 +179,8 @@ const stepsData = [
     options: ['SIM, ESTOU PREPARADA!']
   },
   {
-    step: 17,
-    title: '17 - Benefícios do Desafio e Provas Sociais',
+    step: 16,
+    title: '16 - Benefícios do Desafio e Provas Sociais',
     texts: [
       'Deixa eu te explicar como irá funcionar...',
       'Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:\n\n✅ Perca de peso\n✅ Ganho de massa magra\n✅ Alivio de dores nas costas\n✅ Melhora da postura\n✅ Aumento da autoestima\n✅ Aumento da libido\n✅ Melhora da flexibilidade\n✅ Pode ser feito em casa\n✅ Sem aparelhos, você não precisa comprar NADA.',
@@ -212,8 +195,8 @@ const stepsData = [
     options: ['SIM, EU ACEITO O DESAFIO!']
   },
   {
-    step: 18,
-    title: '18 - Oferta Final',
+    step: 17,
+    title: '17 - Oferta Final',
     texts: [
       'Não gostamos de ver que uma mensalidade em academias pelo Brasil pode chegar a R$ 200,00 por mês! Fora nutricionistas e personais! Achamos um absurdo isso...',
       'Por isso queremos oferecer isso a você sem nenhum custo. Sim, é isso mesmo, o acompanhamento é totalmente gratuito.',

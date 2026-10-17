@@ -83,7 +83,7 @@ const Tracker = {
     if (stepNumber > (lead.maxStepReached || 1)) {
       lead.maxStepReached = stepNumber;
     }
-    if (stepNumber >= 18) {
+    if (stepNumber >= 17) {
       lead.completed = true;
     }
     lead.updatedAt = new Date().toISOString();
@@ -246,31 +246,16 @@ document.addEventListener("touchstart", () => {
 const funnelSteps = [
   {
     step: 1,
-    key: "idade",
+    key: "inicio_teste",
     messages: [
-      "🔥 Quer transformar seu corpo sem precisar de academia? 🔥",
-      "Se você quer perder peso, ganhar massa magra e melhorar sua autoestima *com treinos em casa*, tenho algo especial para você.",
-      "Em apenas *15 minutos por dia*, você pode ter resultados visíveis em *28 dias*.",
-      "👉 Antes de te mostrar como, me conta: *qual a sua idade?*"
+      "Faça Pilates Tailandês para melhorar as articulações e de quebra perder uns kilinhos em 28 dias",
+      "Clique abaixo, faça o teste grátis de 1 minuto e aprenda"
     ],
     type: "choice",
-    options: ["18 a 29 anos", "30 a 39 anos", "40 a 49 anos", "50 anos ou mais"]
+    options: ["COMEÇAR TESTE GRÁTIS"]
   },
   {
     step: 2,
-    key: "objetivo",
-    messages: ["Legal, e qual é seu principal objetivo com o pilates?"],
-    type: "choice",
-    options: [
-      "Perder barriga",
-      "Aumentar a força muscular",
-      "Desenvolver a flexibilidade",
-      "Reduzir o estresse e ansiedade",
-      "Reduzir as dores corporais"
-    ]
-  },
-  {
-    step: 3,
     key: "praticou",
     messages: ["Você já praticou Pilates antes?"],
     type: "choice",
@@ -281,7 +266,7 @@ const funnelSteps = [
     ]
   },
   {
-    step: 4,
+    step: 3,
     key: "flexibilidade",
     messages: [
       "Qual é seu nível de flexibilidade?",
@@ -291,42 +276,42 @@ const funnelSteps = [
     options: ["Sou flexível", "Mais ou menos flexível", "Não sou flexível"]
   },
   {
-    step: 5,
+    step: 4,
     key: "fisico",
     messages: ["Como você descreveria seu fisico?"],
     type: "choice",
     options: ["Magra", "Média", "Um pouco acima do peso", "Acima do peso"]
   },
   {
-    step: 6,
+    step: 5,
     key: "corpo_sonhos",
     messages: ["Qual é o seu \"corpo dos sonhos\"?"],
     type: "choice",
     options: ["Magra", "Tonificada", "Com curvas", "Média"]
   },
   {
-    step: 7,
+    step: 6,
     key: "tempo_melhor_fisico",
     messages: ["Há quanto tempo você esteve no melhor físico de sua vida?"],
     type: "choice",
     options: ["Há menos de um ano", "1 a 2 anos atrás", "Há mais de 3 anos", "Não sei dizer"]
   },
   {
-    step: 8,
+    step: 7,
     key: "regiao",
     messages: ["Qual região do corpo você gostaria de atingir primeiro?"],
     type: "choice",
     options: ["Barriga", "Glúetos", "Pernas", "Peito"]
   },
   {
-    step: 9,
+    step: 8,
     key: "exercicio",
     messages: ["Quantas vezes faz exercício?"],
     type: "choice",
     options: ["Quase todos os dias", "Algumas vezes na semana", "Algumas vezes por mês", "Poucas vezes"]
   },
   {
-    step: 10,
+    step: 9,
     key: "sono",
     messages: [
       "Já estou terminando, só me responde mais algumas perguntinhas por favor",
@@ -336,7 +321,7 @@ const funnelSteps = [
     options: ["Menos de 5 horas", "5-6 horas", "7-8 horas", "Mais de 8 horas"]
   },
   {
-    step: 11,
+    step: 10,
     key: "motivo",
     messages: ["Qual é o seu principal motivo para entrar em forma?"],
     type: "choice",
@@ -349,7 +334,7 @@ const funnelSteps = [
     ]
   },
   {
-    step: 12,
+    step: 11,
     key: "altura",
     messages: ["Qual a sua altura em cm?"],
     type: "number_input",
@@ -357,7 +342,7 @@ const funnelSteps = [
     unit: "cm"
   },
   {
-    step: 13,
+    step: 12,
     key: "peso_atual",
     messages: ["Qual é o seu peso atualmente em kgs?"],
     type: "number_input",
@@ -365,7 +350,7 @@ const funnelSteps = [
     unit: "kg"
   },
   {
-    step: 14,
+    step: 13,
     key: "peso_desejado",
     messages: ["Entendi! E qual é o seu objetivo de peso ideal em kgs?"],
     type: "number_input",
@@ -373,7 +358,7 @@ const funnelSteps = [
     unit: "kg"
   },
   {
-    step: 15,
+    step: 14,
     messages: [
       "Terminando seu plano de Pilates Tailandês personalizado..."
     ],
@@ -381,7 +366,7 @@ const funnelSteps = [
     waitDuration: 4800
   },
   {
-    step: 16,
+    step: 15,
     messages: [
       "Seu Plano de Pilates Tailandês está pronto! 🔥",
       "De acordo com as informações que você me passou, prevemos sua meta até {DATA_ALVO}."
@@ -390,7 +375,7 @@ const funnelSteps = [
     options: ["SIM, ESTOU PREPARADA!"]
   },
   {
-    step: 17,
+    step: 16,
     messages: [
       "Deixa eu te explicar como irá funcionar...",
       "Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:\n\n✅ Perca de peso\n✅ Ganho de massa magra\n✅ Alivio de dores nas costas\n✅ Melhora da postura\n✅ Aumento da autoestima\n✅ Aumento da libido\n✅ Melhora da flexibilidade\n✅ Pode ser feito em casa\n✅ Sem aparelhos, você não precisa comprar NADA.",
@@ -404,7 +389,7 @@ const funnelSteps = [
     options: ["SIM, EU ACEITO O DESAFIO!"]
   },
   {
-    step: 18,
+    step: 17,
     messages: [
       "Não gostamos de ver que uma mensalidade em academias pelo Brasil pode chegar a R$ 200,00 por mês! Fora nutricionistas e personais! Achamos um absurdo isso...",
       "Por isso queremos oferecer isso a você sem nenhum custo. Sim, é isso mesmo, o acompanhamento é totalmente gratuito.",
@@ -599,10 +584,10 @@ async function executeStep(stepIndex) {
       msgText = msgText.replace(/\{DATA_ALVO\}/g, getFormattedTargetDate(38));
     }
 
-    const isOfferStep = stepData.type === "final_payt" || stepData.step === 18;
+    const isOfferStep = stepData.type === "final_payt" || stepData.step === 17;
 
     // TEMPOS DE DIGITAÇÃO:
-    // Para a oferta final (Etapa 18 após "SIM, EU ACEITO O DESAFIO"): ritmo cadenciado para leitura real da proposta e garantia
+    // Para a oferta final (Etapa 17 após "SIM, EU ACEITO O DESAFIO"): ritmo cadenciado para leitura real da proposta e garantia
     // Para as demais etapas: tempos dinâmicos e ágeis
     const typingTime = isOfferStep
       ? Math.min(3800, Math.max(1800, msgText.length * 20))
@@ -623,7 +608,7 @@ async function executeStep(stepIndex) {
     renderIncomingMessage(msgText);
 
     // Pausa entre mensagens consecutivas:
-    // Na oferta final (Etapa 18), pausa cadenciada de 2000ms para permitir leitura completa do texto
+    // Na oferta final (Etapa 17), pausa cadenciada de 2000ms para permitir leitura completa do texto
     // Nas demais etapas, pausa rápida de 600ms
     if (i < stepData.messages.length - 1) {
       const pauseDuration = isOfferStep ? 2000 : 600;
@@ -637,13 +622,13 @@ async function executeStep(stepIndex) {
   } else if (stepData.type === "number_input") {
     renderNumberInput(stepData);
   } else if (stepData.type === "calculation_wait") {
-    // Etapa 15: Análise e cálculo do plano personalizado (4.8 segundos para transmitir autoridade e precisão)
+    // Etapa 14: Análise e cálculo do plano personalizado (4.8 segundos para transmitir autoridade e precisão)
     await handleCalculationWait(stepData.waitDuration || 4800);
   } else if (stepData.type === "chart_step") {
-    // Etapa 16: Previsão gráfica de redução de peso
+    // Etapa 15: Previsão gráfica de redução de peso
     renderChartStep(stepData);
   } else if (stepData.type === "final_payt") {
-    // Etapa 18: Botão final direto para a Zuptos (aguarda 900ms para leitura da garantia antes de exibir o botão)
+    // Etapa 17: Botão final direto para a Zuptos (aguarda 900ms para leitura da garantia antes de exibir o botão)
     setTimeout(() => {
       renderPaytChoice(stepData.options[0]);
     }, 900);
@@ -840,7 +825,7 @@ function renderChoices(options, responseKey) {
   options.forEach(optionText => {
     const btn = document.createElement("button");
     btn.className = "choice-btn";
-    if (optionText.includes("EU QUERO") || optionText.includes("ESTOU PREPARADA") || optionText.includes("ACEITO")) {
+    if (optionText.includes("EU QUERO") || optionText.includes("ESTOU PREPARADA") || optionText.includes("ACEITO") || optionText.includes("COMEÇAR")) {
       btn.classList.add("primary-cta");
     }
     btn.textContent = optionText;

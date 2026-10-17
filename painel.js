@@ -9,30 +9,30 @@ const AUTH_KEY = "pilates_admin_auth";
 const DEFAULT_PASS = "admin123";
 const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycby0xd-wdy9vJZZO8nq8x7PIlE1yON6if4eTjZmul86SM3OemdSne8sKW9rWcUmCzGV7nA/exec";
 
-// Definição das 18 etapas com nomes explicativos para visualização
+// Definição das 17 etapas com nomes explicativos para visualização
 const FUNNEL_STEPS_META = [
-  { num: 1, name: "Idade / Boas-vindas", desc: "🔥 Gancho inicial + Qual a sua idade? (18 a 29, 30 a 39, 40 a 49, 50+)" },
-  { num: 2, name: "Objetivo Principal", desc: "Perder barriga, força, flexibilidade, ansiedade, etc." },
-  { num: 3, name: "Praticou Antes", desc: "Histórico com Pilates" },
-  { num: 4, name: "Flexibilidade", desc: "Nível de flexibilidade atual" },
-  { num: 5, name: "Físico Atual", desc: "Descrição do corpo hoje" },
-  { num: 6, name: "Corpo dos Sonhos", desc: "Objetivo estético desejado" },
-  { num: 7, name: "Melhor Físico", desc: "Tempo desde a melhor fase física" },
-  { num: 8, name: "Região do Corpo Alvo", desc: "Região que quer atingir primeiro (Barriga, Glúteos, etc.)" },
-  { num: 9, name: "Frequência Exercício", desc: "Quantas vezes treina por semana/mês" },
-  { num: 10, name: "Horas de Sono", desc: "Qualidade do descanso diário" },
-  { num: 11, name: "Motivo Principal", desc: "Gatilho emocional para entrar em forma" },
-  { num: 12, name: "Altura em cm", desc: "Campo numérico de altura" },
-  { num: 13, name: "Peso Atual (kg)", desc: "Campo numérico de peso atual" },
-  { num: 14, name: "Peso Ideal (kg)", desc: "Campo numérico de peso desejado" },
-  { num: 15, name: "Finalização do Plano (4s)", desc: "Pontinhos de digitação terminando o cronograma personalizado" },
-  { num: 16, name: "Previsão & Gráfico de Peso", desc: "Gráfico visual de redução de peso em 37 dias (1kg/semana)" },
-  { num: 17, name: "Benefícios do Desafio", desc: "Apresentação detalhada do método 100% sem aparelhos" },
-  { num: 18, name: "Checkout (R$ 37)", desc: "Oferta com garantia de 30 dias e redirecionamento" }
+  { num: 1, name: "Início / Teste Grátis", desc: "🔥 Gancho direto + Começar Teste Grátis de 1 minuto" },
+  { num: 2, name: "Praticou Antes", desc: "Histórico com Pilates" },
+  { num: 3, name: "Flexibilidade", desc: "Nível de flexibilidade atual" },
+  { num: 4, name: "Físico Atual", desc: "Descrição do corpo hoje" },
+  { num: 5, name: "Corpo dos Sonhos", desc: "Objetivo estético desejado" },
+  { num: 6, name: "Melhor Físico", desc: "Tempo desde a melhor fase física" },
+  { num: 7, name: "Região do Corpo Alvo", desc: "Região que quer atingir primeiro (Barriga, Glúteos, etc.)" },
+  { num: 8, name: "Frequência Exercício", desc: "Quantas vezes treina por semana/mês" },
+  { num: 9, name: "Horas de Sono", desc: "Qualidade do descanso diário" },
+  { num: 10, name: "Motivo Principal", desc: "Gatilho emocional para entrar em forma" },
+  { num: 11, name: "Altura em cm", desc: "Campo numérico de altura" },
+  { num: 12, name: "Peso Atual (kg)", desc: "Campo numérico de peso atual" },
+  { num: 13, name: "Peso Ideal (kg)", desc: "Campo numérico de peso desejado" },
+  { num: 14, name: "Finalização do Plano (Análise)", desc: "Pontinhos de digitação terminando o cronograma personalizado" },
+  { num: 15, name: "Previsão & Gráfico de Peso", desc: "Gráfico visual de redução de peso em 37 dias (1kg/semana)" },
+  { num: 16, name: "Benefícios & 3 Depoimentos", desc: "Apresentação dos benefícios e provas sociais reais" },
+  { num: 17, name: "Checkout (R$ 37)", desc: "Oferta com garantia de 30 dias e redirecionamento" }
 ];
 
 // Mapeamento amigável das perguntas para exibição no modal
 const QUESTION_LABELS = {
+  inicio_teste: "Começar teste grátis?",
   idade: "Qual a sua idade?",
   objetivo: "Qual o seu principal objetivo?",
   praticou: "Já praticou Pilates antes?",
@@ -48,8 +48,8 @@ const QUESTION_LABELS = {
   peso_atual: "Qual o seu peso atualmente em kg?",
   peso_desejado: "Qual o seu objetivo de peso ideal em kg?",
   preparada_transformacao: "Preparada para a transformação?",
-  etapa_17: "Aceitou o Desafio Pilates?",
-  etapa_18: "Clicou no Checkout Payt?"
+  etapa_16: "Aceitou o Desafio Pilates?",
+  etapa_17: "Clicou no Checkout Zuptos?"
 };
 
 let currentLeads = [];
@@ -167,7 +167,7 @@ async function loadDashboard() {
 // ==========================================
 function renderKpis() {
   const total = currentLeads.length;
-  const completed = currentLeads.filter(l => (l.maxStepReached || l.currentStep) >= 18 || l.completed).length;
+  const completed = currentLeads.filter(l => (l.maxStepReached || l.currentStep) >= 17 || l.completed).length;
   const checkout = currentLeads.filter(l => l.clickedCheckout).length;
   
   const completionRate = total > 0 ? Math.round((completed / total) * 100) : 0;

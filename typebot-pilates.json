@@ -15,14 +15,14 @@
   "groups": [
     {
       "id": "group_1",
-      "title": "01 - Idade e Boas-vindas",
+      "title": "01 - Início e Teste Grátis",
       "graphCoordinates": {
         "x": 100,
         "y": 100
       },
       "blocks": [
         {
-          "id": "block_text_1_59epiaw",
+          "id": "block_text_1_kvvgqxg",
           "type": "text",
           "content": {
             "richText": [
@@ -30,7 +30,7 @@
                 "type": "p",
                 "children": [
                   {
-                    "text": "🔥 Quer transformar seu corpo sem precisar de academia? 🔥"
+                    "text": "Faça Pilates Tailandês para melhorar as articulações e de quebra perder uns kilinhos em 28 dias"
                   }
                 ]
               }
@@ -38,7 +38,7 @@
           }
         },
         {
-          "id": "block_text_2_6ks0vez",
+          "id": "block_text_2_iklup36",
           "type": "text",
           "content": {
             "richText": [
@@ -46,7 +46,7 @@
                 "type": "p",
                 "children": [
                   {
-                    "text": "Se você quer perder peso, ganhar massa magra e melhorar sua autoestima *com treinos em casa*, tenho algo especial para você."
+                    "text": "Clique abaixo, faça o teste grátis de 1 minuto e aprenda"
                   }
                 ]
               }
@@ -54,140 +54,32 @@
           }
         },
         {
-          "id": "block_text_3_0wghut7",
-          "type": "text",
-          "content": {
-            "richText": [
-              {
-                "type": "p",
-                "children": [
-                  {
-                    "text": "Em apenas *15 minutos por dia*, você pode ter resultados visíveis em *28 dias*."
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "block_text_4_jyo5fia",
-          "type": "text",
-          "content": {
-            "richText": [
-              {
-                "type": "p",
-                "children": [
-                  {
-                    "text": "👉 Antes de te mostrar como, me conta: *qual a sua idade?*"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "block_choice_5_uo050mp",
+          "id": "block_choice_3_dot2n14",
           "type": "choice input",
           "items": [
             {
-              "id": "item_1_0_6_44geuzb",
-              "content": "18 a 29 anos",
+              "id": "item_1_0_4_q5yid1c",
+              "content": "COMEÇAR TESTE GRÁTIS",
               "outgoingEdgeId": "edge_1_item_0_to_2"
-            },
-            {
-              "id": "item_1_1_7_tw5t9rk",
-              "content": "30 a 39 anos",
-              "outgoingEdgeId": "edge_1_item_1_to_2"
-            },
-            {
-              "id": "item_1_2_8_5h0q6d7",
-              "content": "40 a 49 anos",
-              "outgoingEdgeId": "edge_1_item_2_to_2"
-            },
-            {
-              "id": "item_1_3_9_d2tsk4n",
-              "content": "50 anos ou mais",
-              "outgoingEdgeId": "edge_1_item_3_to_2"
             }
           ],
           "options": {
             "isMultipleChoice": false,
-            "variableId": "var_idade"
+            "variableId": "var_inicio_teste"
           }
         }
       ]
     },
     {
       "id": "group_2",
-      "title": "02 - Principal Objetivo",
+      "title": "02 - Prática Anterior",
       "graphCoordinates": {
         "x": 480,
         "y": 100
       },
       "blocks": [
         {
-          "id": "block_text_10_puftlxo",
-          "type": "text",
-          "content": {
-            "richText": [
-              {
-                "type": "p",
-                "children": [
-                  {
-                    "text": "Legal, e qual é seu principal objetivo com o pilates?"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "block_choice_11_ng0861d",
-          "type": "choice input",
-          "items": [
-            {
-              "id": "item_2_0_12_uh0b33q",
-              "content": "Perder barriga",
-              "outgoingEdgeId": "edge_2_item_0_to_3"
-            },
-            {
-              "id": "item_2_1_13_lccd3ba",
-              "content": "Aumentar a força muscular",
-              "outgoingEdgeId": "edge_2_item_1_to_3"
-            },
-            {
-              "id": "item_2_2_14_lerntli",
-              "content": "Desenvolver a flexibilidade",
-              "outgoingEdgeId": "edge_2_item_2_to_3"
-            },
-            {
-              "id": "item_2_3_15_2kg3r7z",
-              "content": "Reduzir o estresse e ansiedade",
-              "outgoingEdgeId": "edge_2_item_3_to_3"
-            },
-            {
-              "id": "item_2_4_16_sw427uw",
-              "content": "Reduzir as dores corporais",
-              "outgoingEdgeId": "edge_2_item_4_to_3"
-            }
-          ],
-          "options": {
-            "isMultipleChoice": false,
-            "variableId": "var_objetivo"
-          }
-        }
-      ]
-    },
-    {
-      "id": "group_3",
-      "title": "03 - Prática Anterior",
-      "graphCoordinates": {
-        "x": 860,
-        "y": 100
-      },
-      "blocks": [
-        {
-          "id": "block_text_17_22k9jyk",
+          "id": "block_text_5_m3lce8w",
           "type": "text",
           "content": {
             "richText": [
@@ -203,23 +95,23 @@
           }
         },
         {
-          "id": "block_choice_18_0difp9y",
+          "id": "block_choice_6_f14c15a",
           "type": "choice input",
           "items": [
             {
-              "id": "item_3_0_19_ng8vsjl",
+              "id": "item_2_0_7_y4a4m8s",
               "content": "Sim, já pratico regularmente",
-              "outgoingEdgeId": "edge_3_item_0_to_4"
+              "outgoingEdgeId": "edge_2_item_0_to_3"
             },
             {
-              "id": "item_3_1_20_3mb3mgc",
+              "id": "item_2_1_8_34ep0rq",
               "content": "Já fiz algumas vezes, mas não com frequência",
-              "outgoingEdgeId": "edge_3_item_1_to_4"
+              "outgoingEdgeId": "edge_2_item_1_to_3"
             },
             {
-              "id": "item_3_2_21_9uhe5i9",
+              "id": "item_2_2_9_akrvxch",
               "content": "Nunca fiz",
-              "outgoingEdgeId": "edge_3_item_2_to_4"
+              "outgoingEdgeId": "edge_2_item_2_to_3"
             }
           ],
           "options": {
@@ -230,15 +122,15 @@
       ]
     },
     {
-      "id": "group_4",
-      "title": "04 - Flexibilidade",
+      "id": "group_3",
+      "title": "03 - Flexibilidade",
       "graphCoordinates": {
-        "x": 1240,
+        "x": 860,
         "y": 100
       },
       "blocks": [
         {
-          "id": "block_text_22_xrkfd75",
+          "id": "block_text_10_ev1fiv1",
           "type": "text",
           "content": {
             "richText": [
@@ -254,7 +146,7 @@
           }
         },
         {
-          "id": "block_text_23_ziswx5s",
+          "id": "block_text_11_7p8cnja",
           "type": "text",
           "content": {
             "richText": [
@@ -270,23 +162,23 @@
           }
         },
         {
-          "id": "block_choice_24_u914u8f",
+          "id": "block_choice_12_8j0r24l",
           "type": "choice input",
           "items": [
             {
-              "id": "item_4_0_25_whiworm",
+              "id": "item_3_0_13_bjk7i8y",
               "content": "Sou flexível",
-              "outgoingEdgeId": "edge_4_item_0_to_5"
+              "outgoingEdgeId": "edge_3_item_0_to_4"
             },
             {
-              "id": "item_4_1_26_8f6byxc",
+              "id": "item_3_1_14_m57hhpk",
               "content": "Mais ou menos flexível",
-              "outgoingEdgeId": "edge_4_item_1_to_5"
+              "outgoingEdgeId": "edge_3_item_1_to_4"
             },
             {
-              "id": "item_4_2_27_eyyprfn",
+              "id": "item_3_2_15_m7qy2v7",
               "content": "Não sou flexível",
-              "outgoingEdgeId": "edge_4_item_2_to_5"
+              "outgoingEdgeId": "edge_3_item_2_to_4"
             }
           ],
           "options": {
@@ -297,15 +189,15 @@
       ]
     },
     {
-      "id": "group_5",
-      "title": "05 - Físico Hoje",
+      "id": "group_4",
+      "title": "04 - Físico Hoje",
       "graphCoordinates": {
-        "x": 100,
-        "y": 650
+        "x": 1240,
+        "y": 100
       },
       "blocks": [
         {
-          "id": "block_text_28_8fjwzu6",
+          "id": "block_text_16_ty9rwmc",
           "type": "text",
           "content": {
             "richText": [
@@ -321,28 +213,28 @@
           }
         },
         {
-          "id": "block_choice_29_75ifhn9",
+          "id": "block_choice_17_dob6974",
           "type": "choice input",
           "items": [
             {
-              "id": "item_5_0_30_50sypxp",
+              "id": "item_4_0_18_2fk84bp",
               "content": "Magra",
-              "outgoingEdgeId": "edge_5_item_0_to_6"
+              "outgoingEdgeId": "edge_4_item_0_to_5"
             },
             {
-              "id": "item_5_1_31_wyvfokg",
+              "id": "item_4_1_19_t7ndrxg",
               "content": "Média",
-              "outgoingEdgeId": "edge_5_item_1_to_6"
+              "outgoingEdgeId": "edge_4_item_1_to_5"
             },
             {
-              "id": "item_5_2_32_a7kmsjx",
+              "id": "item_4_2_20_kqiguyc",
               "content": "Um pouco acima do peso",
-              "outgoingEdgeId": "edge_5_item_2_to_6"
+              "outgoingEdgeId": "edge_4_item_2_to_5"
             },
             {
-              "id": "item_5_3_33_pvf0ama",
+              "id": "item_4_3_21_6uaxbaa",
               "content": "Acima do peso",
-              "outgoingEdgeId": "edge_5_item_3_to_6"
+              "outgoingEdgeId": "edge_4_item_3_to_5"
             }
           ],
           "options": {
@@ -353,15 +245,15 @@
       ]
     },
     {
-      "id": "group_6",
-      "title": "06 - Corpo dos Sonhos",
+      "id": "group_5",
+      "title": "05 - Corpo dos Sonhos",
       "graphCoordinates": {
-        "x": 480,
+        "x": 100,
         "y": 650
       },
       "blocks": [
         {
-          "id": "block_text_34_5d8c7zn",
+          "id": "block_text_22_50ikrkf",
           "type": "text",
           "content": {
             "richText": [
@@ -377,28 +269,28 @@
           }
         },
         {
-          "id": "block_choice_35_9j2f8h0",
+          "id": "block_choice_23_5pwumuo",
           "type": "choice input",
           "items": [
             {
-              "id": "item_6_0_36_u8buzcn",
+              "id": "item_5_0_24_t838f8o",
               "content": "Magra",
-              "outgoingEdgeId": "edge_6_item_0_to_7"
+              "outgoingEdgeId": "edge_5_item_0_to_6"
             },
             {
-              "id": "item_6_1_37_jiyfcth",
+              "id": "item_5_1_25_mfjjpb4",
               "content": "Tonificada",
-              "outgoingEdgeId": "edge_6_item_1_to_7"
+              "outgoingEdgeId": "edge_5_item_1_to_6"
             },
             {
-              "id": "item_6_2_38_3rblgja",
+              "id": "item_5_2_26_selnvwd",
               "content": "Com curvas",
-              "outgoingEdgeId": "edge_6_item_2_to_7"
+              "outgoingEdgeId": "edge_5_item_2_to_6"
             },
             {
-              "id": "item_6_3_39_tt756dz",
+              "id": "item_5_3_27_nt5l4l5",
               "content": "Média",
-              "outgoingEdgeId": "edge_6_item_3_to_7"
+              "outgoingEdgeId": "edge_5_item_3_to_6"
             }
           ],
           "options": {
@@ -409,15 +301,15 @@
       ]
     },
     {
-      "id": "group_7",
-      "title": "07 - Melhor Físico",
+      "id": "group_6",
+      "title": "06 - Melhor Físico",
       "graphCoordinates": {
-        "x": 860,
+        "x": 480,
         "y": 650
       },
       "blocks": [
         {
-          "id": "block_text_40_m00ns5u",
+          "id": "block_text_28_2iwld8b",
           "type": "text",
           "content": {
             "richText": [
@@ -433,28 +325,28 @@
           }
         },
         {
-          "id": "block_choice_41_b4dmg0p",
+          "id": "block_choice_29_padhxh3",
           "type": "choice input",
           "items": [
             {
-              "id": "item_7_0_42_6ybi2q6",
+              "id": "item_6_0_30_mxc9mhv",
               "content": "Há menos de um ano",
-              "outgoingEdgeId": "edge_7_item_0_to_8"
+              "outgoingEdgeId": "edge_6_item_0_to_7"
             },
             {
-              "id": "item_7_1_43_yab3qfs",
+              "id": "item_6_1_31_qgu8xfk",
               "content": "1 a 2 anos atrás",
-              "outgoingEdgeId": "edge_7_item_1_to_8"
+              "outgoingEdgeId": "edge_6_item_1_to_7"
             },
             {
-              "id": "item_7_2_44_ws83sw6",
+              "id": "item_6_2_32_i0m0m9d",
               "content": "Há mais de 3 anos",
-              "outgoingEdgeId": "edge_7_item_2_to_8"
+              "outgoingEdgeId": "edge_6_item_2_to_7"
             },
             {
-              "id": "item_7_3_45_vie3ro8",
+              "id": "item_6_3_33_rwg7mna",
               "content": "Não sei dizer",
-              "outgoingEdgeId": "edge_7_item_3_to_8"
+              "outgoingEdgeId": "edge_6_item_3_to_7"
             }
           ],
           "options": {
@@ -465,15 +357,15 @@
       ]
     },
     {
-      "id": "group_8",
-      "title": "08 - Região Prioritária",
+      "id": "group_7",
+      "title": "07 - Região Prioritária",
       "graphCoordinates": {
-        "x": 1240,
+        "x": 860,
         "y": 650
       },
       "blocks": [
         {
-          "id": "block_text_46_0nkqo7l",
+          "id": "block_text_34_j8j6uud",
           "type": "text",
           "content": {
             "richText": [
@@ -489,28 +381,28 @@
           }
         },
         {
-          "id": "block_choice_47_6idf5bp",
+          "id": "block_choice_35_f7iq5hz",
           "type": "choice input",
           "items": [
             {
-              "id": "item_8_0_48_izpfj1k",
+              "id": "item_7_0_36_4yqvu2g",
               "content": "Barriga",
-              "outgoingEdgeId": "edge_8_item_0_to_9"
+              "outgoingEdgeId": "edge_7_item_0_to_8"
             },
             {
-              "id": "item_8_1_49_9v6ykzw",
+              "id": "item_7_1_37_ju7zy88",
               "content": "Glúteos",
-              "outgoingEdgeId": "edge_8_item_1_to_9"
+              "outgoingEdgeId": "edge_7_item_1_to_8"
             },
             {
-              "id": "item_8_2_50_3l5z6ao",
+              "id": "item_7_2_38_1qqjfj9",
               "content": "Pernas",
-              "outgoingEdgeId": "edge_8_item_2_to_9"
+              "outgoingEdgeId": "edge_7_item_2_to_8"
             },
             {
-              "id": "item_8_3_51_gz5lrva",
+              "id": "item_7_3_39_sf7lpro",
               "content": "Peito",
-              "outgoingEdgeId": "edge_8_item_3_to_9"
+              "outgoingEdgeId": "edge_7_item_3_to_8"
             }
           ],
           "options": {
@@ -521,15 +413,15 @@
       ]
     },
     {
-      "id": "group_9",
-      "title": "09 - Frequência de Exercício",
+      "id": "group_8",
+      "title": "08 - Frequência de Exercício",
       "graphCoordinates": {
-        "x": 100,
-        "y": 1200
+        "x": 1240,
+        "y": 650
       },
       "blocks": [
         {
-          "id": "block_text_52_n7m4e7k",
+          "id": "block_text_40_5q82moz",
           "type": "text",
           "content": {
             "richText": [
@@ -545,28 +437,28 @@
           }
         },
         {
-          "id": "block_choice_53_0eee0tu",
+          "id": "block_choice_41_34bjdfk",
           "type": "choice input",
           "items": [
             {
-              "id": "item_9_0_54_da0nbsj",
+              "id": "item_8_0_42_3tftbtl",
               "content": "Quase todos os dias",
-              "outgoingEdgeId": "edge_9_item_0_to_10"
+              "outgoingEdgeId": "edge_8_item_0_to_9"
             },
             {
-              "id": "item_9_1_55_tj55qks",
+              "id": "item_8_1_43_pqm6t1k",
               "content": "Algumas vezes na semana",
-              "outgoingEdgeId": "edge_9_item_1_to_10"
+              "outgoingEdgeId": "edge_8_item_1_to_9"
             },
             {
-              "id": "item_9_2_56_6jy7tme",
+              "id": "item_8_2_44_jhiy9rp",
               "content": "Algumas vezes por mês",
-              "outgoingEdgeId": "edge_9_item_2_to_10"
+              "outgoingEdgeId": "edge_8_item_2_to_9"
             },
             {
-              "id": "item_9_3_57_5qyzwid",
+              "id": "item_8_3_45_44lfmqo",
               "content": "Poucas vezes",
-              "outgoingEdgeId": "edge_9_item_3_to_10"
+              "outgoingEdgeId": "edge_8_item_3_to_9"
             }
           ],
           "options": {
@@ -577,15 +469,15 @@
       ]
     },
     {
-      "id": "group_10",
-      "title": "10 - Horas de Sono",
+      "id": "group_9",
+      "title": "09 - Horas de Sono",
       "graphCoordinates": {
-        "x": 480,
+        "x": 100,
         "y": 1200
       },
       "blocks": [
         {
-          "id": "block_text_58_r0idp8v",
+          "id": "block_text_46_g9xu9ho",
           "type": "text",
           "content": {
             "richText": [
@@ -601,7 +493,7 @@
           }
         },
         {
-          "id": "block_text_59_1j47549",
+          "id": "block_text_47_2u3m505",
           "type": "text",
           "content": {
             "richText": [
@@ -617,28 +509,28 @@
           }
         },
         {
-          "id": "block_choice_60_ba8mj6m",
+          "id": "block_choice_48_f2fqpet",
           "type": "choice input",
           "items": [
             {
-              "id": "item_10_0_61_uav01x6",
+              "id": "item_9_0_49_6ycz0q4",
               "content": "Menos de 5 horas",
-              "outgoingEdgeId": "edge_10_item_0_to_11"
+              "outgoingEdgeId": "edge_9_item_0_to_10"
             },
             {
-              "id": "item_10_1_62_ruzljqn",
+              "id": "item_9_1_50_0wexgbs",
               "content": "5-6 horas",
-              "outgoingEdgeId": "edge_10_item_1_to_11"
+              "outgoingEdgeId": "edge_9_item_1_to_10"
             },
             {
-              "id": "item_10_2_63_pq5qivk",
+              "id": "item_9_2_51_919pjrr",
               "content": "7-8 horas",
-              "outgoingEdgeId": "edge_10_item_2_to_11"
+              "outgoingEdgeId": "edge_9_item_2_to_10"
             },
             {
-              "id": "item_10_3_64_2evu2sn",
+              "id": "item_9_3_52_5kksgs7",
               "content": "Mais de 8 horas",
-              "outgoingEdgeId": "edge_10_item_3_to_11"
+              "outgoingEdgeId": "edge_9_item_3_to_10"
             }
           ],
           "options": {
@@ -649,15 +541,15 @@
       ]
     },
     {
-      "id": "group_11",
-      "title": "11 - Principal Motivo",
+      "id": "group_10",
+      "title": "10 - Principal Motivo",
       "graphCoordinates": {
-        "x": 860,
+        "x": 480,
         "y": 1200
       },
       "blocks": [
         {
-          "id": "block_text_65_at79anf",
+          "id": "block_text_53_23n6gb1",
           "type": "text",
           "content": {
             "richText": [
@@ -673,33 +565,33 @@
           }
         },
         {
-          "id": "block_choice_66_qdyn2h0",
+          "id": "block_choice_54_zjof3xc",
           "type": "choice input",
           "items": [
             {
-              "id": "item_11_0_67_2hcm6po",
+              "id": "item_10_0_55_7k7w9ly",
               "content": "Me sentir mais confiante no meu corpo",
-              "outgoingEdgeId": "edge_11_item_0_to_12"
+              "outgoingEdgeId": "edge_10_item_0_to_11"
             },
             {
-              "id": "item_11_1_68_5hrjzmg",
+              "id": "item_10_1_56_13h5nyn",
               "content": "Me sentir mais saudável e com energia",
-              "outgoingEdgeId": "edge_11_item_1_to_12"
+              "outgoingEdgeId": "edge_10_item_1_to_11"
             },
             {
-              "id": "item_11_2_69_7jlv7ve",
+              "id": "item_10_2_57_ue6ve54",
               "content": "Vestir melhor minhas roupas",
-              "outgoingEdgeId": "edge_11_item_2_to_12"
+              "outgoingEdgeId": "edge_10_item_2_to_11"
             },
             {
-              "id": "item_11_3_70_upjl5u3",
+              "id": "item_10_3_58_21cada0",
               "content": "Voltar a forma após o parto",
-              "outgoingEdgeId": "edge_11_item_3_to_12"
+              "outgoingEdgeId": "edge_10_item_3_to_11"
             },
             {
-              "id": "item_11_4_71_0zizb9o",
+              "id": "item_10_4_59_1l89trz",
               "content": "Outros",
-              "outgoingEdgeId": "edge_11_item_4_to_12"
+              "outgoingEdgeId": "edge_10_item_4_to_11"
             }
           ],
           "options": {
@@ -710,15 +602,15 @@
       ]
     },
     {
-      "id": "group_12",
-      "title": "12 - Altura em cm",
+      "id": "group_11",
+      "title": "11 - Altura em cm",
       "graphCoordinates": {
-        "x": 1240,
+        "x": 860,
         "y": 1200
       },
       "blocks": [
         {
-          "id": "block_text_72_hrh9h0v",
+          "id": "block_text_60_kw06jh3",
           "type": "text",
           "content": {
             "richText": [
@@ -734,27 +626,27 @@
           }
         },
         {
-          "id": "block_number_73_3kigixk",
+          "id": "block_number_61_duplz84",
           "type": "number input",
           "options": {
             "variableId": "var_altura",
             "placeholder": "Ex: 170",
             "buttonLabel": "Enviar"
           },
-          "outgoingEdgeId": "edge_12_to_13"
+          "outgoingEdgeId": "edge_11_to_12"
         }
       ]
     },
     {
-      "id": "group_13",
-      "title": "13 - Peso Atual",
+      "id": "group_12",
+      "title": "12 - Peso Atual",
       "graphCoordinates": {
-        "x": 100,
-        "y": 1750
+        "x": 1240,
+        "y": 1200
       },
       "blocks": [
         {
-          "id": "block_text_74_4drjwjh",
+          "id": "block_text_62_qg63vd8",
           "type": "text",
           "content": {
             "richText": [
@@ -770,27 +662,27 @@
           }
         },
         {
-          "id": "block_number_75_0jmbhem",
+          "id": "block_number_63_wkc935o",
           "type": "number input",
           "options": {
             "variableId": "var_peso_atual",
             "placeholder": "Ex: 80",
             "buttonLabel": "Enviar"
           },
-          "outgoingEdgeId": "edge_13_to_14"
+          "outgoingEdgeId": "edge_12_to_13"
         }
       ]
     },
     {
-      "id": "group_14",
-      "title": "14 - Peso Ideal",
+      "id": "group_13",
+      "title": "13 - Peso Ideal",
       "graphCoordinates": {
-        "x": 480,
+        "x": 100,
         "y": 1750
       },
       "blocks": [
         {
-          "id": "block_text_76_127igzr",
+          "id": "block_text_64_doln3f5",
           "type": "text",
           "content": {
             "richText": [
@@ -806,27 +698,27 @@
           }
         },
         {
-          "id": "block_number_77_qoyczzf",
+          "id": "block_number_65_otp38zc",
           "type": "number input",
           "options": {
             "variableId": "var_peso_desejado",
             "placeholder": "Ex: 68",
             "buttonLabel": "Enviar"
           },
-          "outgoingEdgeId": "edge_14_to_15"
+          "outgoingEdgeId": "edge_13_to_14"
         }
       ]
     },
     {
-      "id": "group_15",
-      "title": "15 - Finalização do Plano",
+      "id": "group_14",
+      "title": "14 - Finalização do Plano",
       "graphCoordinates": {
-        "x": 860,
+        "x": 480,
         "y": 1750
       },
       "blocks": [
         {
-          "id": "block_text_78_s17vaua",
+          "id": "block_text_66_1ynfew6",
           "type": "text",
           "content": {
             "richText": [
@@ -842,25 +734,25 @@
           }
         },
         {
-          "id": "block_wait_79_aczm1re",
+          "id": "block_wait_67_1mysc2w",
           "type": "Wait",
           "options": {
             "secondsToWaitFor": 5
           },
-          "outgoingEdgeId": "edge_15_to_16"
+          "outgoingEdgeId": "edge_14_to_15"
         }
       ]
     },
     {
-      "id": "group_16",
-      "title": "16 - Previsão e Gráfico",
+      "id": "group_15",
+      "title": "15 - Previsão e Gráfico",
       "graphCoordinates": {
-        "x": 1240,
+        "x": 860,
         "y": 1750
       },
       "blocks": [
         {
-          "id": "block_text_80_bu7vzjt",
+          "id": "block_text_68_tnhbj7g",
           "type": "text",
           "content": {
             "richText": [
@@ -876,7 +768,7 @@
           }
         },
         {
-          "id": "block_text_81_y6412r8",
+          "id": "block_text_69_k11h183",
           "type": "text",
           "content": {
             "richText": [
@@ -892,7 +784,7 @@
           }
         },
         {
-          "id": "block_text_82_i59wqpq",
+          "id": "block_text_70_6us5m28",
           "type": "text",
           "content": {
             "richText": [
@@ -916,7 +808,7 @@
           }
         },
         {
-          "id": "block_text_83_wzedkpj",
+          "id": "block_text_71_y85kjaz",
           "type": "text",
           "content": {
             "richText": [
@@ -932,13 +824,13 @@
           }
         },
         {
-          "id": "block_choice_84_1a7ctck",
+          "id": "block_choice_72_ituja95",
           "type": "choice input",
           "items": [
             {
-              "id": "item_16_0_85_cezniwt",
+              "id": "item_15_0_73_vw95jv3",
               "content": "SIM, ESTOU PREPARADA!",
-              "outgoingEdgeId": "edge_16_item_0_to_17"
+              "outgoingEdgeId": "edge_15_item_0_to_16"
             }
           ],
           "options": {
@@ -948,15 +840,15 @@
       ]
     },
     {
-      "id": "group_17",
-      "title": "17 - Benefícios do Desafio e Provas Sociais",
+      "id": "group_16",
+      "title": "16 - Benefícios do Desafio e Provas Sociais",
       "graphCoordinates": {
-        "x": 100,
-        "y": 2300
+        "x": 1240,
+        "y": 1750
       },
       "blocks": [
         {
-          "id": "block_text_86_ndvedqi",
+          "id": "block_text_74_vprq9h7",
           "type": "text",
           "content": {
             "richText": [
@@ -972,7 +864,7 @@
           }
         },
         {
-          "id": "block_text_87_nkostm8",
+          "id": "block_text_75_kx3uyft",
           "type": "text",
           "content": {
             "richText": [
@@ -1068,7 +960,7 @@
           }
         },
         {
-          "id": "block_text_88_yesf5yf",
+          "id": "block_text_76_fj5ok3d",
           "type": "text",
           "content": {
             "richText": [
@@ -1084,7 +976,7 @@
           }
         },
         {
-          "id": "block_text_89_veblj7l",
+          "id": "block_text_77_jjmfe5w",
           "type": "text",
           "content": {
             "richText": [
@@ -1100,7 +992,7 @@
           }
         },
         {
-          "id": "block_text_90_v34musd",
+          "id": "block_text_78_2yse31t",
           "type": "text",
           "content": {
             "richText": [
@@ -1116,7 +1008,7 @@
           }
         },
         {
-          "id": "block_text_91_djtqcfv",
+          "id": "block_text_79_qulv55n",
           "type": "text",
           "content": {
             "richText": [
@@ -1132,7 +1024,7 @@
           }
         },
         {
-          "id": "block_text_92_rhl5t23",
+          "id": "block_text_80_5fv5eu8",
           "type": "text",
           "content": {
             "richText": [
@@ -1148,13 +1040,13 @@
           }
         },
         {
-          "id": "block_choice_93_04k5lct",
+          "id": "block_choice_81_x3kpg62",
           "type": "choice input",
           "items": [
             {
-              "id": "item_17_0_94_yh244t3",
+              "id": "item_16_0_82_d33pjd3",
               "content": "SIM, EU ACEITO O DESAFIO!",
-              "outgoingEdgeId": "edge_17_item_0_to_18"
+              "outgoingEdgeId": "edge_16_item_0_to_17"
             }
           ],
           "options": {
@@ -1164,15 +1056,15 @@
       ]
     },
     {
-      "id": "group_18",
-      "title": "18 - Oferta Final",
+      "id": "group_17",
+      "title": "17 - Oferta Final",
       "graphCoordinates": {
-        "x": 480,
+        "x": 100,
         "y": 2300
       },
       "blocks": [
         {
-          "id": "block_text_95_emzsugk",
+          "id": "block_text_83_32k8c7t",
           "type": "text",
           "content": {
             "richText": [
@@ -1188,7 +1080,7 @@
           }
         },
         {
-          "id": "block_text_96_cp3spx0",
+          "id": "block_text_84_d0wxfwp",
           "type": "text",
           "content": {
             "richText": [
@@ -1204,7 +1096,7 @@
           }
         },
         {
-          "id": "block_text_97_4tfnxe6",
+          "id": "block_text_85_k93jwwq",
           "type": "text",
           "content": {
             "richText": [
@@ -1252,11 +1144,11 @@
           }
         },
         {
-          "id": "block_choice_98_2hxjqla",
+          "id": "block_choice_86_96a73f5",
           "type": "choice input",
           "items": [
             {
-              "id": "item_18_0_99_k5vpl6c",
+              "id": "item_17_0_87_kdb1qw3",
               "content": "👉 QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)",
               "outgoingEdgeId": "edge_payt_redirect"
             }
@@ -1266,7 +1158,7 @@
           }
         },
         {
-          "id": "block_redirect_100_2ee9stb",
+          "id": "block_redirect_88_6nbl0sz",
           "type": "Redirect",
           "options": {
             "url": "https://app.zuptos.com.br/checkout/7dda6e09d2f964c0",
@@ -1289,38 +1181,8 @@
     {
       "id": "edge_1_item_0_to_2",
       "from": {
-        "blockId": "block_choice_5_uo050mp",
-        "itemId": "item_1_0_6_44geuzb"
-      },
-      "to": {
-        "groupId": "group_2"
-      }
-    },
-    {
-      "id": "edge_1_item_1_to_2",
-      "from": {
-        "blockId": "block_choice_5_uo050mp",
-        "itemId": "item_1_1_7_tw5t9rk"
-      },
-      "to": {
-        "groupId": "group_2"
-      }
-    },
-    {
-      "id": "edge_1_item_2_to_2",
-      "from": {
-        "blockId": "block_choice_5_uo050mp",
-        "itemId": "item_1_2_8_5h0q6d7"
-      },
-      "to": {
-        "groupId": "group_2"
-      }
-    },
-    {
-      "id": "edge_1_item_3_to_2",
-      "from": {
-        "blockId": "block_choice_5_uo050mp",
-        "itemId": "item_1_3_9_d2tsk4n"
+        "blockId": "block_choice_3_dot2n14",
+        "itemId": "item_1_0_4_q5yid1c"
       },
       "to": {
         "groupId": "group_2"
@@ -1329,8 +1191,8 @@
     {
       "id": "edge_2_item_0_to_3",
       "from": {
-        "blockId": "block_choice_11_ng0861d",
-        "itemId": "item_2_0_12_uh0b33q"
+        "blockId": "block_choice_6_f14c15a",
+        "itemId": "item_2_0_7_y4a4m8s"
       },
       "to": {
         "groupId": "group_3"
@@ -1339,8 +1201,8 @@
     {
       "id": "edge_2_item_1_to_3",
       "from": {
-        "blockId": "block_choice_11_ng0861d",
-        "itemId": "item_2_1_13_lccd3ba"
+        "blockId": "block_choice_6_f14c15a",
+        "itemId": "item_2_1_8_34ep0rq"
       },
       "to": {
         "groupId": "group_3"
@@ -1349,28 +1211,8 @@
     {
       "id": "edge_2_item_2_to_3",
       "from": {
-        "blockId": "block_choice_11_ng0861d",
-        "itemId": "item_2_2_14_lerntli"
-      },
-      "to": {
-        "groupId": "group_3"
-      }
-    },
-    {
-      "id": "edge_2_item_3_to_3",
-      "from": {
-        "blockId": "block_choice_11_ng0861d",
-        "itemId": "item_2_3_15_2kg3r7z"
-      },
-      "to": {
-        "groupId": "group_3"
-      }
-    },
-    {
-      "id": "edge_2_item_4_to_3",
-      "from": {
-        "blockId": "block_choice_11_ng0861d",
-        "itemId": "item_2_4_16_sw427uw"
+        "blockId": "block_choice_6_f14c15a",
+        "itemId": "item_2_2_9_akrvxch"
       },
       "to": {
         "groupId": "group_3"
@@ -1379,8 +1221,8 @@
     {
       "id": "edge_3_item_0_to_4",
       "from": {
-        "blockId": "block_choice_18_0difp9y",
-        "itemId": "item_3_0_19_ng8vsjl"
+        "blockId": "block_choice_12_8j0r24l",
+        "itemId": "item_3_0_13_bjk7i8y"
       },
       "to": {
         "groupId": "group_4"
@@ -1389,8 +1231,8 @@
     {
       "id": "edge_3_item_1_to_4",
       "from": {
-        "blockId": "block_choice_18_0difp9y",
-        "itemId": "item_3_1_20_3mb3mgc"
+        "blockId": "block_choice_12_8j0r24l",
+        "itemId": "item_3_1_14_m57hhpk"
       },
       "to": {
         "groupId": "group_4"
@@ -1399,8 +1241,8 @@
     {
       "id": "edge_3_item_2_to_4",
       "from": {
-        "blockId": "block_choice_18_0difp9y",
-        "itemId": "item_3_2_21_9uhe5i9"
+        "blockId": "block_choice_12_8j0r24l",
+        "itemId": "item_3_2_15_m7qy2v7"
       },
       "to": {
         "groupId": "group_4"
@@ -1409,8 +1251,8 @@
     {
       "id": "edge_4_item_0_to_5",
       "from": {
-        "blockId": "block_choice_24_u914u8f",
-        "itemId": "item_4_0_25_whiworm"
+        "blockId": "block_choice_17_dob6974",
+        "itemId": "item_4_0_18_2fk84bp"
       },
       "to": {
         "groupId": "group_5"
@@ -1419,8 +1261,8 @@
     {
       "id": "edge_4_item_1_to_5",
       "from": {
-        "blockId": "block_choice_24_u914u8f",
-        "itemId": "item_4_1_26_8f6byxc"
+        "blockId": "block_choice_17_dob6974",
+        "itemId": "item_4_1_19_t7ndrxg"
       },
       "to": {
         "groupId": "group_5"
@@ -1429,8 +1271,18 @@
     {
       "id": "edge_4_item_2_to_5",
       "from": {
-        "blockId": "block_choice_24_u914u8f",
-        "itemId": "item_4_2_27_eyyprfn"
+        "blockId": "block_choice_17_dob6974",
+        "itemId": "item_4_2_20_kqiguyc"
+      },
+      "to": {
+        "groupId": "group_5"
+      }
+    },
+    {
+      "id": "edge_4_item_3_to_5",
+      "from": {
+        "blockId": "block_choice_17_dob6974",
+        "itemId": "item_4_3_21_6uaxbaa"
       },
       "to": {
         "groupId": "group_5"
@@ -1439,8 +1291,8 @@
     {
       "id": "edge_5_item_0_to_6",
       "from": {
-        "blockId": "block_choice_29_75ifhn9",
-        "itemId": "item_5_0_30_50sypxp"
+        "blockId": "block_choice_23_5pwumuo",
+        "itemId": "item_5_0_24_t838f8o"
       },
       "to": {
         "groupId": "group_6"
@@ -1449,8 +1301,8 @@
     {
       "id": "edge_5_item_1_to_6",
       "from": {
-        "blockId": "block_choice_29_75ifhn9",
-        "itemId": "item_5_1_31_wyvfokg"
+        "blockId": "block_choice_23_5pwumuo",
+        "itemId": "item_5_1_25_mfjjpb4"
       },
       "to": {
         "groupId": "group_6"
@@ -1459,8 +1311,8 @@
     {
       "id": "edge_5_item_2_to_6",
       "from": {
-        "blockId": "block_choice_29_75ifhn9",
-        "itemId": "item_5_2_32_a7kmsjx"
+        "blockId": "block_choice_23_5pwumuo",
+        "itemId": "item_5_2_26_selnvwd"
       },
       "to": {
         "groupId": "group_6"
@@ -1469,8 +1321,8 @@
     {
       "id": "edge_5_item_3_to_6",
       "from": {
-        "blockId": "block_choice_29_75ifhn9",
-        "itemId": "item_5_3_33_pvf0ama"
+        "blockId": "block_choice_23_5pwumuo",
+        "itemId": "item_5_3_27_nt5l4l5"
       },
       "to": {
         "groupId": "group_6"
@@ -1479,8 +1331,8 @@
     {
       "id": "edge_6_item_0_to_7",
       "from": {
-        "blockId": "block_choice_35_9j2f8h0",
-        "itemId": "item_6_0_36_u8buzcn"
+        "blockId": "block_choice_29_padhxh3",
+        "itemId": "item_6_0_30_mxc9mhv"
       },
       "to": {
         "groupId": "group_7"
@@ -1489,8 +1341,8 @@
     {
       "id": "edge_6_item_1_to_7",
       "from": {
-        "blockId": "block_choice_35_9j2f8h0",
-        "itemId": "item_6_1_37_jiyfcth"
+        "blockId": "block_choice_29_padhxh3",
+        "itemId": "item_6_1_31_qgu8xfk"
       },
       "to": {
         "groupId": "group_7"
@@ -1499,8 +1351,8 @@
     {
       "id": "edge_6_item_2_to_7",
       "from": {
-        "blockId": "block_choice_35_9j2f8h0",
-        "itemId": "item_6_2_38_3rblgja"
+        "blockId": "block_choice_29_padhxh3",
+        "itemId": "item_6_2_32_i0m0m9d"
       },
       "to": {
         "groupId": "group_7"
@@ -1509,8 +1361,8 @@
     {
       "id": "edge_6_item_3_to_7",
       "from": {
-        "blockId": "block_choice_35_9j2f8h0",
-        "itemId": "item_6_3_39_tt756dz"
+        "blockId": "block_choice_29_padhxh3",
+        "itemId": "item_6_3_33_rwg7mna"
       },
       "to": {
         "groupId": "group_7"
@@ -1519,8 +1371,8 @@
     {
       "id": "edge_7_item_0_to_8",
       "from": {
-        "blockId": "block_choice_41_b4dmg0p",
-        "itemId": "item_7_0_42_6ybi2q6"
+        "blockId": "block_choice_35_f7iq5hz",
+        "itemId": "item_7_0_36_4yqvu2g"
       },
       "to": {
         "groupId": "group_8"
@@ -1529,8 +1381,8 @@
     {
       "id": "edge_7_item_1_to_8",
       "from": {
-        "blockId": "block_choice_41_b4dmg0p",
-        "itemId": "item_7_1_43_yab3qfs"
+        "blockId": "block_choice_35_f7iq5hz",
+        "itemId": "item_7_1_37_ju7zy88"
       },
       "to": {
         "groupId": "group_8"
@@ -1539,8 +1391,8 @@
     {
       "id": "edge_7_item_2_to_8",
       "from": {
-        "blockId": "block_choice_41_b4dmg0p",
-        "itemId": "item_7_2_44_ws83sw6"
+        "blockId": "block_choice_35_f7iq5hz",
+        "itemId": "item_7_2_38_1qqjfj9"
       },
       "to": {
         "groupId": "group_8"
@@ -1549,8 +1401,8 @@
     {
       "id": "edge_7_item_3_to_8",
       "from": {
-        "blockId": "block_choice_41_b4dmg0p",
-        "itemId": "item_7_3_45_vie3ro8"
+        "blockId": "block_choice_35_f7iq5hz",
+        "itemId": "item_7_3_39_sf7lpro"
       },
       "to": {
         "groupId": "group_8"
@@ -1559,8 +1411,8 @@
     {
       "id": "edge_8_item_0_to_9",
       "from": {
-        "blockId": "block_choice_47_6idf5bp",
-        "itemId": "item_8_0_48_izpfj1k"
+        "blockId": "block_choice_41_34bjdfk",
+        "itemId": "item_8_0_42_3tftbtl"
       },
       "to": {
         "groupId": "group_9"
@@ -1569,8 +1421,8 @@
     {
       "id": "edge_8_item_1_to_9",
       "from": {
-        "blockId": "block_choice_47_6idf5bp",
-        "itemId": "item_8_1_49_9v6ykzw"
+        "blockId": "block_choice_41_34bjdfk",
+        "itemId": "item_8_1_43_pqm6t1k"
       },
       "to": {
         "groupId": "group_9"
@@ -1579,8 +1431,8 @@
     {
       "id": "edge_8_item_2_to_9",
       "from": {
-        "blockId": "block_choice_47_6idf5bp",
-        "itemId": "item_8_2_50_3l5z6ao"
+        "blockId": "block_choice_41_34bjdfk",
+        "itemId": "item_8_2_44_jhiy9rp"
       },
       "to": {
         "groupId": "group_9"
@@ -1589,8 +1441,8 @@
     {
       "id": "edge_8_item_3_to_9",
       "from": {
-        "blockId": "block_choice_47_6idf5bp",
-        "itemId": "item_8_3_51_gz5lrva"
+        "blockId": "block_choice_41_34bjdfk",
+        "itemId": "item_8_3_45_44lfmqo"
       },
       "to": {
         "groupId": "group_9"
@@ -1599,8 +1451,8 @@
     {
       "id": "edge_9_item_0_to_10",
       "from": {
-        "blockId": "block_choice_53_0eee0tu",
-        "itemId": "item_9_0_54_da0nbsj"
+        "blockId": "block_choice_48_f2fqpet",
+        "itemId": "item_9_0_49_6ycz0q4"
       },
       "to": {
         "groupId": "group_10"
@@ -1609,8 +1461,8 @@
     {
       "id": "edge_9_item_1_to_10",
       "from": {
-        "blockId": "block_choice_53_0eee0tu",
-        "itemId": "item_9_1_55_tj55qks"
+        "blockId": "block_choice_48_f2fqpet",
+        "itemId": "item_9_1_50_0wexgbs"
       },
       "to": {
         "groupId": "group_10"
@@ -1619,8 +1471,8 @@
     {
       "id": "edge_9_item_2_to_10",
       "from": {
-        "blockId": "block_choice_53_0eee0tu",
-        "itemId": "item_9_2_56_6jy7tme"
+        "blockId": "block_choice_48_f2fqpet",
+        "itemId": "item_9_2_51_919pjrr"
       },
       "to": {
         "groupId": "group_10"
@@ -1629,8 +1481,8 @@
     {
       "id": "edge_9_item_3_to_10",
       "from": {
-        "blockId": "block_choice_53_0eee0tu",
-        "itemId": "item_9_3_57_5qyzwid"
+        "blockId": "block_choice_48_f2fqpet",
+        "itemId": "item_9_3_52_5kksgs7"
       },
       "to": {
         "groupId": "group_10"
@@ -1639,8 +1491,8 @@
     {
       "id": "edge_10_item_0_to_11",
       "from": {
-        "blockId": "block_choice_60_ba8mj6m",
-        "itemId": "item_10_0_61_uav01x6"
+        "blockId": "block_choice_54_zjof3xc",
+        "itemId": "item_10_0_55_7k7w9ly"
       },
       "to": {
         "groupId": "group_11"
@@ -1649,8 +1501,8 @@
     {
       "id": "edge_10_item_1_to_11",
       "from": {
-        "blockId": "block_choice_60_ba8mj6m",
-        "itemId": "item_10_1_62_ruzljqn"
+        "blockId": "block_choice_54_zjof3xc",
+        "itemId": "item_10_1_56_13h5nyn"
       },
       "to": {
         "groupId": "group_11"
@@ -1659,8 +1511,8 @@
     {
       "id": "edge_10_item_2_to_11",
       "from": {
-        "blockId": "block_choice_60_ba8mj6m",
-        "itemId": "item_10_2_63_pq5qivk"
+        "blockId": "block_choice_54_zjof3xc",
+        "itemId": "item_10_2_57_ue6ve54"
       },
       "to": {
         "groupId": "group_11"
@@ -1669,58 +1521,27 @@
     {
       "id": "edge_10_item_3_to_11",
       "from": {
-        "blockId": "block_choice_60_ba8mj6m",
-        "itemId": "item_10_3_64_2evu2sn"
+        "blockId": "block_choice_54_zjof3xc",
+        "itemId": "item_10_3_58_21cada0"
       },
       "to": {
         "groupId": "group_11"
       }
     },
     {
-      "id": "edge_11_item_0_to_12",
+      "id": "edge_10_item_4_to_11",
       "from": {
-        "blockId": "block_choice_66_qdyn2h0",
-        "itemId": "item_11_0_67_2hcm6po"
+        "blockId": "block_choice_54_zjof3xc",
+        "itemId": "item_10_4_59_1l89trz"
       },
       "to": {
-        "groupId": "group_12"
+        "groupId": "group_11"
       }
     },
     {
-      "id": "edge_11_item_1_to_12",
+      "id": "edge_11_to_12",
       "from": {
-        "blockId": "block_choice_66_qdyn2h0",
-        "itemId": "item_11_1_68_5hrjzmg"
-      },
-      "to": {
-        "groupId": "group_12"
-      }
-    },
-    {
-      "id": "edge_11_item_2_to_12",
-      "from": {
-        "blockId": "block_choice_66_qdyn2h0",
-        "itemId": "item_11_2_69_7jlv7ve"
-      },
-      "to": {
-        "groupId": "group_12"
-      }
-    },
-    {
-      "id": "edge_11_item_3_to_12",
-      "from": {
-        "blockId": "block_choice_66_qdyn2h0",
-        "itemId": "item_11_3_70_upjl5u3"
-      },
-      "to": {
-        "groupId": "group_12"
-      }
-    },
-    {
-      "id": "edge_11_item_4_to_12",
-      "from": {
-        "blockId": "block_choice_66_qdyn2h0",
-        "itemId": "item_11_4_71_0zizb9o"
+        "blockId": "block_number_61_duplz84"
       },
       "to": {
         "groupId": "group_12"
@@ -1729,7 +1550,7 @@
     {
       "id": "edge_12_to_13",
       "from": {
-        "blockId": "block_number_73_3kigixk"
+        "blockId": "block_number_63_wkc935o"
       },
       "to": {
         "groupId": "group_13"
@@ -1738,7 +1559,7 @@
     {
       "id": "edge_13_to_14",
       "from": {
-        "blockId": "block_number_75_0jmbhem"
+        "blockId": "block_number_65_otp38zc"
       },
       "to": {
         "groupId": "group_14"
@@ -1747,16 +1568,17 @@
     {
       "id": "edge_14_to_15",
       "from": {
-        "blockId": "block_number_77_qoyczzf"
+        "blockId": "block_wait_67_1mysc2w"
       },
       "to": {
         "groupId": "group_15"
       }
     },
     {
-      "id": "edge_15_to_16",
+      "id": "edge_15_item_0_to_16",
       "from": {
-        "blockId": "block_wait_79_aczm1re"
+        "blockId": "block_choice_72_ituja95",
+        "itemId": "item_15_0_73_vw95jv3"
       },
       "to": {
         "groupId": "group_16"
@@ -1765,43 +1587,29 @@
     {
       "id": "edge_16_item_0_to_17",
       "from": {
-        "blockId": "block_choice_84_1a7ctck",
-        "itemId": "item_16_0_85_cezniwt"
+        "blockId": "block_choice_81_x3kpg62",
+        "itemId": "item_16_0_82_d33pjd3"
       },
       "to": {
         "groupId": "group_17"
       }
     },
     {
-      "id": "edge_17_item_0_to_18",
-      "from": {
-        "blockId": "block_choice_93_04k5lct",
-        "itemId": "item_17_0_94_yh244t3"
-      },
-      "to": {
-        "groupId": "group_18"
-      }
-    },
-    {
       "id": "edge_payt_redirect",
       "from": {
-        "blockId": "block_choice_98_2hxjqla",
-        "itemId": "item_18_0_99_k5vpl6c"
+        "blockId": "block_choice_86_96a73f5",
+        "itemId": "item_17_0_87_kdb1qw3"
       },
       "to": {
-        "groupId": "group_18",
-        "blockId": "block_redirect_100_2ee9stb"
+        "groupId": "group_17",
+        "blockId": "block_redirect_88_6nbl0sz"
       }
     }
   ],
   "variables": [
     {
-      "id": "var_idade",
-      "name": "idade"
-    },
-    {
-      "id": "var_objetivo",
-      "name": "objetivo"
+      "id": "var_inicio_teste",
+      "name": "inicio_teste"
     },
     {
       "id": "var_praticou",

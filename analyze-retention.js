@@ -20,24 +20,23 @@ function fetchJson(url) {
 }
 
 const FUNNEL_STEPS_META = [
-  { num: 1, name: "Idade / Boas-vindas" },
-  { num: 2, name: "Objetivo Principal" },
-  { num: 3, name: "Praticou Antes" },
-  { num: 4, name: "Flexibilidade" },
-  { num: 5, name: "Físico Atual" },
-  { num: 6, name: "Corpo dos Sonhos" },
-  { num: 7, name: "Melhor Físico" },
-  { num: 8, name: "Região do Corpo Alvo" },
-  { num: 9, name: "Frequência Exercício" },
-  { num: 10, name: "Horas de Sono" },
-  { num: 11, name: "Motivo Principal" },
-  { num: 12, name: "Altura em cm" },
-  { num: 13, name: "Peso Atual (kg)" },
-  { num: 14, name: "Peso Ideal (kg)" },
-  { num: 15, name: "Finalização do Plano (Wait/Análise)" },
-  { num: 16, name: "Previsão & Gráfico de Peso" },
-  { num: 17, name: "Benefícios & Depoimentos" },
-  { num: 18, name: "Checkout Payt / Zuptos" }
+  { num: 1, name: "Início / Teste Grátis" },
+  { num: 2, name: "Praticou Antes" },
+  { num: 3, name: "Flexibilidade" },
+  { num: 4, name: "Físico Atual" },
+  { num: 5, name: "Corpo dos Sonhos" },
+  { num: 6, name: "Melhor Físico" },
+  { num: 7, name: "Região do Corpo Alvo" },
+  { num: 8, name: "Frequência Exercício" },
+  { num: 9, name: "Horas de Sono" },
+  { num: 10, name: "Motivo Principal" },
+  { num: 11, name: "Altura em cm" },
+  { num: 12, name: "Peso Atual (kg)" },
+  { num: 13, name: "Peso Ideal (kg)" },
+  { num: 14, name: "Finalização do Plano (Análise)" },
+  { num: 15, name: "Previsão & Gráfico de Peso" },
+  { num: 16, name: "Benefícios & Depoimentos" },
+  { num: 17, name: "Checkout Payt / Zuptos" }
 ];
 
 async function run() {
@@ -101,7 +100,7 @@ async function run() {
     }
 
     const total = subset.length;
-    const completed = subset.filter(l => (l.maxStepReached || l.currentStep) >= 18 || l.completed).length;
+    const completed = subset.filter(l => (l.maxStepReached || l.currentStep) >= 17 || l.completed).length;
     const clickedCheckout = subset.filter(l => l.clickedCheckout).length;
 
     console.log(`Leads iniciados: ${total}`);
