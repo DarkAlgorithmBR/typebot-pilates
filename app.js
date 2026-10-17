@@ -381,7 +381,6 @@ const funnelSteps = [
       "Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:\n\n✅ Perca de peso\n✅ Ganho de massa magra\n✅ Alivio de dores nas costas\n✅ Melhora da postura\n✅ Aumento da autoestima\n✅ Aumento da libido\n✅ Melhora da flexibilidade\n✅ Pode ser feito em casa\n✅ Sem aparelhos, você não precisa comprar NADA.",
       "Dá uma olhada no que algumas das minhas alunas que começaram do zero me mandaram essa semana 👇",
       { type: "image", src: "depoimento-neuza.png" },
-      { type: "image", src: "depoimento-maria.png" },
       { type: "image", src: "depoimento-leopoldina.jpg" },
       "Você está preparada para essa transformação na sua vida?"
     ],

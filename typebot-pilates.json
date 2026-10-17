@@ -22,7 +22,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_1_kvvgqxg",
+          "id": "block_text_1_0l1imge",
           "type": "text",
           "content": {
             "richText": [
@@ -38,7 +38,7 @@
           }
         },
         {
-          "id": "block_text_2_iklup36",
+          "id": "block_text_2_p6w6jij",
           "type": "text",
           "content": {
             "richText": [
@@ -54,11 +54,11 @@
           }
         },
         {
-          "id": "block_choice_3_dot2n14",
+          "id": "block_choice_3_497paf4",
           "type": "choice input",
           "items": [
             {
-              "id": "item_1_0_4_q5yid1c",
+              "id": "item_1_0_4_9hlfpep",
               "content": "COMEÇAR TESTE GRÁTIS",
               "outgoingEdgeId": "edge_1_item_0_to_2"
             }
@@ -79,7 +79,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_5_m3lce8w",
+          "id": "block_text_5_8rx9vfk",
           "type": "text",
           "content": {
             "richText": [
@@ -95,21 +95,21 @@
           }
         },
         {
-          "id": "block_choice_6_f14c15a",
+          "id": "block_choice_6_1dlyt31",
           "type": "choice input",
           "items": [
             {
-              "id": "item_2_0_7_y4a4m8s",
+              "id": "item_2_0_7_vupjy0j",
               "content": "Sim, já pratico regularmente",
               "outgoingEdgeId": "edge_2_item_0_to_3"
             },
             {
-              "id": "item_2_1_8_34ep0rq",
+              "id": "item_2_1_8_rh367jm",
               "content": "Já fiz algumas vezes, mas não com frequência",
               "outgoingEdgeId": "edge_2_item_1_to_3"
             },
             {
-              "id": "item_2_2_9_akrvxch",
+              "id": "item_2_2_9_ehgxawt",
               "content": "Nunca fiz",
               "outgoingEdgeId": "edge_2_item_2_to_3"
             }
@@ -130,7 +130,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_10_ev1fiv1",
+          "id": "block_text_10_qq3pycy",
           "type": "text",
           "content": {
             "richText": [
@@ -146,7 +146,7 @@
           }
         },
         {
-          "id": "block_text_11_7p8cnja",
+          "id": "block_text_11_vcfm9pw",
           "type": "text",
           "content": {
             "richText": [
@@ -162,21 +162,21 @@
           }
         },
         {
-          "id": "block_choice_12_8j0r24l",
+          "id": "block_choice_12_ypmfiyw",
           "type": "choice input",
           "items": [
             {
-              "id": "item_3_0_13_bjk7i8y",
+              "id": "item_3_0_13_uuilgp1",
               "content": "Sou flexível",
               "outgoingEdgeId": "edge_3_item_0_to_4"
             },
             {
-              "id": "item_3_1_14_m57hhpk",
+              "id": "item_3_1_14_2c558pe",
               "content": "Mais ou menos flexível",
               "outgoingEdgeId": "edge_3_item_1_to_4"
             },
             {
-              "id": "item_3_2_15_m7qy2v7",
+              "id": "item_3_2_15_gf9x8es",
               "content": "Não sou flexível",
               "outgoingEdgeId": "edge_3_item_2_to_4"
             }
@@ -197,7 +197,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_16_ty9rwmc",
+          "id": "block_text_16_8pr1w0r",
           "type": "text",
           "content": {
             "richText": [
@@ -213,26 +213,26 @@
           }
         },
         {
-          "id": "block_choice_17_dob6974",
+          "id": "block_choice_17_sxpzm9g",
           "type": "choice input",
           "items": [
             {
-              "id": "item_4_0_18_2fk84bp",
+              "id": "item_4_0_18_86jaw14",
               "content": "Magra",
               "outgoingEdgeId": "edge_4_item_0_to_5"
             },
             {
-              "id": "item_4_1_19_t7ndrxg",
+              "id": "item_4_1_19_i4ozcr4",
               "content": "Média",
               "outgoingEdgeId": "edge_4_item_1_to_5"
             },
             {
-              "id": "item_4_2_20_kqiguyc",
+              "id": "item_4_2_20_vdn4wru",
               "content": "Um pouco acima do peso",
               "outgoingEdgeId": "edge_4_item_2_to_5"
             },
             {
-              "id": "item_4_3_21_6uaxbaa",
+              "id": "item_4_3_21_7yh388q",
               "content": "Acima do peso",
               "outgoingEdgeId": "edge_4_item_3_to_5"
             }
@@ -253,7 +253,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_22_50ikrkf",
+          "id": "block_text_22_3be6wqq",
           "type": "text",
           "content": {
             "richText": [
@@ -269,26 +269,26 @@
           }
         },
         {
-          "id": "block_choice_23_5pwumuo",
+          "id": "block_choice_23_m095ef8",
           "type": "choice input",
           "items": [
             {
-              "id": "item_5_0_24_t838f8o",
+              "id": "item_5_0_24_andqclb",
               "content": "Magra",
               "outgoingEdgeId": "edge_5_item_0_to_6"
             },
             {
-              "id": "item_5_1_25_mfjjpb4",
+              "id": "item_5_1_25_qr2btl0",
               "content": "Tonificada",
               "outgoingEdgeId": "edge_5_item_1_to_6"
             },
             {
-              "id": "item_5_2_26_selnvwd",
+              "id": "item_5_2_26_v5q1vx4",
               "content": "Com curvas",
               "outgoingEdgeId": "edge_5_item_2_to_6"
             },
             {
-              "id": "item_5_3_27_nt5l4l5",
+              "id": "item_5_3_27_s0w520n",
               "content": "Média",
               "outgoingEdgeId": "edge_5_item_3_to_6"
             }
@@ -309,7 +309,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_28_2iwld8b",
+          "id": "block_text_28_0ajimnd",
           "type": "text",
           "content": {
             "richText": [
@@ -325,26 +325,26 @@
           }
         },
         {
-          "id": "block_choice_29_padhxh3",
+          "id": "block_choice_29_c4bahjg",
           "type": "choice input",
           "items": [
             {
-              "id": "item_6_0_30_mxc9mhv",
+              "id": "item_6_0_30_2hvathy",
               "content": "Há menos de um ano",
               "outgoingEdgeId": "edge_6_item_0_to_7"
             },
             {
-              "id": "item_6_1_31_qgu8xfk",
+              "id": "item_6_1_31_4xkug8s",
               "content": "1 a 2 anos atrás",
               "outgoingEdgeId": "edge_6_item_1_to_7"
             },
             {
-              "id": "item_6_2_32_i0m0m9d",
+              "id": "item_6_2_32_iad7hpb",
               "content": "Há mais de 3 anos",
               "outgoingEdgeId": "edge_6_item_2_to_7"
             },
             {
-              "id": "item_6_3_33_rwg7mna",
+              "id": "item_6_3_33_40phvee",
               "content": "Não sei dizer",
               "outgoingEdgeId": "edge_6_item_3_to_7"
             }
@@ -365,7 +365,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_34_j8j6uud",
+          "id": "block_text_34_fx4rju8",
           "type": "text",
           "content": {
             "richText": [
@@ -381,26 +381,26 @@
           }
         },
         {
-          "id": "block_choice_35_f7iq5hz",
+          "id": "block_choice_35_iz38h4i",
           "type": "choice input",
           "items": [
             {
-              "id": "item_7_0_36_4yqvu2g",
+              "id": "item_7_0_36_qwpd8mp",
               "content": "Barriga",
               "outgoingEdgeId": "edge_7_item_0_to_8"
             },
             {
-              "id": "item_7_1_37_ju7zy88",
+              "id": "item_7_1_37_5hk502t",
               "content": "Glúteos",
               "outgoingEdgeId": "edge_7_item_1_to_8"
             },
             {
-              "id": "item_7_2_38_1qqjfj9",
+              "id": "item_7_2_38_by7w81u",
               "content": "Pernas",
               "outgoingEdgeId": "edge_7_item_2_to_8"
             },
             {
-              "id": "item_7_3_39_sf7lpro",
+              "id": "item_7_3_39_gdhoa4w",
               "content": "Peito",
               "outgoingEdgeId": "edge_7_item_3_to_8"
             }
@@ -421,7 +421,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_40_5q82moz",
+          "id": "block_text_40_j2jta3s",
           "type": "text",
           "content": {
             "richText": [
@@ -437,26 +437,26 @@
           }
         },
         {
-          "id": "block_choice_41_34bjdfk",
+          "id": "block_choice_41_kjdugew",
           "type": "choice input",
           "items": [
             {
-              "id": "item_8_0_42_3tftbtl",
+              "id": "item_8_0_42_wz4wvcv",
               "content": "Quase todos os dias",
               "outgoingEdgeId": "edge_8_item_0_to_9"
             },
             {
-              "id": "item_8_1_43_pqm6t1k",
+              "id": "item_8_1_43_ksevczj",
               "content": "Algumas vezes na semana",
               "outgoingEdgeId": "edge_8_item_1_to_9"
             },
             {
-              "id": "item_8_2_44_jhiy9rp",
+              "id": "item_8_2_44_sa55sc3",
               "content": "Algumas vezes por mês",
               "outgoingEdgeId": "edge_8_item_2_to_9"
             },
             {
-              "id": "item_8_3_45_44lfmqo",
+              "id": "item_8_3_45_yj6341t",
               "content": "Poucas vezes",
               "outgoingEdgeId": "edge_8_item_3_to_9"
             }
@@ -477,7 +477,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_46_g9xu9ho",
+          "id": "block_text_46_692ymem",
           "type": "text",
           "content": {
             "richText": [
@@ -493,7 +493,7 @@
           }
         },
         {
-          "id": "block_text_47_2u3m505",
+          "id": "block_text_47_mjqk19h",
           "type": "text",
           "content": {
             "richText": [
@@ -509,26 +509,26 @@
           }
         },
         {
-          "id": "block_choice_48_f2fqpet",
+          "id": "block_choice_48_wo12iis",
           "type": "choice input",
           "items": [
             {
-              "id": "item_9_0_49_6ycz0q4",
+              "id": "item_9_0_49_u6a6koc",
               "content": "Menos de 5 horas",
               "outgoingEdgeId": "edge_9_item_0_to_10"
             },
             {
-              "id": "item_9_1_50_0wexgbs",
+              "id": "item_9_1_50_q6ttv2n",
               "content": "5-6 horas",
               "outgoingEdgeId": "edge_9_item_1_to_10"
             },
             {
-              "id": "item_9_2_51_919pjrr",
+              "id": "item_9_2_51_e4p56ov",
               "content": "7-8 horas",
               "outgoingEdgeId": "edge_9_item_2_to_10"
             },
             {
-              "id": "item_9_3_52_5kksgs7",
+              "id": "item_9_3_52_f2la9gj",
               "content": "Mais de 8 horas",
               "outgoingEdgeId": "edge_9_item_3_to_10"
             }
@@ -549,7 +549,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_53_23n6gb1",
+          "id": "block_text_53_iv845f1",
           "type": "text",
           "content": {
             "richText": [
@@ -565,31 +565,31 @@
           }
         },
         {
-          "id": "block_choice_54_zjof3xc",
+          "id": "block_choice_54_i7q3z68",
           "type": "choice input",
           "items": [
             {
-              "id": "item_10_0_55_7k7w9ly",
+              "id": "item_10_0_55_6t9ukeu",
               "content": "Me sentir mais confiante no meu corpo",
               "outgoingEdgeId": "edge_10_item_0_to_11"
             },
             {
-              "id": "item_10_1_56_13h5nyn",
+              "id": "item_10_1_56_66nrsex",
               "content": "Me sentir mais saudável e com energia",
               "outgoingEdgeId": "edge_10_item_1_to_11"
             },
             {
-              "id": "item_10_2_57_ue6ve54",
+              "id": "item_10_2_57_0efsq45",
               "content": "Vestir melhor minhas roupas",
               "outgoingEdgeId": "edge_10_item_2_to_11"
             },
             {
-              "id": "item_10_3_58_21cada0",
+              "id": "item_10_3_58_m2vitzl",
               "content": "Voltar a forma após o parto",
               "outgoingEdgeId": "edge_10_item_3_to_11"
             },
             {
-              "id": "item_10_4_59_1l89trz",
+              "id": "item_10_4_59_stmosqy",
               "content": "Outros",
               "outgoingEdgeId": "edge_10_item_4_to_11"
             }
@@ -610,7 +610,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_60_kw06jh3",
+          "id": "block_text_60_rrmhp1w",
           "type": "text",
           "content": {
             "richText": [
@@ -626,7 +626,7 @@
           }
         },
         {
-          "id": "block_number_61_duplz84",
+          "id": "block_number_61_jg74sw0",
           "type": "number input",
           "options": {
             "variableId": "var_altura",
@@ -646,7 +646,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_62_qg63vd8",
+          "id": "block_text_62_achz3j1",
           "type": "text",
           "content": {
             "richText": [
@@ -662,7 +662,7 @@
           }
         },
         {
-          "id": "block_number_63_wkc935o",
+          "id": "block_number_63_sbo0a8k",
           "type": "number input",
           "options": {
             "variableId": "var_peso_atual",
@@ -682,7 +682,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_64_doln3f5",
+          "id": "block_text_64_2omq5ww",
           "type": "text",
           "content": {
             "richText": [
@@ -698,7 +698,7 @@
           }
         },
         {
-          "id": "block_number_65_otp38zc",
+          "id": "block_number_65_e0p2sea",
           "type": "number input",
           "options": {
             "variableId": "var_peso_desejado",
@@ -718,7 +718,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_66_1ynfew6",
+          "id": "block_text_66_ldiwrfu",
           "type": "text",
           "content": {
             "richText": [
@@ -734,7 +734,7 @@
           }
         },
         {
-          "id": "block_wait_67_1mysc2w",
+          "id": "block_wait_67_pug0x1j",
           "type": "Wait",
           "options": {
             "secondsToWaitFor": 5
@@ -752,7 +752,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_68_tnhbj7g",
+          "id": "block_text_68_y6qz6z8",
           "type": "text",
           "content": {
             "richText": [
@@ -768,7 +768,7 @@
           }
         },
         {
-          "id": "block_text_69_k11h183",
+          "id": "block_text_69_73bvwza",
           "type": "text",
           "content": {
             "richText": [
@@ -784,7 +784,7 @@
           }
         },
         {
-          "id": "block_text_70_6us5m28",
+          "id": "block_text_70_7m33fkh",
           "type": "text",
           "content": {
             "richText": [
@@ -808,7 +808,7 @@
           }
         },
         {
-          "id": "block_text_71_y85kjaz",
+          "id": "block_text_71_eppldmp",
           "type": "text",
           "content": {
             "richText": [
@@ -824,11 +824,11 @@
           }
         },
         {
-          "id": "block_choice_72_ituja95",
+          "id": "block_choice_72_s5mydpc",
           "type": "choice input",
           "items": [
             {
-              "id": "item_15_0_73_vw95jv3",
+              "id": "item_15_0_73_4zyqk8p",
               "content": "SIM, ESTOU PREPARADA!",
               "outgoingEdgeId": "edge_15_item_0_to_16"
             }
@@ -848,7 +848,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_74_vprq9h7",
+          "id": "block_text_74_xi2lydc",
           "type": "text",
           "content": {
             "richText": [
@@ -864,7 +864,7 @@
           }
         },
         {
-          "id": "block_text_75_kx3uyft",
+          "id": "block_text_75_q5tt6uq",
           "type": "text",
           "content": {
             "richText": [
@@ -960,7 +960,7 @@
           }
         },
         {
-          "id": "block_text_76_fj5ok3d",
+          "id": "block_text_76_826u9iq",
           "type": "text",
           "content": {
             "richText": [
@@ -976,7 +976,7 @@
           }
         },
         {
-          "id": "block_text_77_jjmfe5w",
+          "id": "block_text_77_z59qz7o",
           "type": "text",
           "content": {
             "richText": [
@@ -992,23 +992,7 @@
           }
         },
         {
-          "id": "block_text_78_2yse31t",
-          "type": "text",
-          "content": {
-            "richText": [
-              {
-                "type": "p",
-                "children": [
-                  {
-                    "text": "📸 [Depoimento Maria Silva: Perdeu 3,5kg em 4 semanas sem deixar de comer o que gosta]"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "id": "block_text_79_qulv55n",
+          "id": "block_text_78_rnddd67",
           "type": "text",
           "content": {
             "richText": [
@@ -1024,7 +1008,7 @@
           }
         },
         {
-          "id": "block_text_80_5fv5eu8",
+          "id": "block_text_79_nufops7",
           "type": "text",
           "content": {
             "richText": [
@@ -1040,11 +1024,11 @@
           }
         },
         {
-          "id": "block_choice_81_x3kpg62",
+          "id": "block_choice_80_4v3vtls",
           "type": "choice input",
           "items": [
             {
-              "id": "item_16_0_82_d33pjd3",
+              "id": "item_16_0_81_f93tmhw",
               "content": "SIM, EU ACEITO O DESAFIO!",
               "outgoingEdgeId": "edge_16_item_0_to_17"
             }
@@ -1064,7 +1048,7 @@
       },
       "blocks": [
         {
-          "id": "block_text_83_32k8c7t",
+          "id": "block_text_82_8e176k9",
           "type": "text",
           "content": {
             "richText": [
@@ -1080,7 +1064,7 @@
           }
         },
         {
-          "id": "block_text_84_d0wxfwp",
+          "id": "block_text_83_3s4f192",
           "type": "text",
           "content": {
             "richText": [
@@ -1096,7 +1080,7 @@
           }
         },
         {
-          "id": "block_text_85_k93jwwq",
+          "id": "block_text_84_euargg0",
           "type": "text",
           "content": {
             "richText": [
@@ -1144,11 +1128,11 @@
           }
         },
         {
-          "id": "block_choice_86_96a73f5",
+          "id": "block_choice_85_13xuo86",
           "type": "choice input",
           "items": [
             {
-              "id": "item_17_0_87_kdb1qw3",
+              "id": "item_17_0_86_tmefxpk",
               "content": "👉 QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)",
               "outgoingEdgeId": "edge_payt_redirect"
             }
@@ -1158,7 +1142,7 @@
           }
         },
         {
-          "id": "block_redirect_88_6nbl0sz",
+          "id": "block_redirect_87_quqolhy",
           "type": "Redirect",
           "options": {
             "url": "https://app.zuptos.com.br/checkout/7dda6e09d2f964c0",
@@ -1181,8 +1165,8 @@
     {
       "id": "edge_1_item_0_to_2",
       "from": {
-        "blockId": "block_choice_3_dot2n14",
-        "itemId": "item_1_0_4_q5yid1c"
+        "blockId": "block_choice_3_497paf4",
+        "itemId": "item_1_0_4_9hlfpep"
       },
       "to": {
         "groupId": "group_2"
@@ -1191,8 +1175,8 @@
     {
       "id": "edge_2_item_0_to_3",
       "from": {
-        "blockId": "block_choice_6_f14c15a",
-        "itemId": "item_2_0_7_y4a4m8s"
+        "blockId": "block_choice_6_1dlyt31",
+        "itemId": "item_2_0_7_vupjy0j"
       },
       "to": {
         "groupId": "group_3"
@@ -1201,8 +1185,8 @@
     {
       "id": "edge_2_item_1_to_3",
       "from": {
-        "blockId": "block_choice_6_f14c15a",
-        "itemId": "item_2_1_8_34ep0rq"
+        "blockId": "block_choice_6_1dlyt31",
+        "itemId": "item_2_1_8_rh367jm"
       },
       "to": {
         "groupId": "group_3"
@@ -1211,8 +1195,8 @@
     {
       "id": "edge_2_item_2_to_3",
       "from": {
-        "blockId": "block_choice_6_f14c15a",
-        "itemId": "item_2_2_9_akrvxch"
+        "blockId": "block_choice_6_1dlyt31",
+        "itemId": "item_2_2_9_ehgxawt"
       },
       "to": {
         "groupId": "group_3"
@@ -1221,8 +1205,8 @@
     {
       "id": "edge_3_item_0_to_4",
       "from": {
-        "blockId": "block_choice_12_8j0r24l",
-        "itemId": "item_3_0_13_bjk7i8y"
+        "blockId": "block_choice_12_ypmfiyw",
+        "itemId": "item_3_0_13_uuilgp1"
       },
       "to": {
         "groupId": "group_4"
@@ -1231,8 +1215,8 @@
     {
       "id": "edge_3_item_1_to_4",
       "from": {
-        "blockId": "block_choice_12_8j0r24l",
-        "itemId": "item_3_1_14_m57hhpk"
+        "blockId": "block_choice_12_ypmfiyw",
+        "itemId": "item_3_1_14_2c558pe"
       },
       "to": {
         "groupId": "group_4"
@@ -1241,8 +1225,8 @@
     {
       "id": "edge_3_item_2_to_4",
       "from": {
-        "blockId": "block_choice_12_8j0r24l",
-        "itemId": "item_3_2_15_m7qy2v7"
+        "blockId": "block_choice_12_ypmfiyw",
+        "itemId": "item_3_2_15_gf9x8es"
       },
       "to": {
         "groupId": "group_4"
@@ -1251,8 +1235,8 @@
     {
       "id": "edge_4_item_0_to_5",
       "from": {
-        "blockId": "block_choice_17_dob6974",
-        "itemId": "item_4_0_18_2fk84bp"
+        "blockId": "block_choice_17_sxpzm9g",
+        "itemId": "item_4_0_18_86jaw14"
       },
       "to": {
         "groupId": "group_5"
@@ -1261,8 +1245,8 @@
     {
       "id": "edge_4_item_1_to_5",
       "from": {
-        "blockId": "block_choice_17_dob6974",
-        "itemId": "item_4_1_19_t7ndrxg"
+        "blockId": "block_choice_17_sxpzm9g",
+        "itemId": "item_4_1_19_i4ozcr4"
       },
       "to": {
         "groupId": "group_5"
@@ -1271,8 +1255,8 @@
     {
       "id": "edge_4_item_2_to_5",
       "from": {
-        "blockId": "block_choice_17_dob6974",
-        "itemId": "item_4_2_20_kqiguyc"
+        "blockId": "block_choice_17_sxpzm9g",
+        "itemId": "item_4_2_20_vdn4wru"
       },
       "to": {
         "groupId": "group_5"
@@ -1281,8 +1265,8 @@
     {
       "id": "edge_4_item_3_to_5",
       "from": {
-        "blockId": "block_choice_17_dob6974",
-        "itemId": "item_4_3_21_6uaxbaa"
+        "blockId": "block_choice_17_sxpzm9g",
+        "itemId": "item_4_3_21_7yh388q"
       },
       "to": {
         "groupId": "group_5"
@@ -1291,8 +1275,8 @@
     {
       "id": "edge_5_item_0_to_6",
       "from": {
-        "blockId": "block_choice_23_5pwumuo",
-        "itemId": "item_5_0_24_t838f8o"
+        "blockId": "block_choice_23_m095ef8",
+        "itemId": "item_5_0_24_andqclb"
       },
       "to": {
         "groupId": "group_6"
@@ -1301,8 +1285,8 @@
     {
       "id": "edge_5_item_1_to_6",
       "from": {
-        "blockId": "block_choice_23_5pwumuo",
-        "itemId": "item_5_1_25_mfjjpb4"
+        "blockId": "block_choice_23_m095ef8",
+        "itemId": "item_5_1_25_qr2btl0"
       },
       "to": {
         "groupId": "group_6"
@@ -1311,8 +1295,8 @@
     {
       "id": "edge_5_item_2_to_6",
       "from": {
-        "blockId": "block_choice_23_5pwumuo",
-        "itemId": "item_5_2_26_selnvwd"
+        "blockId": "block_choice_23_m095ef8",
+        "itemId": "item_5_2_26_v5q1vx4"
       },
       "to": {
         "groupId": "group_6"
@@ -1321,8 +1305,8 @@
     {
       "id": "edge_5_item_3_to_6",
       "from": {
-        "blockId": "block_choice_23_5pwumuo",
-        "itemId": "item_5_3_27_nt5l4l5"
+        "blockId": "block_choice_23_m095ef8",
+        "itemId": "item_5_3_27_s0w520n"
       },
       "to": {
         "groupId": "group_6"
@@ -1331,8 +1315,8 @@
     {
       "id": "edge_6_item_0_to_7",
       "from": {
-        "blockId": "block_choice_29_padhxh3",
-        "itemId": "item_6_0_30_mxc9mhv"
+        "blockId": "block_choice_29_c4bahjg",
+        "itemId": "item_6_0_30_2hvathy"
       },
       "to": {
         "groupId": "group_7"
@@ -1341,8 +1325,8 @@
     {
       "id": "edge_6_item_1_to_7",
       "from": {
-        "blockId": "block_choice_29_padhxh3",
-        "itemId": "item_6_1_31_qgu8xfk"
+        "blockId": "block_choice_29_c4bahjg",
+        "itemId": "item_6_1_31_4xkug8s"
       },
       "to": {
         "groupId": "group_7"
@@ -1351,8 +1335,8 @@
     {
       "id": "edge_6_item_2_to_7",
       "from": {
-        "blockId": "block_choice_29_padhxh3",
-        "itemId": "item_6_2_32_i0m0m9d"
+        "blockId": "block_choice_29_c4bahjg",
+        "itemId": "item_6_2_32_iad7hpb"
       },
       "to": {
         "groupId": "group_7"
@@ -1361,8 +1345,8 @@
     {
       "id": "edge_6_item_3_to_7",
       "from": {
-        "blockId": "block_choice_29_padhxh3",
-        "itemId": "item_6_3_33_rwg7mna"
+        "blockId": "block_choice_29_c4bahjg",
+        "itemId": "item_6_3_33_40phvee"
       },
       "to": {
         "groupId": "group_7"
@@ -1371,8 +1355,8 @@
     {
       "id": "edge_7_item_0_to_8",
       "from": {
-        "blockId": "block_choice_35_f7iq5hz",
-        "itemId": "item_7_0_36_4yqvu2g"
+        "blockId": "block_choice_35_iz38h4i",
+        "itemId": "item_7_0_36_qwpd8mp"
       },
       "to": {
         "groupId": "group_8"
@@ -1381,8 +1365,8 @@
     {
       "id": "edge_7_item_1_to_8",
       "from": {
-        "blockId": "block_choice_35_f7iq5hz",
-        "itemId": "item_7_1_37_ju7zy88"
+        "blockId": "block_choice_35_iz38h4i",
+        "itemId": "item_7_1_37_5hk502t"
       },
       "to": {
         "groupId": "group_8"
@@ -1391,8 +1375,8 @@
     {
       "id": "edge_7_item_2_to_8",
       "from": {
-        "blockId": "block_choice_35_f7iq5hz",
-        "itemId": "item_7_2_38_1qqjfj9"
+        "blockId": "block_choice_35_iz38h4i",
+        "itemId": "item_7_2_38_by7w81u"
       },
       "to": {
         "groupId": "group_8"
@@ -1401,8 +1385,8 @@
     {
       "id": "edge_7_item_3_to_8",
       "from": {
-        "blockId": "block_choice_35_f7iq5hz",
-        "itemId": "item_7_3_39_sf7lpro"
+        "blockId": "block_choice_35_iz38h4i",
+        "itemId": "item_7_3_39_gdhoa4w"
       },
       "to": {
         "groupId": "group_8"
@@ -1411,8 +1395,8 @@
     {
       "id": "edge_8_item_0_to_9",
       "from": {
-        "blockId": "block_choice_41_34bjdfk",
-        "itemId": "item_8_0_42_3tftbtl"
+        "blockId": "block_choice_41_kjdugew",
+        "itemId": "item_8_0_42_wz4wvcv"
       },
       "to": {
         "groupId": "group_9"
@@ -1421,8 +1405,8 @@
     {
       "id": "edge_8_item_1_to_9",
       "from": {
-        "blockId": "block_choice_41_34bjdfk",
-        "itemId": "item_8_1_43_pqm6t1k"
+        "blockId": "block_choice_41_kjdugew",
+        "itemId": "item_8_1_43_ksevczj"
       },
       "to": {
         "groupId": "group_9"
@@ -1431,8 +1415,8 @@
     {
       "id": "edge_8_item_2_to_9",
       "from": {
-        "blockId": "block_choice_41_34bjdfk",
-        "itemId": "item_8_2_44_jhiy9rp"
+        "blockId": "block_choice_41_kjdugew",
+        "itemId": "item_8_2_44_sa55sc3"
       },
       "to": {
         "groupId": "group_9"
@@ -1441,8 +1425,8 @@
     {
       "id": "edge_8_item_3_to_9",
       "from": {
-        "blockId": "block_choice_41_34bjdfk",
-        "itemId": "item_8_3_45_44lfmqo"
+        "blockId": "block_choice_41_kjdugew",
+        "itemId": "item_8_3_45_yj6341t"
       },
       "to": {
         "groupId": "group_9"
@@ -1451,8 +1435,8 @@
     {
       "id": "edge_9_item_0_to_10",
       "from": {
-        "blockId": "block_choice_48_f2fqpet",
-        "itemId": "item_9_0_49_6ycz0q4"
+        "blockId": "block_choice_48_wo12iis",
+        "itemId": "item_9_0_49_u6a6koc"
       },
       "to": {
         "groupId": "group_10"
@@ -1461,8 +1445,8 @@
     {
       "id": "edge_9_item_1_to_10",
       "from": {
-        "blockId": "block_choice_48_f2fqpet",
-        "itemId": "item_9_1_50_0wexgbs"
+        "blockId": "block_choice_48_wo12iis",
+        "itemId": "item_9_1_50_q6ttv2n"
       },
       "to": {
         "groupId": "group_10"
@@ -1471,8 +1455,8 @@
     {
       "id": "edge_9_item_2_to_10",
       "from": {
-        "blockId": "block_choice_48_f2fqpet",
-        "itemId": "item_9_2_51_919pjrr"
+        "blockId": "block_choice_48_wo12iis",
+        "itemId": "item_9_2_51_e4p56ov"
       },
       "to": {
         "groupId": "group_10"
@@ -1481,8 +1465,8 @@
     {
       "id": "edge_9_item_3_to_10",
       "from": {
-        "blockId": "block_choice_48_f2fqpet",
-        "itemId": "item_9_3_52_5kksgs7"
+        "blockId": "block_choice_48_wo12iis",
+        "itemId": "item_9_3_52_f2la9gj"
       },
       "to": {
         "groupId": "group_10"
@@ -1491,8 +1475,8 @@
     {
       "id": "edge_10_item_0_to_11",
       "from": {
-        "blockId": "block_choice_54_zjof3xc",
-        "itemId": "item_10_0_55_7k7w9ly"
+        "blockId": "block_choice_54_i7q3z68",
+        "itemId": "item_10_0_55_6t9ukeu"
       },
       "to": {
         "groupId": "group_11"
@@ -1501,8 +1485,8 @@
     {
       "id": "edge_10_item_1_to_11",
       "from": {
-        "blockId": "block_choice_54_zjof3xc",
-        "itemId": "item_10_1_56_13h5nyn"
+        "blockId": "block_choice_54_i7q3z68",
+        "itemId": "item_10_1_56_66nrsex"
       },
       "to": {
         "groupId": "group_11"
@@ -1511,8 +1495,8 @@
     {
       "id": "edge_10_item_2_to_11",
       "from": {
-        "blockId": "block_choice_54_zjof3xc",
-        "itemId": "item_10_2_57_ue6ve54"
+        "blockId": "block_choice_54_i7q3z68",
+        "itemId": "item_10_2_57_0efsq45"
       },
       "to": {
         "groupId": "group_11"
@@ -1521,8 +1505,8 @@
     {
       "id": "edge_10_item_3_to_11",
       "from": {
-        "blockId": "block_choice_54_zjof3xc",
-        "itemId": "item_10_3_58_21cada0"
+        "blockId": "block_choice_54_i7q3z68",
+        "itemId": "item_10_3_58_m2vitzl"
       },
       "to": {
         "groupId": "group_11"
@@ -1531,8 +1515,8 @@
     {
       "id": "edge_10_item_4_to_11",
       "from": {
-        "blockId": "block_choice_54_zjof3xc",
-        "itemId": "item_10_4_59_1l89trz"
+        "blockId": "block_choice_54_i7q3z68",
+        "itemId": "item_10_4_59_stmosqy"
       },
       "to": {
         "groupId": "group_11"
@@ -1541,7 +1525,7 @@
     {
       "id": "edge_11_to_12",
       "from": {
-        "blockId": "block_number_61_duplz84"
+        "blockId": "block_number_61_jg74sw0"
       },
       "to": {
         "groupId": "group_12"
@@ -1550,7 +1534,7 @@
     {
       "id": "edge_12_to_13",
       "from": {
-        "blockId": "block_number_63_wkc935o"
+        "blockId": "block_number_63_sbo0a8k"
       },
       "to": {
         "groupId": "group_13"
@@ -1559,7 +1543,7 @@
     {
       "id": "edge_13_to_14",
       "from": {
-        "blockId": "block_number_65_otp38zc"
+        "blockId": "block_number_65_e0p2sea"
       },
       "to": {
         "groupId": "group_14"
@@ -1568,7 +1552,7 @@
     {
       "id": "edge_14_to_15",
       "from": {
-        "blockId": "block_wait_67_1mysc2w"
+        "blockId": "block_wait_67_pug0x1j"
       },
       "to": {
         "groupId": "group_15"
@@ -1577,8 +1561,8 @@
     {
       "id": "edge_15_item_0_to_16",
       "from": {
-        "blockId": "block_choice_72_ituja95",
-        "itemId": "item_15_0_73_vw95jv3"
+        "blockId": "block_choice_72_s5mydpc",
+        "itemId": "item_15_0_73_4zyqk8p"
       },
       "to": {
         "groupId": "group_16"
@@ -1587,8 +1571,8 @@
     {
       "id": "edge_16_item_0_to_17",
       "from": {
-        "blockId": "block_choice_81_x3kpg62",
-        "itemId": "item_16_0_82_d33pjd3"
+        "blockId": "block_choice_80_4v3vtls",
+        "itemId": "item_16_0_81_f93tmhw"
       },
       "to": {
         "groupId": "group_17"
@@ -1597,12 +1581,12 @@
     {
       "id": "edge_payt_redirect",
       "from": {
-        "blockId": "block_choice_86_96a73f5",
-        "itemId": "item_17_0_87_kdb1qw3"
+        "blockId": "block_choice_85_13xuo86",
+        "itemId": "item_17_0_86_tmefxpk"
       },
       "to": {
         "groupId": "group_17",
-        "blockId": "block_redirect_88_6nbl0sz"
+        "blockId": "block_redirect_87_quqolhy"
       }
     }
   ],
