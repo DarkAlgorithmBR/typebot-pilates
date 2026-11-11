@@ -76,8 +76,10 @@ async function run() {
     return brDate.toISOString().substring(0, 10);
   }
 
-  const todayStr = '2026-10-17';
-  const yesterdayStr = '2026-10-16';
+  // Horário atual de Brasília
+  const nowBr = new Date(Date.now() - (3 * 3600 * 1000));
+  const todayStr = '2026-10-18';
+  const yesterdayStr = '2026-10-17';
 
   const todayLeads = uniqueLeads.filter(l => {
     const dStr = getLocalDateStr(l.startedAt || l.updatedAt);
