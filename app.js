@@ -248,11 +248,12 @@ const funnelSteps = [
     step: 1,
     key: "inicio_teste",
     messages: [
-      "Faça Pilates Tailandês para melhorar as articulações e de quebra perder uns kilinhos em 28 dias",
-      "Clique abaixo, faça o teste grátis de 1 minuto e aprenda"
+      "Oie, tudo bem? 👋",
+      "Meu nome é Mali Santos e sou especialista em *Pilates Tailandês há mais de 6 anos...*",
+      "Gostaria de receber *GRATUITAMENTE* um plano personalizado de Pilates Tailandês que *fortalece seu corpo, aumenta sua autoestima e te deixa em forma em apenas 28 dias?* (CLIQUE NO BOTÃO ABAIXO)"
     ],
     type: "choice",
-    options: ["COMEÇAR TESTE GRÁTIS"]
+    options: ["SIM, QUERO MEU PLANO!"]
   },
   {
     step: 2,
