@@ -305,7 +305,7 @@ const funnelSteps = [
     key: "regiao",
     messages: ["Qual região do corpo você gostaria de atingir primeiro?"],
     type: "choice",
-    options: ["Barriga", "Glúetos", "Pernas", "Peito"]
+    options: ["Barriga", "Glúteos", "Braços", "Pernas", "Peito"]
   },
   {
     step: 8,

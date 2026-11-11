@@ -85,7 +85,8 @@ Mensagem da Mali Santos:
   1. "Qual região do corpo você gostaria de atingir primeiro?"
 Opções de Resposta:
   - Barriga
-  - Glúetos
+  - Glúteos
+  - Braços
   - Pernas
   - Peito
 
