@@ -83,7 +83,7 @@ const Tracker = {
     if (stepNumber > (lead.maxStepReached || 1)) {
       lead.maxStepReached = stepNumber;
     }
-    if (stepNumber >= 17) {
+    if (stepNumber >= 18) {
       lead.completed = true;
     }
     lead.updatedAt = new Date().toISOString();
@@ -241,7 +241,7 @@ document.addEventListener("touchstart", () => {
 }, { once: true });
 
 // ==========================================
-// DADOS DAS 18 ETAPAS DO FUNIL (AJUSTADO CONFORME O FUNIL ORIGINAL)
+// DADOS DAS 18 ETAPAS DO FUNIL (REFATORADO PARA ALTA CONVERSÃO)
 // ==========================================
 const funnelSteps = [
   {
@@ -279,7 +279,10 @@ const funnelSteps = [
   {
     step: 4,
     key: "fisico",
-    messages: ["Como você descreveria seu fisico?"],
+    messages: [
+      "Fica tranquila! Mais de 82% das mulheres que começaram o Pilates Tailandês com a gente não conseguiam nem encostar a mão no chão, e hoje têm o corpo muito mais solto, leve e sem dores.",
+      "Como você descreveria seu fisico?"
+    ],
     type: "choice",
     options: ["Magra", "Média", "Um pouco acima do peso", "Acima do peso"]
   },
@@ -306,13 +309,24 @@ const funnelSteps = [
   },
   {
     step: 8,
+    key: "prova_leopoldina",
+    messages: [
+      "Perfeito! O Pilates Tailandês tem movimentos específicos de ativação profunda que atacam exatamente essa região sem você precisar fazer exercícios pesados ou abdominais tradicionais.",
+      "Dá uma olhada no que a Leopoldina me mandou há pouco tempo... Ela tinha esse mesmo objetivo e secou 15kg em 5 semanas seguindo o app:",
+      { type: "image", src: "depoimento-leopoldina.jpg" }
+    ],
+    type: "choice",
+    options: ["UAU, QUERO ESSE RESULTADO!"]
+  },
+  {
+    step: 9,
     key: "exercicio",
     messages: ["Quantas vezes faz exercício?"],
     type: "choice",
     options: ["Quase todos os dias", "Algumas vezes na semana", "Algumas vezes por mês", "Poucas vezes"]
   },
   {
-    step: 9,
+    step: 10,
     key: "sono",
     messages: [
       "Já estou terminando, só me responde mais algumas perguntinhas por favor",
@@ -322,7 +336,7 @@ const funnelSteps = [
     options: ["Menos de 5 horas", "5-6 horas", "7-8 horas", "Mais de 8 horas"]
   },
   {
-    step: 10,
+    step: 11,
     key: "motivo",
     messages: ["Qual é o seu principal motivo para entrar em forma?"],
     type: "choice",
@@ -335,31 +349,40 @@ const funnelSteps = [
     ]
   },
   {
-    step: 11,
+    step: 12,
     key: "altura",
-    messages: ["Qual a sua altura em cm?"],
-    type: "number_input",
-    placeholder: "Ex: 170",
+    messages: [
+      "Eu te entendo perfeitamente... Ver o nosso corpo mudar, sentir falta de energia e as roupas pararem de cair bem mexe muito com a nossa cabeça. Mas você não está sozinha e nós vamos virar esse jogo juntas a partir de hoje!",
+      "Qual a sua altura em cm?"
+    ],
+    type: "slider",
+    min: 145,
+    max: 190,
+    defaultVal: 162,
     unit: "cm"
   },
   {
-    step: 12,
+    step: 13,
     key: "peso_atual",
     messages: ["Qual é o seu peso atualmente em kgs?"],
-    type: "number_input",
-    placeholder: "Ex: 80",
-    unit: "kg"
-  },
-  {
-    step: 13,
-    key: "peso_desejado",
-    messages: ["Entendi! E qual é o seu objetivo de peso ideal em kgs?"],
-    type: "number_input",
-    placeholder: "Ex: 68",
+    type: "slider",
+    min: 50,
+    max: 130,
+    defaultVal: 75,
     unit: "kg"
   },
   {
     step: 14,
+    key: "peso_desejado",
+    messages: ["Entendi! E qual é o seu objetivo de peso ideal em kgs?"],
+    type: "slider",
+    min: 45,
+    max: 100,
+    defaultVal: 62,
+    unit: "kg"
+  },
+  {
+    step: 15,
     messages: [
       "Terminando seu plano de Pilates Tailandês personalizado..."
     ],
@@ -367,7 +390,7 @@ const funnelSteps = [
     waitDuration: 4800
   },
   {
-    step: 15,
+    step: 16,
     messages: [
       "Seu Plano de Pilates Tailandês está pronto! 🔥",
       "De acordo com as informações que você me passou, prevemos sua meta até {DATA_ALVO}."
@@ -376,27 +399,28 @@ const funnelSteps = [
     options: ["SIM, ESTOU PREPARADA!"]
   },
   {
-    step: 16,
+    step: 17,
+    key: "beneficios_neuza",
     messages: [
       "Deixa eu te explicar como irá funcionar...",
-      "Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:\n\n✅ Perca de peso\n✅ Ganho de massa magra\n✅ Alivio de dores nas costas\n✅ Melhora da postura\n✅ Aumento da autoestima\n✅ Aumento da libido\n✅ Melhora da flexibilidade\n✅ Pode ser feito em casa\n✅ Sem aparelhos, você não precisa comprar NADA.",
-      "Dá uma olhada no que algumas das minhas alunas que começaram do zero me mandaram essa semana 👇",
+      "Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:\n\n✅ Perda de peso\n✅ Ganho de massa magra\n✅ Alivio de dores nas costas\n✅ Melhora da postura\n✅ Aumento da autoestima\n✅ Aumento da libido\n✅ Melhora da flexibilidade\n✅ Pode ser feito em casa\n✅ Sem aparelhos, você não precisa comprar NADA.",
+      "E se você está pensando: 'Mali, será que eu vou conseguir acompanhar sozinha pelo celular?', fica tranquila! Olha o que a Neuza me mandou na primeira semana:",
       { type: "image", src: "depoimento-neuza.png" },
-      { type: "image", src: "depoimento-leopoldina.jpg" },
-      "Você está preparada para essa transformação na sua vida?"
+      "Você está preparada para começar essa transformação na sua vida hoje?"
     ],
     type: "choice",
     options: ["SIM, EU ACEITO O DESAFIO!"]
   },
   {
-    step: 17,
+    step: 18,
     messages: [
-      "Não gostamos de ver que uma mensalidade em academias pelo Brasil pode chegar a R$ 200,00 por mês! Fora nutricionistas e personais! Achamos um absurdo isso...",
-      "Por isso queremos oferecer isso a você sem nenhum custo. Sim, é isso mesmo, o acompanhamento é totalmente gratuito.",
-      "Mas, para manter tudo rodando e garantir que você tenha a melhor experiência, cobramos uma pequena taxa de inscrição de APENAS R$ 37. Que é o valor que a Plataforma nos cobra para hospedar as aulas dos treinos.\n\nEssa pequena contribuição nos ajuda a manter tudo isso vivo, a continuar apoiando e transformando a vida de tantas mulheres. E é também uma forma de selarmos nosso compromisso juntos.\n\nAlém disso, se em até 30 dias você sentir que não está vendo a mudança que esperava, eu prometo que devolvo cada centavo."
+      "O seu Plano Personalizado de Pilates Tailandês está liberado! 🔓",
+      "Uma mensalidade de Pilates tradicional ou academia custa facilmente mais de R$ 200,00 por mês — fora nutricionista. Mas meu objetivo é que qualquer mulher consiga transformar o corpo em casa.",
+      "Por isso, ao garantir seu acesso hoje, você vai receber o pacote completo:\n\n📦 *O QUE VOCÊ RECEBE IMEDIATAMENTE:*\n✅ *App Plano 28 Dias de Pilates Tailandês* (Treinos rápidos em casa, passo a passo) — _De R$ 97_\n✅ *Protocolo Desinchaço Abdominal* (Ativação profunda para secar a barriga) — _De R$ 47_\n✅ *Rotina Noturna de 5 Minutos* (Para destravar a coluna, aliviar dores e dormir melhor) — _De R$ 37_\n✅ *Comunidade VIP de Alunas + Suporte* — _De R$ 47*\n\n❌ *Valor Total:* ~R$ 228,00~\n🔥 *Seu acesso hoje:* *APENAS R$ 37,00* _(Pagamento único — sem mensalidades!)_",
+      "🛡️ *Garantia Incondicional de 30 Dias:* Você tem 1 mês inteiro para testar. Se você não sentir suas roupas folgando, as dores sumindo e a autoestima voltando, basta um clique e eu devolvo 100% do seu dinheiro."
     ],
     type: "final_payt",
-    options: ["QUERO COMEÇAR A MINHA TRANSFORMAÇÃO AGORA (R$ 37)"]
+    options: ["QUERO MEU PLANO PERSONALIZADO POR R$ 37"]
   }
 ];
 
@@ -472,11 +496,12 @@ function createTypingBubble() {
   return row;
 }
 
-// Formata texto com suporte a negrito (*texto*), itálico (_texto_) e quebras de linha
+// Formata texto com suporte a negrito (*texto*), itálico (_texto_), tachado (~texto~) e quebras de linha
 function formatWhatsAppText(text) {
   return text
     .replace(/\*(.*?)\*/g, "<strong>$1</strong>")
     .replace(/_(.*?)_/g, "<em>$1</em>")
+    .replace(/~(.*?)~/g, "<del>$1</del>")
     .replace(/\n/g, "<br>");
 }
 
@@ -584,10 +609,10 @@ async function executeStep(stepIndex) {
       msgText = msgText.replace(/\{DATA_ALVO\}/g, getFormattedTargetDate(38));
     }
 
-    const isOfferStep = stepData.type === "final_payt" || stepData.step === 17;
+    const isOfferStep = stepData.type === "final_payt" || stepData.step === 18;
 
     // TEMPOS DE DIGITAÇÃO:
-    // Para a oferta final (Etapa 17 após "SIM, EU ACEITO O DESAFIO"): ritmo cadenciado para leitura real da proposta e garantia
+    // Para a oferta final (Etapa 18 após "SIM, EU ACEITO O DESAFIO"): ritmo cadenciado para leitura real da proposta e garantia
     // Para as demais etapas: tempos dinâmicos e ágeis
     const typingTime = isOfferStep
       ? Math.min(3800, Math.max(1800, msgText.length * 20))
@@ -608,7 +633,7 @@ async function executeStep(stepIndex) {
     renderIncomingMessage(msgText);
 
     // Pausa entre mensagens consecutivas:
-    // Na oferta final (Etapa 17), pausa cadenciada de 2000ms para permitir leitura completa do texto
+    // Na oferta final (Etapa 18), pausa cadenciada de 2000ms para permitir leitura completa do texto
     // Nas demais etapas, pausa rápida de 600ms
     if (i < stepData.messages.length - 1) {
       const pauseDuration = isOfferStep ? 2000 : 600;
@@ -619,20 +644,121 @@ async function executeStep(stepIndex) {
   // Ações de acordo com o tipo da etapa
   if (stepData.type === "choice") {
     renderChoices(stepData.options, stepData.key);
+  } else if (stepData.type === "slider") {
+    renderSliderInput(stepData);
   } else if (stepData.type === "number_input") {
     renderNumberInput(stepData);
   } else if (stepData.type === "calculation_wait") {
-    // Etapa 14: Análise e cálculo do plano personalizado (4.8 segundos para transmitir autoridade e precisão)
+    // Etapa 15: Análise e cálculo do plano personalizado (4.8 segundos com barra de progresso em 3 estágios)
     await handleCalculationWait(stepData.waitDuration || 4800);
   } else if (stepData.type === "chart_step") {
-    // Etapa 15: Previsão gráfica de redução de peso
+    // Etapa 16: Previsão gráfica de redução de peso
     renderChartStep(stepData);
   } else if (stepData.type === "final_payt") {
-    // Etapa 17: Botão final direto para a Wiapy (aguarda 900ms para leitura da garantia antes de exibir o botão)
+    // Etapa 18: Botão final direto para a Wiapy com destaque pulsante
     setTimeout(() => {
       renderPaytChoice(stepData.options[0]);
     }, 900);
   }
+}
+
+// Renderiza controle deslizante interativo (Range Slider) para Altura e Peso (Etapas 12, 13, 14)
+function renderSliderInput(stepData) {
+  removeActiveChoices();
+
+  const container = document.createElement("div");
+  container.className = "inline-slider-wrapper";
+  container.id = "active-inline-choices";
+
+  const minVal = stepData.min || 50;
+  const maxVal = stepData.max || 150;
+  const defaultVal = stepData.defaultVal || Math.round((minVal + maxVal) / 2);
+  const unit = stepData.unit || "";
+
+  container.innerHTML = `
+    <div class="inline-slider-card">
+      <div class="slider-header">
+        <span class="slider-label">Deslize para ajustar:</span>
+        <div class="slider-val-badge">
+          <span class="slider-val-number" id="slider-display-val">${defaultVal}</span>
+          <span class="slider-val-unit">${unit}</span>
+        </div>
+      </div>
+
+      <div class="slider-control-row">
+        <button type="button" class="slider-step-btn" id="slider-btn-minus" aria-label="Diminuir">－</button>
+        <div class="slider-track-wrap">
+          <input type="range" class="inline-range-slider" id="slider-range-input" 
+                 min="${minVal}" max="${maxVal}" step="1" value="${defaultVal}">
+          <div class="slider-minmax-labels">
+            <span>${minVal} ${unit}</span>
+            <span>${maxVal} ${unit}</span>
+          </div>
+        </div>
+        <button type="button" class="slider-step-btn" id="slider-btn-plus" aria-label="Aumentar">＋</button>
+      </div>
+
+      <button type="button" class="choice-btn primary-cta slider-confirm-btn" id="slider-confirm-btn">
+        CONFIRMAR (${defaultVal} ${unit})
+      </button>
+    </div>
+  `;
+
+  chatMessagesEl.appendChild(container);
+  scrollToBottom();
+
+  const rangeInput = container.querySelector("#slider-range-input");
+  const displayVal = container.querySelector("#slider-display-val");
+  const confirmBtn = container.querySelector("#slider-confirm-btn");
+  const btnMinus = container.querySelector("#slider-btn-minus");
+  const btnPlus = container.querySelector("#slider-btn-plus");
+
+  function updateSliderFill() {
+    const val = parseInt(rangeInput.value, 10);
+    const percent = ((val - minVal) / (maxVal - minVal)) * 100;
+    rangeInput.style.background = `linear-gradient(to right, #00a884 0%, #008069 ${percent}%, #374248 ${percent}%, #374248 100%)`;
+    displayVal.textContent = val;
+    confirmBtn.textContent = `CONFIRMAR (${val} ${unit})`;
+  }
+
+  updateSliderFill();
+
+  rangeInput.addEventListener("input", updateSliderFill);
+
+  btnMinus.addEventListener("click", () => {
+    let cur = parseInt(rangeInput.value, 10);
+    if (cur > minVal) {
+      rangeInput.value = cur - 1;
+      updateSliderFill();
+    }
+  });
+
+  btnPlus.addEventListener("click", () => {
+    let cur = parseInt(rangeInput.value, 10);
+    if (cur < maxVal) {
+      rangeInput.value = cur + 1;
+      updateSliderFill();
+    }
+  });
+
+  confirmBtn.addEventListener("click", () => {
+    const finalVal = rangeInput.value;
+    const formattedAnswer = `${finalVal} ${unit}`.trim();
+
+    if (stepData.key) {
+      state.userResponses[stepData.key] = finalVal;
+      Tracker.trackAnswer(stepData.key, formattedAnswer);
+    } else {
+      Tracker.trackAnswer("etapa_" + (state.currentStepIndex + 1), formattedAnswer);
+    }
+
+    container.remove();
+    renderOutgoingMessage(formattedAnswer);
+
+    setTimeout(() => {
+      executeStep(state.currentStepIndex + 1);
+    }, 400);
+  });
 }
 
 // Renderiza campo numérico inline para Altura e Peso (Etapas 13, 14, 15)
@@ -825,7 +951,7 @@ function renderChoices(options, responseKey) {
   options.forEach(optionText => {
     const btn = document.createElement("button");
     btn.className = "choice-btn";
-    if (optionText.includes("EU QUERO") || optionText.includes("ESTOU PREPARADA") || optionText.includes("ACEITO") || optionText.includes("COMEÇAR")) {
+    if (optionText.includes("EU QUERO") || optionText.includes("ESTOU PREPARADA") || optionText.includes("ACEITO") || optionText.includes("COMEÇAR") || optionText.includes("UAU")) {
       btn.classList.add("primary-cta");
     }
     btn.textContent = optionText;
@@ -860,33 +986,87 @@ function renderChoices(options, responseKey) {
   scrollToBottom();
 }
 
-// Etapa 15: Cálculo sem barra de loading, apenas com pontinhos de digitação ("digitando...")
-async function handleCalculationWait(durationMs) {
+// Etapa 15: Análise e cálculo do plano personalizado com barra de progresso em 3 estágios (4.8s)
+async function handleCalculationWait(durationMs = 4800) {
   setTypingStatus(true);
-  const typingBubble = createTypingBubble();
-  chatMessagesEl.appendChild(typingBubble);
+
+  // Cria o card visual de análise com barra de progresso em tempo real
+  const row = document.createElement("div");
+  row.className = "message-row incoming first-in-series";
+  row.id = "active-loading-analysis-card";
+  row.innerHTML = `
+    <div class="message-bubble loading-analysis-bubble">
+      <div class="loading-analysis-header">
+        <span class="loading-spinner-dot"></span>
+        <span class="loading-title">Gerando seu Plano Personalizado...</span>
+      </div>
+      <div class="loading-status-text" id="analysis-status-text">
+        Analisando seu nível de flexibilidade e biotipo...
+      </div>
+      <div class="loading-bar-wrapper">
+        <div class="loading-bar-fill" id="analysis-bar-fill" style="width: 0%;"></div>
+      </div>
+      <div class="loading-meta-row">
+        <span class="loading-sub">Inteligência Corporal Pilates Tailandês</span>
+        <span class="loading-percent" id="analysis-percent">0%</span>
+      </div>
+    </div>
+  `;
+
+  chatMessagesEl.appendChild(row);
   scrollToBottom();
+  AudioController.playReceive();
 
-  // Espera os 4.8 segundos de análise e cálculo do plano personalizado
-  await new Promise(res => setTimeout(res, durationMs || 4800));
+  const statusTextEl = row.querySelector("#analysis-status-text");
+  const barFillEl = row.querySelector("#analysis-bar-fill");
+  const percentEl = row.querySelector("#analysis-percent");
 
-  typingBubble.remove();
+  const startTime = Date.now();
+
+  await new Promise((resolve) => {
+    const interval = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(100, Math.round((elapsed / durationMs) * 100));
+
+      if (barFillEl) barFillEl.style.width = `${progress}%`;
+      if (percentEl) percentEl.textContent = `${progress}%`;
+
+      if (statusTextEl) {
+        if (progress <= 35) {
+          statusTextEl.textContent = "Analisando seu nível de flexibilidade e biotipo...";
+        } else if (progress <= 75) {
+          statusTextEl.textContent = "Cruzando sua rotina com o protocolo de Pilates Tailandês...";
+        } else {
+          statusTextEl.textContent = "Calculando projeção de emagrecimento e montando seu plano...";
+        }
+      }
+
+      if (progress >= 100) {
+        clearInterval(interval);
+        if (statusTextEl) {
+          statusTextEl.innerHTML = "✅ <strong>Plano 100% calculado e pronto!</strong>";
+        }
+        setTimeout(resolve, 350);
+      }
+    }, 50);
+  });
+
   setTypingStatus(false);
 
-  // Avança automaticamente para a Etapa 16
+  // Avança automaticamente para a Etapa 16 (Gráfico)
   executeStep(state.currentStepIndex + 1);
 }
 
-// Etapa 17: Renderiza botão CTA final da Wiapy
+// Etapa 18: Renderiza botão CTA final da Wiapy com destaque pulsante
 function renderPaytChoice(buttonLabel) {
   removeActiveChoices();
 
   const container = document.createElement("div");
-  container.className = "inline-choices-row";
+  container.className = "inline-choices-row payt-cta-row";
   container.id = "active-inline-choices";
 
   const btn = document.createElement("button");
-  btn.className = "choice-btn";
+  btn.className = "choice-btn primary-cta final-pulsing-cta";
   btn.textContent = buttonLabel;
 
   btn.addEventListener("click", () => {

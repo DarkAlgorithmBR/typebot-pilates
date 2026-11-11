@@ -1,0 +1,249 @@
+================================================================================
+FUNIL COMPLETO DE CONVERSÃO - PILATES TAILANDÊS (WHATSAPP TYPEBOT)
+Especialista: Mali Santos
+Mecanismo Único: Pilates Tailandês
+Ticket de Venda: R$ 37,00 (Pagamento único — sem mensalidades!)
+Stack de Valor: De R$ 228,00 por apenas R$ 37,00
+Garantia: 30 Dias Incondicional (Devolução de 100% com 1 clique)
+Checkout: Wiapy (https://pay.wiapy.com/i3tIMsUrLrwY)
+================================================================================
+
+[ETAPA 01] - ENTRADA / GANCHO & APRESENTAÇÃO
+Tipo: Múltipla Escolha (Botão Único de Aceite)
+Mensagens da Mali Santos:
+  1. "Oie, tudo bem? 👋"
+  2. "Meu nome é Mali Santos e sou especialista em *Pilates Tailandês há mais de 6 anos...*"
+  3. "Gostaria de receber *GRATUITAMENTE* um plano personalizado de Pilates Tailandês que *fortalece seu corpo, aumenta sua autoestima e te deixa em forma em apenas 28 dias?* (CLIQUE NO BOTÃO ABAIXO)"
+Botão de Ação:
+  - [ SIM, QUERO MEU PLANO! ]
+
+--------------------------------------------------------------------------------
+
+[ETAPA 02] - QUALIFICAÇÃO / EXPERIÊNCIA PRÉVIA
+Tipo: Múltipla Escolha
+Mensagem da Mali Santos:
+  1. "Você já praticou Pilates antes?"
+Opções de Resposta:
+  - Sim, já pratico regularmente
+  - Já fiz algumas vezes, mas não com frequência
+  - Nunca fiz
+
+--------------------------------------------------------------------------------
+
+[ETAPA 03] - NÍVEL DE FLEXIBILIDADE
+Tipo: Múltipla Escolha
+Mensagens da Mali Santos:
+  1. "Qual é seu nível de flexibilidade?"
+  2. "_Não importa seu nível, vamos elaborar um plano totalmente *especial* para você!_"
+Opções de Resposta:
+  - Sou flexível
+  - Mais ou menos flexível
+  - Não sou flexível
+
+--------------------------------------------------------------------------------
+
+[ETAPA 04] - INTERVENÇÃO DE ALÍVIO (82%) + AUTOPERCEPÇÃO CORPORAL ATUAL
+Tipo: Múltipla Escolha
+Mensagens da Mali Santos:
+  1. "Fica tranquila! Mais de 82% das mulheres que começaram o Pilates Tailandês com a gente não conseguiam nem encostar a mão no chão, e hoje têm o corpo muito mais solto, leve e sem dores."
+  2. "Como você descreveria seu fisico?"
+Opções de Resposta:
+  - Magra
+  - Média
+  - Um pouco acima do peso
+  - Acima do peso
+
+--------------------------------------------------------------------------------
+
+[ETAPA 05] - DEFINIÇÃO DO OBJETIVO ("CORPO DOS SONHOS")
+Tipo: Múltipla Escolha
+Mensagem da Mali Santos:
+  1. "Qual é o seu \"corpo dos sonhos\"?"
+Opções de Resposta:
+  - Magra
+  - Tonificada
+  - Com curvas
+  - Média
+
+--------------------------------------------------------------------------------
+
+[ETAPA 06] - HISTÓRICO TEMPORAL DO MELHOR FÍSICO
+Tipo: Múltipla Escolha
+Mensagem da Mali Santos:
+  1. "Há quanto tempo você esteve no melhor físico de sua vida?"
+Opções de Resposta:
+  - Há menos de um ano
+  - 1 a 2 anos atrás
+  - Há mais de 3 anos
+  - Não sei dizer
+
+--------------------------------------------------------------------------------
+
+[ETAPA 07] - FOCO / REGIÃO CORPORAL PRIORITÁRIA
+Tipo: Múltipla Escolha
+Mensagem da Mali Santos:
+  1. "Qual região do corpo você gostaria de atingir primeiro?"
+Opções de Resposta:
+  - Barriga
+  - Glúetos
+  - Pernas
+  - Peito
+
+--------------------------------------------------------------------------------
+
+[ETAPA 08] - PROVA SOCIAL ESTRATÉGICA 1 (LEOPOLDINA -15KG) + MICRO-COMPROMISSO
+Tipo: Prova Social Visual + Botão de Destravamento
+Mensagens da Mali Santos:
+  1. "Perfeito! O Pilates Tailandês tem movimentos específicos de ativação profunda que atacam exatamente essa região sem você precisar fazer exercícios pesados ou abdominais tradicionais."
+  2. "Dá uma olhada no que a Leopoldina me mandou há pouco tempo... Ela tinha esse mesmo objetivo e secou 15kg em 5 semanas seguindo o app:"
+  3. [IMAGEM/PRINT]: Foto de evolução real da aluna Leopoldina (-15kg em 5 semanas com redução de medidas).
+Botão de Micro-Compromisso:
+  - [ UAU, QUERO ESSE RESULTADO! ]
+
+--------------------------------------------------------------------------------
+
+[ETAPA 09] - FREQUÊNCIA ATUAL DE ATIVIDADE FÍSICA
+Tipo: Múltipla Escolha
+Mensagem da Mali Santos:
+  1. "Quantas vezes faz exercício?"
+Opções de Resposta:
+  - Quase todos os dias
+  - Algumas vezes na semana
+  - Algumas vezes por mês
+  - Poucas vezes
+
+--------------------------------------------------------------------------------
+
+[ETAPA 10] - ROTINA DE SONO E RECUPERAÇÃO
+Tipo: Múltipla Escolha
+Mensagens da Mali Santos:
+  1. "Já estou terminando, só me responde mais algumas perguntinhas por favor"
+  2. "Quantas horas você dorme por dia?"
+Opções de Resposta:
+  - Menos de 5 horas
+  - 5-6 horas
+  - 7-8 horas
+  - Mais de 8 horas
+
+--------------------------------------------------------------------------------
+
+[ETAPA 11] - MOTIVAÇÃO EMOCIONAL PROFUNDA (DOR / DESEJO)
+Tipo: Múltipla Escolha
+Mensagem da Mali Santos:
+  1. "Qual é o seu principal motivo para entrar em forma?"
+Opções de Resposta:
+  - Me sentir mais confiante no meu corpo
+  - Me sentir mais saudável e com energia
+  - Vestir melhor minhas roupas
+  - Voltar a forma após o parto
+  - Outros
+
+--------------------------------------------------------------------------------
+
+[ETAPA 12] - ACOLHIMENTO EMPÁTICO + DADOS FÍSICOS: ALTURA (RANGE SLIDER)
+Tipo: Slider Interativo de Arraste (Sem abrir teclado mobile)
+Mensagens da Mali Santos:
+  1. "Eu te entendo perfeitamente... Ver o nosso corpo mudar, sentir falta de energia e as roupas pararem de cair bem mexe muito com a nossa cabeça. Mas você não está sozinha e nós vamos virar esse jogo juntas a partir de hoje!"
+  2. "Qual a sua altura em cm?"
+Controle Interativo:
+  - Range Slider: de 145 cm a 190 cm (Valor padrão inicial: 162 cm)
+  - Botões de ajuste fino: [－] e [＋]
+  - Botão de Confirmação: [ CONFIRMAR (162 cm) ]
+
+--------------------------------------------------------------------------------
+
+[ETAPA 13] - DADOS FÍSICOS: PESO ATUAL (RANGE SLIDER)
+Tipo: Slider Interativo de Arraste (Sem abrir teclado mobile)
+Mensagem da Mali Santos:
+  1. "Qual é o seu peso atualmente em kgs?"
+Controle Interativo:
+  - Range Slider: de 50 kg a 130 kg (Valor padrão inicial: 75 kg)
+  - Botões de ajuste fino: [－] e [＋]
+  - Botão de Confirmação: [ CONFIRMAR (75 kg) ]
+
+--------------------------------------------------------------------------------
+
+[ETAPA 14] - DADOS FÍSICOS: PESO DESEJADO / META (RANGE SLIDER)
+Tipo: Slider Interativo de Arraste (Sem abrir teclado mobile)
+Mensagem da Mali Santos:
+  1. "Entendi! E qual é o seu objetivo de peso ideal em kgs?"
+Controle Interativo:
+  - Range Slider: de 45 kg a 100 kg (Valor padrão inicial: 62 kg)
+  - Botões de ajuste fino: [－] e [＋]
+  - Botão de Confirmação: [ CONFIRMAR (62 kg) ]
+
+--------------------------------------------------------------------------------
+
+[ETAPA 15] - ANÁLISE / CÁLCULO PERSONALIZADO EM 3 ESTÁGIOS (4.8 SEGUNDOS)
+Tipo: Card Visual de Processamento com Barra de Progresso e Percentual Dinâmico
+Mensagem / Estados da Análise:
+  - 0% a 35%: "Analisando seu nível de flexibilidade e biotipo..."
+  - 36% a 75%: "Cruzando sua rotina com o protocolo de Pilates Tailandês..."
+  - 76% a 100%: "Calculando projeção de emagrecimento e montando seu plano..."
+  - Conclusão: "✅ Plano 100% calculado e pronto!"
+
+--------------------------------------------------------------------------------
+
+[ETAPA 16] - ENTREGA DA PREVISÃO & GRÁFICO DINÂMICO
+Tipo: Gráfico Comparativo Interativo + Botão de Compromisso
+Mensagens da Mali Santos:
+  1. "Seu Plano de Pilates Tailandês está pronto! 🔥"
+  2. "De acordo com as informações que você me passou, prevemos sua meta até {DATA_ALVO}."
+      (Calcula dinamicamente a data alvo com ~38 dias à frente)
+Elemento Visual:
+  - Gráfico comparativo interativo:
+    * Linha Vermelha (Sem Pilates): peso subindo ou estabilizado.
+    * Linha Verde (Com Pilates Tailandês): perda consistente de 800g a 1kg por semana até atingir o peso desejado informado na Etapa 14.
+Botão de Ação:
+  - [ SIM, ESTOU PREPARADA! ]
+
+--------------------------------------------------------------------------------
+
+[ETAPA 17] - APRESENTAÇÃO DOS BENEFÍCIOS + PROVA NEUZA (QUEBRA DE OBJEÇÃO TÉCNICA)
+Tipo: Mensagens com Ortografia Corrigida + Print de Aluna no WhatsApp + Botão de Aceite
+Mensagens da Mali Santos:
+  1. "Deixa eu te explicar como irá funcionar..."
+  2. "Você receberá treinos personalizados exclusivamente para você, todos os dias! Exercícios que você pode fazer em casa:
+
+✅ Perda de peso
+✅ Ganho de massa magra
+✅ Alivio de dores nas costas
+✅ Melhora da postura
+✅ Aumento da autoestima
+✅ Aumento da libido
+✅ Melhora da flexibilidade
+✅ Pode ser feito em casa
+✅ Sem aparelhos, você não precisa comprar NADA."
+  3. "E se você está pensando: 'Mali, será que eu vou conseguir acompanhar sozinha pelo celular?', fica tranquila! Olha o que a Neuza me mandou na primeira semana:"
+  4. [IMAGEM/PRINT]: Depoimento da aluna Neuza (conversa real no WhatsApp relatando facilidade e primeiros resultados rápidos).
+  5. "Você está preparada para começar essa transformação na sua vida hoje?"
+Botão de Ação:
+  - [ SIM, EU ACEITO O DESAFIO! ]
+
+--------------------------------------------------------------------------------
+
+[ETAPA 18] - OFERTA FINAL: STACK DE VALOR AGRESSIVO + GARANTIA 30 DIAS + CHECKOUT WIAPY
+Tipo: Empilhamento de Oferta em Pitch Direto com Botão CTA Pulsante
+Mensagens da Mali Santos:
+  1. "O seu Plano Personalizado de Pilates Tailandês está liberado! 🔓"
+  2. "Uma mensalidade de Pilates tradicional ou academia custa facilmente mais de R$ 200,00 por mês — fora nutricionista. Mas meu objetivo é que qualquer mulher consiga transformar o corpo em casa."
+  3. "Por isso, ao garantir seu acesso hoje, você vai receber o pacote completo:
+
+📦 *O QUE VOCÊ RECEBE IMEDIATAMENTE:*
+✅ *App Plano 28 Dias de Pilates Tailandês* (Treinos rápidos em casa, passo a passo) — _De R$ 97_
+✅ *Protocolo Desinchaço Abdominal* (Ativação profunda para secar a barriga) — _De R$ 47*
+✅ *Rotina Noturna de 5 Minutos* (Para destravar a coluna, aliviar dores e dormir melhor) — _De R$ 37*
+✅ *Comunidade VIP de Alunas + Suporte* — _De R$ 47*
+
+❌ *Valor Total:* ~R$ 228,00~
+🔥 *Seu acesso hoje:* *APENAS R$ 37,00* _(Pagamento único — sem mensalidades!)_"
+
+  4. "🛡️ *Garantia Incondicional de 30 Dias:* Você tem 1 mês inteiro para testar. Se você não sentir suas roupas folgando, as dores sumindo e a autoestima voltando, basta um clique e eu devolvo 100% do seu dinheiro."
+
+Botão CTA de Checkout (com Efeito Pulsante / Glow Verde):
+  - [ QUERO MEU PLANO PERSONALIZADO POR R$ 37 ]
+
+Ação do Botão:
+  - Ao clicar, o lead envia a confirmação no chat e é redirecionado instantaneamente em nova aba para o checkout oficial da Wiapy:
+    https://pay.wiapy.com/i3tIMsUrLrwY
+================================================================================
