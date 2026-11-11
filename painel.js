@@ -49,7 +49,7 @@ const QUESTION_LABELS = {
   peso_desejado: "Qual o seu objetivo de peso ideal em kg?",
   preparada_transformacao: "Preparada para a transformação?",
   etapa_16: "Aceitou o Desafio Pilates?",
-  etapa_17: "Clicou no Checkout Zuptos?"
+  etapa_17: "Clicou no Checkout Wiapy?"
 };
 
 let currentLeads = [];

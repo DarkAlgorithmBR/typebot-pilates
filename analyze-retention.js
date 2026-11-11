@@ -36,7 +36,7 @@ const FUNNEL_STEPS_META = [
   { num: 14, name: "Finalização do Plano (Análise)" },
   { num: 15, name: "Previsão & Gráfico de Peso" },
   { num: 16, name: "Benefícios & Depoimentos" },
-  { num: 17, name: "Checkout Payt / Zuptos" }
+  { num: 17, name: "Checkout Wiapy" }
 ];
 
 async function run() {

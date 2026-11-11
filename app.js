@@ -6,8 +6,8 @@
 // ==========================================
 // CONFIGURAÇÕES GERAIS
 // ==========================================
-// Link oficial de checkout (Zuptos):
-const CHECKOUT_PAYT_URL = "https://app.zuptos.com.br/checkout/7dda6e09d2f964c0";
+// Link oficial de checkout (Wiapy):
+const CHECKOUT_PAYT_URL = "https://pay.wiapy.com/i3tIMsUrLrwY";
 
 // Estado da conversa e respostas do usuário
 const state = {
@@ -628,7 +628,7 @@ async function executeStep(stepIndex) {
     // Etapa 15: Previsão gráfica de redução de peso
     renderChartStep(stepData);
   } else if (stepData.type === "final_payt") {
-    // Etapa 17: Botão final direto para a Zuptos (aguarda 900ms para leitura da garantia antes de exibir o botão)
+    // Etapa 17: Botão final direto para a Wiapy (aguarda 900ms para leitura da garantia antes de exibir o botão)
     setTimeout(() => {
       renderPaytChoice(stepData.options[0]);
     }, 900);
@@ -877,7 +877,7 @@ async function handleCalculationWait(durationMs) {
   executeStep(state.currentStepIndex + 1);
 }
 
-// Etapa 18: Renderiza botão CTA final da Payt/Zuptos
+// Etapa 17: Renderiza botão CTA final da Wiapy
 function renderPaytChoice(buttonLabel) {
   removeActiveChoices();
 
