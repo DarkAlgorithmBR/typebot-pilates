@@ -112,6 +112,7 @@ Opções de Resposta:
   - Algumas vezes na semana
   - Algumas vezes por mês
   - Poucas vezes
+  - Não pratico nada
 
 --------------------------------------------------------------------------------
 

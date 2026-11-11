@@ -323,7 +323,7 @@ const funnelSteps = [
     key: "exercicio",
     messages: ["Quantas vezes faz exercício?"],
     type: "choice",
-    options: ["Quase todos os dias", "Algumas vezes na semana", "Algumas vezes por mês", "Poucas vezes"]
+    options: ["Quase todos os dias", "Algumas vezes na semana", "Algumas vezes por mês", "Poucas vezes", "Não pratico nada"]
   },
   {
     step: 10,
